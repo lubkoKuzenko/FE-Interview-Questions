@@ -1,4 +1,4 @@
-# Angular Interview Questions
+# Angular Interview Questions 
 
 <img src="https://webref.ru/assets/images/angular-cookbook/angular.png" width="960">
 
