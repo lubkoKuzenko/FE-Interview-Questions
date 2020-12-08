@@ -1,6 +1,6 @@
 # Front End Interview Questions
 
-<img src="./assets/developer.gif">
+<img src="./images/developer.gif">
 
 - [HTML](./HTML/README.md)
 - [CSS]
