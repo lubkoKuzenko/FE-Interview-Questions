@@ -36,7 +36,7 @@
 | 28. | [Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?](#can-you-explain-the-difference-between-coding-a-website-to-be-responsive-versus-using-a-mobile-first-strategy)                                             |
 | 29. | [How is responsive design different from adaptive design?](#how-is-responsive-design-different-from-adaptive-design)                                                                                                                                                         |
 | 30. | [Have you ever worked with retina graphics? If so, when and what techniques did you use?](#have-you-ever-worked-with-retina-graphics-if-so-when-and-what-techniques-did-you-use)                                                                                             |
-| 31. | [Is there any reason you'd want to use `translate()|` instead of `absolute` positioning, or vice-versa? And why?](#is-there-any-reason-youd-want-to-use-translate-instead-of-absolute-positioning-or-vice-versa-and-why)                                                     |
+| 31. | [Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?](#is-there-any-reason-youd-want-to-use-translate-instead-of-absolute-positioning-or-vice-versa-and-why)                                                      |
 
 ### What is CSS selector specificity and how does it work?
 
