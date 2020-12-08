@@ -2,7 +2,7 @@
 
 <img src="./assets/developer.gif">
 
-- [HTML]
+- [HTML](./HTML/README.md)
 - [CSS]
 - [JavaScript]
 - [TypeScript]
