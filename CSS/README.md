@@ -1,4 +1,4 @@
-# HTML Interview Questions with Answers
+# CSS Interview Questions with Answers
 
 <img src="./images/css.webp" width="960">
 
