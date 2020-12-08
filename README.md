@@ -7,7 +7,7 @@
 - [JavaScript](./JavaScript/README.md)
 - [TypeScript]
 - [Angular](./Angular/README.md)
-- [React]
+- [React](./React/README.md)
 
 ## Contributors
 
