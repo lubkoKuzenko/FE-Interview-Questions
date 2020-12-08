@@ -3,8 +3,8 @@
 <img src="./images/developer.gif">
 
 - [HTML](./HTML/README.md)
-- [CSS]
-- [JavaScript]
+- [CSS](./CSS/README.md)
+- [JavaScript](./JavaScript/README.md)
 - [TypeScript]
 - [Angular](./Angular/README.md)
 - [React]
