@@ -5,7 +5,7 @@
 - [HTML](./HTML/README.md)
 - [CSS](./CSS/README.md)
 - [JavaScript](./JavaScript/README.md)
-- [TypeScript]
+- [TypeScript](./TypeScript/README.md)
 - [Angular](./Angular/README.md)
 - [React](./React/README.md)
 
