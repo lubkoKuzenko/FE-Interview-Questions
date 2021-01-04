@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-| No. | Questions                                                                                                                                                                                                                                                                    |
+| No. | Question                                                                                                                                                                                                                                                                     |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.  | [What is CSS selector specificity and how does it work?](#what-is-css-selector-specificity-and-how-does-it-work)                                                                                                                                                             |
 | 2.  | [What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?](#whats-the-difference-between-resetting-and-normalizing-css-which-would-you-choose-and-why)                                                                              |
