@@ -11,32 +11,30 @@
 | 3.  | [Describe `float`s and how they work.](#describe-floats-and-how-they-work)                                                                                                                                                                                                   |
 | 4.  | [Describe z-index and how stacking context is formed.](#describe-z-index-and-how-stacking-context-is-formed)                                                                                                                                                                 |
 | 5.  | [Describe BFC (Block Formatting Context) and how it works.](#describe-block-formatting-context-bfc-and-how-it-works)                                                                                                                                                         |
-| 6.  | [What are the various clearing techniques and which is appropriate for what context?](#what-are-the-various-clearing-techniques-and-which-is-appropriate-for-what-context)                                                                                                   |
-| 7.  | [Explain CSS sprites, and how you would implement them on a page or site.](#explain-css-sprites-and-how-you-would-implement-them-on-a-page-or-site)                                                                                                                          |
-| 8.  | [How would you approach fixing browser-specific styling issues?](#how-would-you-approach-fixing-browser-specific-styling-issues)                                                                                                                                             |
-| 9.  | [How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?](#how-do-you-serve-your-pages-for-feature-constrained-browsers-what-techniquesprocesses-do-you-use)                                                                     |
-| 10. | [What are the different ways to visually hide content (and make it available only for screen readers)?](#what-are-the-different-ways-to-visually-hide-content-and-make-it-available-only-for-screen-readers)                                                                 |
-| 11. | [Have you ever used a grid system, and if so, what do you prefer?](#have-you-ever-used-a-grid-system-and-if-so-what-do-you-prefer)                                                                                                                                           |
-| 12. | [Have you used or implemented media queries or mobile specific layouts/CSS?](#have-you-used-or-implemented-media-queries-or-mobile-specific-layoutscss)                                                                                                                      |
-| 13. | [Are you familiar with styling SVG?](#are-you-familiar-with-styling-svg)                                                                                                                                                                                                     |
-| 14. | [Can you give an example of an @media property other than screen?](#can-you-give-an-example-of-an-media-property-other-than-screen)                                                                                                                                          |
-| 15. | [What are some of the "gotchas" for writing efficient CSS?](#what-are-some-of-the-gotchas-for-writing-efficient-css)                                                                                                                                                         |
-| 16. | [What are the advantages/disadvantages of using CSS preprocessors?](#what-are-the-advantagesdisadvantages-of-using-css-preprocessors)                                                                                                                                        |
-| 17. | [Describe what you like and dislike about the CSS preprocessors you have used.](#describe-what-you-like-and-dislike-about-the-css-preprocessors-you-have-used)                                                                                                               |
-| 18. | [How would you implement a web design comp that uses non-standard fonts?](#how-would-you-implement-a-web-design-comp-that-uses-non-standard-fonts)                                                                                                                           |
-| 19. | [Explain how a browser determines what elements match a CSS selector.](#explain-how-a-browser-determines-what-elements-match-a-css-selector)                                                                                                                                 |
-| 20. | [Describe pseudo-elements and discuss what they are used for.](#describe-pseudo-elements-and-discuss-what-they-are-used-for)                                                                                                                                                 |
-| 21. | [Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.](#explain-your-understanding-of-the-box-model-and-how-you-would-tell-the-browser-in-css-to-render-your-layout-in-different-box-models) |
-| 22. | [What does `* { box-sizing: border-box; }` do? What are its advantages?](#what-does---box-sizing-border-box--do-what-are-its-advantages)                                                                                                                                     |
-| 23. | [What is the CSS `display` property and can you give a few examples of its use?](#what-is-the-css-display-property-and-can-you-give-a-few-examples-of-its-use)                                                                                                               |
-| 24. | [What's the difference between `inline` and `inline-block`?](#whats-the-difference-between-inline-and-inline-block)                                                                                                                                                          |
-| 25. | [What's the difference between a `relative`, `fixed`, `absolute` and `static`ally positioned element?](#whats-the-difference-between-a-relative-fixed-absolute-and-statically-positioned-element)                                                                            |
-| 26. | [What existing CSS frameworks have you used locally, or in production? How would you change/improve them?](#what-existing-css-frameworks-have-you-used-locally-or-in-production-how-would-you-changeimprove-them)                                                            |
-| 27. | [Have you played around with the new CSS Flexbox or Grid specs?](#have-you-played-around-with-the-new-css-flexbox-or-grid-specs)                                                                                                                                             |
-| 28. | [Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?](#can-you-explain-the-difference-between-coding-a-website-to-be-responsive-versus-using-a-mobile-first-strategy)                                             |
-| 29. | [How is responsive design different from adaptive design?](#how-is-responsive-design-different-from-adaptive-design)                                                                                                                                                         |
-| 30. | [Have you ever worked with retina graphics? If so, when and what techniques did you use?](#have-you-ever-worked-with-retina-graphics-if-so-when-and-what-techniques-did-you-use)                                                                                             |
-| 31. | [Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?](#is-there-any-reason-youd-want-to-use-translate-instead-of-absolute-positioning-or-vice-versa-and-why)                                                      |
+| 6.  | [Explain CSS sprites, and how you would implement them on a page or site.](#explain-css-sprites-and-how-you-would-implement-them-on-a-page-or-site)                                                                                                                          |
+| 7.  | [How would you approach fixing browser-specific styling issues?](#how-would-you-approach-fixing-browser-specific-styling-issues)                                                                                                                                             |
+| 8.  | [How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?](#how-do-you-serve-your-pages-for-feature-constrained-browsers-what-techniquesprocesses-do-you-use)                                                                     |
+| 9.  | [What are the different ways to visually hide content (and make it available only for screen readers)?](#what-are-the-different-ways-to-visually-hide-content-and-make-it-available-only-for-screen-readers)                                                                 |
+| 10. | [Have you ever used a grid system, and if so, what do you prefer?](#have-you-ever-used-a-grid-system-and-if-so-what-do-you-prefer)                                                                                                                                           |
+| 11. | [Have you used or implemented media queries or mobile specific layouts/CSS?](#have-you-used-or-implemented-media-queries-or-mobile-specific-layoutscss)                                                                                                                      |
+| 12. | [Are you familiar with styling SVG?](#are-you-familiar-with-styling-svg)                                                                                                                                                                                                     |
+| 13. | [Can you give an example of an @media property other than screen?](#can-you-give-an-example-of-an-media-property-other-than-screen)                                                                                                                                          |
+| 14. | [What are some of the "gotchas" for writing efficient CSS?](#what-are-some-of-the-gotchas-for-writing-efficient-css)                                                                                                                                                         |
+| 15. | [What are the advantages/disadvantages of using CSS preprocessors?](#what-are-the-advantagesdisadvantages-of-using-css-preprocessors)                                                                                                                                        |
+| 16. | [Describe what you like and dislike about the CSS preprocessors you have used.](#describe-what-you-like-and-dislike-about-the-css-preprocessors-you-have-used)                                                                                                               |
+| 17. | [How would you implement a web design comp that uses non-standard fonts?](#how-would-you-implement-a-web-design-comp-that-uses-non-standard-fonts)                                                                                                                           |
+| 18. | [Explain how a browser determines what elements match a CSS selector.](#explain-how-a-browser-determines-what-elements-match-a-css-selector)                                                                                                                                 |
+| 19. | [Describe pseudo-elements and discuss what they are used for.](#describe-pseudo-elements-and-discuss-what-they-are-used-for)                                                                                                                                                 |
+| 20. | [Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.](#explain-your-understanding-of-the-box-model-and-how-you-would-tell-the-browser-in-css-to-render-your-layout-in-different-box-models) |
+| 21. | [What does `* { box-sizing: border-box; }` do? What are its advantages?](#what-does---box-sizing-border-box--do-what-are-its-advantages)                                                                                                                                     |
+| 22. | [What is the CSS `display` property and can you give a few examples of its use?](#what-is-the-css-display-property-and-can-you-give-a-few-examples-of-its-use)                                                                                                               |
+| 23. | [What's the difference between `inline` and `inline-block`?](#whats-the-difference-between-inline-and-inline-block)                                                                                                                                                          |
+| 24. | [What's the difference between a `relative`, `fixed`, `absolute` and `static`ally positioned element?](#whats-the-difference-between-a-relative-fixed-absolute-and-statically-positioned-element)                                                                            |
+| 25. | [What existing CSS frameworks have you used locally, or in production? How would you change/improve them?](#what-existing-css-frameworks-have-you-used-locally-or-in-production-how-would-you-changeimprove-them)                                                            |
+| 26. | [Have you played around with the new CSS Flexbox or Grid specs?](#have-you-played-around-with-the-new-css-flexbox-or-grid-specs)                                                                                                                                             |
+| 27. | [Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?](#can-you-explain-the-difference-between-coding-a-website-to-be-responsive-versus-using-a-mobile-first-strategy)                                             |
+| 28. | [How is responsive design different from adaptive design?](#how-is-responsive-design-different-from-adaptive-design)                                                                                                                                                         |
+| 29. | [Have you ever worked with retina graphics? If so, when and what techniques did you use?](#have-you-ever-worked-with-retina-graphics-if-so-when-and-what-techniques-did-you-use)                                                                                             |
 
 ### What is CSS selector specificity and how does it work?
 
@@ -142,16 +140,6 @@ Vertical margins between adjacent block-level boxes in a BFC collapse. Read more
 
 - https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
 - https://www.sitepoint.com/understanding-block-formatting-contexts-in-css/
-
-[[↑] Back to top](#table-of-contents)
-
-### What are the various clearing techniques and which is appropriate for what context?
-
-- Empty `div` method - `<div style="clear:both;"></div>`.
-- Clearfix method - Refer to the `.clearfix` class above.
-- `overflow: auto` or `overflow: hidden` method - Parent will establish a new block formatting context and expand to contains its floated children.
-
-In large projects, I would write a utility `.clearfix` class and use them in places where I need it. `overflow: hidden` might clip children if the children is taller than the parent and is not very ideal.
 
 [[↑] Back to top](#table-of-contents)
 
@@ -567,17 +555,5 @@ For icons, I would also opt to use SVGs and icon fonts where possible, as they r
 - https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/
 - http://scottjehl.github.io/picturefill/
 - https://aclaes.com/responsive-background-images-with-srcset-and-sizes/
-
-[[↑] Back to top](#table-of-contents)
-
-### Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?
-
-`translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
-
-When using `translate()`, the element still occupies its original space (sort of like `position: relative`), unlike in changing the absolute positioning.
-
-###### References
-
-- https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/
 
 [[↑] Back to top](#table-of-contents)
