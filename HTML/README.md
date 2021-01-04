@@ -6,14 +6,11 @@
 
 |No.|  Questions                        |
 |----|------------------------------------|
-| 01.|[Does localStorage throw error after reaches maximum limits?](#q-does-localstorage-throw-error-after-reaches-maximum-limits)|
-| 02.|[What are the new form elements in HTML5?](#q-what-are-the-new-form-elements-in-html5)|
-| 03.|[What is the DOM? How does the DOM work?](#q-what-is-the-dom-how-does-the-dom-work)|
+| 01.|[What is the DOM? How does the DOM work?](#q-what-is-the-dom-how-does-the-dom-work)|
 | 04.|[How does the browser rendering engine work?](#q-how-does-the-browser-rendering-engine-work)|
 | 05.|[What does a `<DOCTYPE html>` do?](#q-what-does-a-doctype-html-do)|
 | 06.|[What happens when DOCTYPE is not given?](#q-what-happens-when-doctype-is-not-given)|
 | 07.|[What is the difference between standards mode and quirks mode?](#q-what-is-the-difference-between-standards-mode-and-quirks-mode)|
-| 08.|[What is difference between HTML and XHTML?](#q-what-is-difference-between-html-and-xhtml)|
 | 09.|[What are the building blocks of HTML5?](#q-what-are-the-building-blocks-of-html5)|
 | 10.|[Describe the difference between a `cookie`, `sessionStorage` and `localStorage`?](#q-describe-the-difference-between-a-cookie-sessionstorage-and-localstorage)|
 | 11.|[What is Critical Rendering Path?](#q-what-is-critical-rendering-path)|
@@ -24,7 +21,6 @@
 | 16.|[What is the purpose of `main` element?](#q-what-is-the-purpose-of-main-element)|
 | 17.|[Define semantic markup. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, <footer>` and when/how should each be used in structuring html markup?](#q-define-semantic-markup-what-are-the-semantic-meanings-for-section-article-aside-nav-header-footer-and-when-how-should-each-be-used-in-structuring-html-markup)|
 | 18.|[When should you use `section`, `div` or `article`?](#q-when-should-you-use-section-div-or-article)|
-| 19.|[What is Character Encoding?](#q-what-is-character-encoding)|
 | 20.|[What is the purpose of meta tags?](#q-what-is-the-purpose-of-meta-tags)|
 | 21.|[What does async and defer refer in script tag? Describe the difference between `<script>`, `<script async>` and `<script defer>`](#q-what-does-async-and-defer-refer-in-script-tag-describe-the-difference-between-script-script-async-and-script-defer)|
 | 22.|[Can you describe the difference between progressive enhancement and graceful degradation?](#q-can-you-describe-the-difference-between-progressive-enhancement-and-graceful-degradation)|
@@ -45,157 +41,20 @@
 | 37.|[What are the semantic tags available in html5?](#q-what-are-the-semantic-tags-available-in-html5)|
 | 38.|[Why you would like to use semantic tag?](#q-why-you-would-like-to-use-semantic-tag)|
 | 39.|[How to make page responsive?](#q-how-to-make-page-responsive)|
-| 40.|[What is difference between `span` tag and `div` tag?](#q-what-is-difference-between-span-tag-and-div-tag)|
 | 41.|[What are optional closing tag?](#q-what-are-optional-closing-tag)|
 | 42.|[What is a self closing tag?](#q-what-is-a-self-closing-tag)|
 | 43.|[Does the following trigger http request at the time of page load?](#q-does-the-following-trigger-http-request-at-the-time-of-page-load)|
 | 44.|[How Geo-location API works in html5?](#q-how-geo-location-api-works-in-html5)|
 | 45.|[What is difference between SVG and Canvas?](#q-what-is-difference-between-svg-and-canvas)|
 | 46.|[Explain Drag and Drop in HTML5?](#q-explain-drag-and-drop-in-html5)|
-| 47.|[Why to use IndexedDB instead of WebSQL in HTML5?](#q-why-to-use-indexeddb-instead-of-websql-in-html5)|
 | 48.|[Explain Application Cache in HTML5. OR What is a manifest file in HTML?](#q-explain-application-cache-in-html5-or-what-is-a-manifest-file-in-html)|
 | 49.|[Explain Microdata in HTML5?](#q-explain-microdata-in-html5)|
 | 50.|[List the API available in HTML5?](#q-list-the-api-available-in-html5)|
 | 51.|[What are different new form element types provided by HTML5?](#q-what-are-different-new-form-element-types-provided-by-html5)|
-| 52.|[What are the HTML tags which deprecated in HTML5?](#q-what-are-the-html-tags-which-deprecated-in-html5)|
 | 53.|[How you can Use Modernizr in HTML5?](#q-how-you-can-use-modernizr-in-html5)|
 | 54.|[What is the use of WebSocket API?](#q-what-is-the-use-of-websocket-api)|
-| 55.|[What does `enctype='multipart/form-data'` mean?](#q-what-does-enctype-multipart-form-data-mean)|
-| 56.|[What is progressive rendering?](#q-what-is-progressive-rendering)|
-| 57.|[What is difference between Select and Datalist?](#q-what-is-difference-between-select-and-datalist)|
 
 <br/>
-
-## Q. ***Does localStorage throw error after reaches maximum limits?***
-
-Yes
-
-*Example:*
-```html
-<!DOCTYPE HTML>
-<html>
-   <head>
-         <title>HTML5 localStorage</title>
-   </head>
-   <body>
-      <script type="text/javascript">
-        try{
-            if(window.localStorage){ // Check if the localStorage object exists
-            
-                var result = "";
-                var characters  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                var charactersLength = characters.length;
-                for(var i = 0; i < 10000; i++){
-                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                    localStorage.setItem("key"+i, result);
-                }  
-            } else {
-                alert("Sorry, your browser do not support localStorage.");
-            }
-        } catch(e) {
-            console.log('Exception: '+e);
-        }
-      </script>
-   </body>
-</html>
-```
-Output
-```javascript
-Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage': 
-           Setting the value of 'key3230' exceeded the quota.
-```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the new form elements in HTML5?***
-
-There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, `<keygen>`, `<progress>`, and `<meter>`. 
-
-**1.) Datalist Tag**: allows to attach a list of suggestions to a text input element. As soon as the user begins to type in the text field, the list of suggestions appears and the user can choose from the suggestions with the mouse. 
-
-```html
-<p>Enter your favorite browser name:</p>
-<input type="text" list="browsers" name="favorite_browser">
-<datalist id="browsers">
-    <option value="Firefox">
-    <option value="Chrome">    
-    <option value="Internet Explorer">
-    <option value="Opera">
-    <option value="Safari">
-</datalist>
-```
-
-[Live Example](html5-semantic-tags/datalist.html)
-
-**2.) Meter Tag**: indicates a numeric value that falls within a range. The tag supports a number of attributes:    
-value: If you don’t specify a value, the first numeric value inside the `<meter></meter>` pair becomes the value.
-* **max**: The maximum possible value of the item.
-* **min**: The minimum possible value of the item.
-* **high**: If the value can be defined as a range, this is the high end of the range.
-* **low**: If the value can defined as a range, this is the low end of that range.
-* **optimum**: The optimal value of the element. 
-
-```html
-<p>Disk Usage: <meter value="0.2">20%</meter></p>
-
-<p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
-
-<p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
-```
-
-[Live Example](html5-semantic-tags/meter.html) 
-
-**3.) Output Tag**: is meant to display text output. It indicates a section of the page that can be modified by a script (usually JavaScript).
-
-```html
-<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-  <input type="range" id="a" value="50"> +
-  <input type="number" id="b" value="100"> =
-  <output name="result" for="a b"></output>
-</form>
-```
-
-[Live Example](html5-semantic-tags/output.html) 
-
-**4.) Progress Tag**: indicates how much of a task has been completed (often marked as a percentage). It is expected to be modified through JavaScript code. 
-```html
- 
-<p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
-
-<script type="text/javascript">
-    var i = 0;
-    var progressBar = document.getElementById("bar");
-    
-    function countNumbers() {
-      if(i < 100) {
-        i = i + 1;
-        progressBar.value = i;
-        // For browsers that don't support progress tag
-        progressBar.getElementsByTagName("span")[0].textContent = i;
-      }
-
-      // Wait for sometime before running this script again
-      setTimeout("countNumbers()", 100);
-    }
-    countNumbers();
-</script>
-```
-[Live Example](html5-semantic-tags/progress.html) 
-
-**5.) Keygen Tag**: The `<keygen>` element generates an encryption key for passing encrypted data to a server. When an HTML form is submitted, the browser will generate a key pair and store the private key in the browser's local key storage and send the public key to the server.
-```html
-<form action="process-key.php" method="post">
-    <label>Username: <input type="text" name="username"></label>
-    <label>Encryption: <keygen name="key"></label>
-    <input type="submit" value="Submit">
-</form>
-```
-
-*Note: This feature is obsolete. Although it may still work in some browsers, its use is discouraged since it could be removed at any time.*
-
-[Live Example](html5-semantic-tags/) 
-
 ## Q. ***What is the DOM? How does the DOM work?*** 
 
 The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
@@ -218,10 +77,6 @@ In order to render content the browser has to go through a series of steps:
 
 <img src="./images/layers.png" alt="Browser Rendering Engine" />
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What does a `<DOCTYPE html>` do?***
 
 A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines how documents of a certain type should be structured (i.e. a `button` can contain a `span` but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. 
@@ -231,9 +86,6 @@ Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quir
 ## Q. ***What happens when DOCTYPE is not given?***
 
 The web page is rendered in quirks mode. The web browsers engines use quirks mode to support older browsers which does not follow the **W3C specifications**. In quirks mode CSS class and id names are case insensitive. In standards mode they are case sensitive.
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What is the difference between standards mode and quirks mode?***
 
@@ -251,12 +103,6 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
   </body>
 </html>
 ```
-
-## Q. ***What is difference between HTML and XHTML?***
-
-The Extensible Hypertext Markup Language, or XHTML, has two important notes for front end developers.   
-1) It needs to be well formed, meaning all elements need to be closed and nested correctly or you will return errors.   
-2) Since it is more strict than HTML is requires less pre-processing by the browser, which may improve your sites performance.
 
 ## Q. ***What are the building blocks of HTML5?***
 
@@ -289,9 +135,6 @@ The Extensible Hypertext Markup Language, or XHTML, has two important notes for 
 
 *Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What is Critical Rendering Path?***
 
@@ -301,10 +144,6 @@ The Extensible Hypertext Markup Language, or XHTML, has two important notes for 
 * Creating the Render Tree
 * Generating the Layout
 * Painting
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?***
 
@@ -326,10 +165,6 @@ The Extensible Hypertext Markup Language, or XHTML, has two important notes for 
 * block elements `<h1>, <p>, <ul>, <ol>, <li>`,
 * inline elements `<span>, <a>, <strong>, <i>, <img>`
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What are semantic and non-semantic elements?***
 
 * **Semantic elements**: clearly describes its meaning to both the browser and the developer. For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcaption>`, `<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, `<time>` clearly defines its content.
@@ -350,10 +185,6 @@ The HTML `<main>` element represents the dominant content of the `<body>` of a d
 
 *Note: A document mustn\'t have more than one `<main>` element that doesn't have the hidden attribute specified.*
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Define semantic markup. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, <footer>` and when/how should each be used in structuring html markup?***
 
 * `<header>` is used to contain introductory and navigational information about a section of the page. This can include the section heading, the author’s name, time and date of publication, table of contents, or other navigational information.
@@ -371,14 +202,6 @@ The HTML `<main>` element represents the dominant content of the `<body>` of a d
 * `<article>`, represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
 
 * `<div>`, on the other hand, does not convey any meaning, aside from any found in its class, lang and title attributes.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is Character Encoding?***
-
-Character encoding is a method of converting bytes into characters. To validate or display an HTML document properly, a program must choose a proper character encoding. This is specified in the tag:
 
 ```html
 <meta charset="utf-8"/>
@@ -443,9 +266,6 @@ The META elements can be used to include name/value pairs describing properties 
   </body>
 </html>
 ```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What does async and defer refer in script tag? Describe the difference between `<script>`, `<script async>` and `<script defer>`***
 
@@ -456,10 +276,6 @@ The META elements can be used to include name/value pairs describing properties 
 The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing.
 
 The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed.     
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***Can you describe the difference between progressive enhancement and graceful degradation?***
 
@@ -483,9 +299,6 @@ A common technique to force the browser to re-download the file is to append a q
 ```
 
 The browser considers it a different file but prevents the need to change the file name.    
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***Name 3 ways to decrease page load?***
 
@@ -516,10 +329,6 @@ Regarding optimization and responsiveness the debate bounces back and forth but,
 * Applying multiple animation types on an element is harder with CSS since all transforming power is in one property transform
 
 * CSS animations being declarative are not programmable therefore limited in capability.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What does CORS stand for and what issue does it address?***
 
@@ -601,10 +410,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
 * Make favicon.ico Small and Cacheable
 * Avoid Empty Image src
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?***
 
 * Chrome: 
@@ -638,10 +443,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
     
     In desktop first approach the media queries will be written with respect to max-width whereas in mobile first approach media queries will be written with respect to min-width
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What are `data-` attributes good for?***
 
 * The HTML5 data attribute lets you assign custom data to an element. When we want to store more information/data about the element when no suitable HTML5 element or attribute exists
@@ -655,9 +456,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
 * **Layout**: Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web’s layout model means that one element can affect others, for example the width of the <body> element typically affects its children’s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.
 * **Paint**: Painting is the process of filling in pixels. It involves drawing out text, colors, images, borders, and shadows, essentially every visual part of the elements. The drawing is typically done onto multiple surfaces, often called layers.
 * **Compositing**: Since the parts of the page were drawn into potentially multiple layers they need to be drawn to the screen in the correct order so that the page renders correctly. This is especially important for elements that overlap another, since a mistake could result in one element appearing over the top of another incorrectly.
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***Explain about HTML Canvas?*** 
 
@@ -734,10 +532,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
 
 [Live Example](canvas.html) 
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain about HTML Layout Engines used by browsers?***
 
 |Engine	      |Status	        |Embedded in                                                                           |
@@ -749,10 +543,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
 |Presto	      |Discontinued	  |formerly in the Opera browser                                                         |
 |EdgeHTML	  |Discontinued	  |formerly in the Microsoft Edge browser                                                |
 |Trident	  |Discontinued	  |Internet Explorer browser and Microsoft Outlook email client                          |
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What are the semantic tags available in html5?***
 
@@ -788,9 +578,6 @@ Syntax:
 <footer></footer>
 ```
 *Example:* [HTML5 Semantic Tags](semantic-tags.html)
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***Why you would like to use semantic tag?***
 
@@ -839,17 +626,6 @@ Using media queries you can define completely different styles for different bro
   }
 }
 ```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is difference between `span` tag and `div` tag?***
-
-The primary difference between a div and a span is their default behavior. By default, a `<div>` is a **block-level-element** and a `<span>` is an **inline element**. 
-
-```html
-<div>Demo Text, with <span>some other</span> text.</div>
-```
 
 ## Q. ***What are optional closing tag?***
 
@@ -892,9 +668,6 @@ if ("geolocation" in navigator) {
 ```
 
 *Example:* [HTML5 Geolocation API](geolocation.html)
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What is difference between SVG and Canvas?***
 
@@ -967,10 +740,6 @@ There are following advantages of using SVG over other image formats like JPEG, 
 |Give better performance with smaller number of objects or larger surface, or both	|Give better performance with larger number of objects or smaller surface, or both|
 |Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur	|Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain Drag and Drop in HTML5?***
 
 HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from `mouse events`. A typical drag operation begins when a user selects a draggable element, drags the element to a droppable element, and then releases the dragged element.
@@ -1015,40 +784,6 @@ Example
 
 [Live Example](drag-drop.html) 
 
-## Q. ***Why to use IndexedDB instead of WebSQL in HTML5?***
-
-**1.) WebSQL** is an API that is only supported in Chrome and Safari (and Android and iOS by extension). It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been deprecated in favor of IndexedDB.
-
-**Advantages**  
-* Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as well as several desktop browsers (Chrome, Safari, Opera).
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Robust, since it supports a transactional database model.
-* Easier to maintain integrity of data, due to rigid data structure.
-
-**Disadvantages**  
-* Deprecated. Will not be supported on IE or Firefox, and will probably be phased out from the other browsers at some stage.
-* Steep learning curve, requiring knowledge of relational databases and SQL.
-* Suffers from object-relational impedance mismatch.
-* Diminishes agility, as database schema must be defined upfront, with all records in a table matching the same structure.
-
-**2.) IndexedDB** is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we’ll see below, it doesn’t necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
-
-**Advantages** 
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Supports versioning.
-* Robust, since it supports a transactional database model.
-* Fairly easy learning curve, due to a simple data model.
-* Decent browser support: Chrome, Firefox, mobile FF, IE10.
-
-**Disadvantages**
-* Very complex API resulting in large amounts of nested callbacks.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain Application Cache in HTML5. OR What is a manifest file in HTML?***
 
 HTML5 provides an application caching mechanism that lets web-based applications run offline. Developers can use the Application Cache (AppCache) interface to specify resources that the browser should cache and make available to offline users. Applications that are cached load and work correctly even if users click the refresh button when they are offline.
@@ -1090,9 +825,6 @@ Example
     <p>My name is <span itemprop="name">Daniel</span>.</p>
 </div>
 ```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***List the API available in HTML5?***
 
@@ -1166,9 +898,6 @@ function toggleFullScreen() {
 }
 ```
 *Example:* [HTML5 API](html5-api.html)
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***What are different new form element types provided by HTML5?***
 
@@ -1224,94 +953,6 @@ function toggleFullScreen() {
 
 <input type="week" value="2020-W24">
 ```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the HTML tags which deprecated in HTML5?***
-
-**Deprecated Tags**  
-The following elements are not available in HTML5 anymore and their function is better handled by CSS.
-
-|Sl.No|Tags (Elements)  |	Description        |
-|-----|-----------------|----------------------|
-| 01. |`<acronym>`	    |Defines an acronym|
-| 02. |`<applet>`	    |Defines an applet|
-| 03. |`<basefont>`	    |Defines an base font for the page.|
-| 04. |`<big>`	        |Defines big text|
-| 05. |`<center>`	    |Defines centered text|
-| 06. |`<dir>`	        |Defines a directory list|
-| 07. |`<font>`	        |Defines text font, size, and color|
-| 08. |`<frame>`	    |Defines a frame|
-| 08. |`<frameset>`	    |Defines a set of frames|
-| 10. |`<isindex>`	    |Defines a single-line input field|
-| 11. |`<noframes>`	    |Defines a noframe section|
-| 12. |`<s>`	        |Defines strikethrough text|
-| 13. |`<strike>`	    |Defines strikethrough text|
-| 14. |`<tt>`	        |Defines teletype text|
-| 15. |`<u>`	        |Defines underlined text|
-
-
-**Deprecated Attributes**  
-
-|Removed Attributes	  |From the Elements     |
-|---------------------|----------------------|
-|rev	              |link, a|
-|charset	          |link and a|
-|shape	              |a|
-|coords	              |a|
-|longdesc	          |img and iframe.|
-|target	              |link|
-|nohref	              |area|
-|profile	          |head|
-|version	          |html|
-|name	              |img|
-|scheme	              |meta|
-|archive	          |object|
-|classid	          |object|
-|codebase	          |object|
-|codetype	          |object|
-|declare	          |object|
-|standby	          |object|
-|valuetype	          |param|
-|type	              |param|
-|axis	              |td and t|
-|abbr	              |td and t|
-|scope	              |td|
-|align	              |caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|alink	              |body|
-|link	              |body|
-|vlink	              |body|
-|text	              |body|
-|background	          |body|
-|bgcolor	          |table, tr, td, th and body.|
-|border	              |table and object.|
-|cellpadding	      |table|
-|cellspacing	      |table|
-|char	              |col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|charoff 	          |col, colgroup, tbody, td, tfoot, th, thead and tr.|
-|clear	              |br|
-|compact	          |dl, menu, ol and ul.|
-|frame	              |table|
-|compact	          |dl, menu, ol and ul.|
-|frame	              |table|
-|frameborder	      |iframe|
-|hspace	              |img and object.|
-|vspace	              |img and object.|
-|marginheight	      |iframe|
-|marginwidth	      |iframe|
-|noshade	          |hr|
-|nowrap	              |td and th|
-|rules	              |table|
-|scrolling	          |iframe|
-|size	              |hr|
-|type	              |li, ol and ul.|
-|valign	              |col, colgroup, tbody, td, tfoot, th, thead and tr|
-|width	              |hr, table, td, th, col, colgroup and pre.|
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## Q. ***How you can Use Modernizr in HTML5?***
 Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor’s browser supports. In detecting feature support, it allows developers to test for some of the new technologies and then provide fallbacks for browsers that do not support them. This is called **feature detection** and is much more efficient than browser sniffing.
@@ -1364,77 +1005,3 @@ socket.addEventListener('message', function(event) {
     console.log('Message from server ', event.data);
 });
 ```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What does `enctype='multipart/form-data'` mean?***
-
-The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
-
-*Example:* 01
-```html
-<form action="fileupload.php" method="post" enctype="multipart/form-data"> 
-    <p>Please select the file you would like to upload.</p> 
-    <input type="file" name="upload"> 
-    <br> 
-    <input type="submit" value="Upload File">
-</form>
-```
-
-*Example:* 02
-```html
-<form action="/urlencoded?token=A87412B" method="POST" enctype="application/x-www-form-urlencoded">
-    <input type="text" name="username" value=""/>
-    <input type="text" name="password" value=""/>
-    <input type="submit" value="Submit" />
-</form>
-```
-
-*Example:* 03
-```html
-<form action="action.do" method="get" enctype="text/plain">
-    Name: <input type="text" name="name" />
-    Phone: <input type="number" name="phone" />
-    <input type="submit" value="Submit" />
-</form>
-```
-
-|Sl.No|Value	                |Description                        |
-|-----|-------------------------|-----------------------------------|
-| 01. |application/x-www-form-urlencoded  |	Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)|
-| 02. |multipart/form-data	    |No characters are encoded. This value is required when you are using forms that have a file upload control |
-| 03.  |text/plain	            |Spaces are converted to "+" symbols, but no special characters are encoded|
-
-
-## Q. ***What is difference between Select and Datalist?***
-
-For the select element, the user is required to select one of the options you've given. For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter anything he wants in the input.
-
-**Select-Option**  
-```html
-<select name="browser">
-  <option value="firefox">Firefox</option>
-  <option value="ie">IE</option>
-  <option value="chrome">Chrome</option>
-  <option value="opera">Opera</option>
-  <option value="safari">Safari</option>
-</select>
-```
-**Datalist-Option**  
-```html
-<input type="text" list="browsers">
-<datalist id="browsers">
-  <option value="Firefox">
-  <option value="IE">
-  <option value="Chrome">
-  <option value="Opera">
-  <option value="Safari">
-</datalist>
-```
-
-#### Q. ***What is progressive rendering?***
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
