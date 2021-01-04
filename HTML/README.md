@@ -6,56 +6,55 @@
 
 |No.|  Questions                        |
 |----|------------------------------------|
-| 01.|[What is the DOM? How does the DOM work?](#q-what-is-the-dom-how-does-the-dom-work)|
-| 04.|[How does the browser rendering engine work?](#q-how-does-the-browser-rendering-engine-work)|
-| 05.|[What does a `<DOCTYPE html>` do?](#q-what-does-a-doctype-html-do)|
-| 06.|[What happens when DOCTYPE is not given?](#q-what-happens-when-doctype-is-not-given)|
-| 07.|[What is the difference between standards mode and quirks mode?](#q-what-is-the-difference-between-standards-mode-and-quirks-mode)|
-| 09.|[What are the building blocks of HTML5?](#q-what-are-the-building-blocks-of-html5)|
-| 10.|[Describe the difference between a `cookie`, `sessionStorage` and `localStorage`?](#q-describe-the-difference-between-a-cookie-sessionstorage-and-localstorage)|
-| 11.|[What is Critical Rendering Path?](#q-what-is-critical-rendering-path)|
-| 12.|[What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?](#q-what-are-the-benefits-of-server-side-rendering-ssr-over-client-side-rendering-csr)|
-| 13.|[What is the difference between a `<span>` and a `<div>`?](#q-what-is-the-difference-between-a-span-and-a-div)|
-| 14.|[Name 5 common block-level and inline HTML elements?](#q-name-5-common-block-level-and-inline-html-elements)|
-| 15.|[What are semantic and non-semantic elements?](#q-what-are-semantic-and-non-semantic-elements)|
-| 16.|[What is the purpose of `main` element?](#q-what-is-the-purpose-of-main-element)|
-| 17.|[Define semantic markup. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, <footer>` and when/how should each be used in structuring html markup?](#q-define-semantic-markup-what-are-the-semantic-meanings-for-section-article-aside-nav-header-footer-and-when-how-should-each-be-used-in-structuring-html-markup)|
-| 18.|[When should you use `section`, `div` or `article`?](#q-when-should-you-use-section-div-or-article)|
-| 20.|[What is the purpose of meta tags?](#q-what-is-the-purpose-of-meta-tags)|
-| 21.|[What does async and defer refer in script tag? Describe the difference between `<script>`, `<script async>` and `<script defer>`](#q-what-does-async-and-defer-refer-in-script-tag-describe-the-difference-between-script-script-async-and-script-defer)|
-| 22.|[Can you describe the difference between progressive enhancement and graceful degradation?](#q-can-you-describe-the-difference-between-progressive-enhancement-and-graceful-degradation)|
-| 23.|[What is the purpose of cache busting and how can you achieve it?](#q-what-is-the-purpose-of-cache-busting-and-how-can-you-achieve-it)|
-| 24.|[Name 3 ways to decrease page load?](#q-name-3-ways-to-decrease-page-load)|
-| 25.|[What ARIA and screenreaders are, and how to make a website accessible?](#q-what-aria-and-screenreaders-are-and-how-to-make-a-website-accessible)|
-| 26.|[What is the purpose of the `alt` attribute on images?](#q-what-is-the-purpose-of-the-alt-attribute-on-images)|
-| 27.|[Explain some of the pros and cons for CSS animations versus JavaScript animations?](#q-explain-some-of-the-pros-and-cons-for-css-animations-versus-javascript-animations)|
-| 28.|[What does CORS stand for and what issue does it address?](#q-what-does-cors-stand-for-and-what-issue-does-it-address)|
-| 29.|[Ways to improve website performance](#q-ways-to-improve-website-performance)|
-| 30.|[Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?](#q-comparison-of-browsers-engines-like-chrome-firefox-internet-explorer-safari)|
-| 31.|[What does the lang attribute in html do?](#q-what-does-the-lang-attribute-in-html-do)|
-| 32.|[What is desktop first and mobile first design approach?](#q-what-is-desktop-first-and-mobile-first-design-approach)|
-| 33.|[What are `data-` attributes good for?](#q-what-are-data-attributes-good-for)|
-| 34.|[Explain the difference between layout, painting and compositing?](#q-explain-the-difference-between-layout-painting-and-compositing)|
-| 35.|[Explain about HTML Canvas?](#q-explain-about-html-canvas)|
-| 36.|[Explain about HTML Layout Engines used by browsers?](#q-explain-about-html-layout-engines-used-by-browsers)|
-| 37.|[What are the semantic tags available in html5?](#q-what-are-the-semantic-tags-available-in-html5)|
-| 38.|[Why you would like to use semantic tag?](#q-why-you-would-like-to-use-semantic-tag)|
-| 39.|[How to make page responsive?](#q-how-to-make-page-responsive)|
-| 41.|[What are optional closing tag?](#q-what-are-optional-closing-tag)|
-| 42.|[What is a self closing tag?](#q-what-is-a-self-closing-tag)|
-| 43.|[Does the following trigger http request at the time of page load?](#q-does-the-following-trigger-http-request-at-the-time-of-page-load)|
-| 44.|[How Geo-location API works in html5?](#q-how-geo-location-api-works-in-html5)|
-| 45.|[What is difference between SVG and Canvas?](#q-what-is-difference-between-svg-and-canvas)|
-| 46.|[Explain Drag and Drop in HTML5?](#q-explain-drag-and-drop-in-html5)|
-| 48.|[Explain Application Cache in HTML5. OR What is a manifest file in HTML?](#q-explain-application-cache-in-html5-or-what-is-a-manifest-file-in-html)|
-| 49.|[Explain Microdata in HTML5?](#q-explain-microdata-in-html5)|
-| 50.|[List the API available in HTML5?](#q-list-the-api-available-in-html5)|
-| 51.|[What are different new form element types provided by HTML5?](#q-what-are-different-new-form-element-types-provided-by-html5)|
-| 53.|[How you can Use Modernizr in HTML5?](#q-how-you-can-use-modernizr-in-html5)|
-| 54.|[What is the use of WebSocket API?](#q-what-is-the-use-of-websocket-api)|
+| 1.|[What is the DOM? How does the DOM work?](#q-what-is-the-dom-how-does-the-dom-work)|
+| 2.|[How does the browser rendering engine work?](#q-how-does-the-browser-rendering-engine-work)|
+| 3.|[What does a `<DOCTYPE html>` do?](#q-what-does-a-doctype-html-do)|
+| 4.|[What happens when DOCTYPE is not given?](#q-what-happens-when-doctype-is-not-given)|
+| 5.|[What is the difference between standards mode and quirks mode?](#q-what-is-the-difference-between-standards-mode-and-quirks-mode)|
+| 6.|[What are the building blocks of HTML5?](#q-what-are-the-building-blocks-of-html5)|
+| 7.|[Describe the difference between a `cookie`, `sessionStorage` and `localStorage`?](#q-describe-the-difference-between-a-cookie-sessionstorage-and-localstorage)|
+| 8.|[What is Critical Rendering Path?](#q-what-is-critical-rendering-path)|
+| 9.|[What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?](#q-what-are-the-benefits-of-server-side-rendering-ssr-over-client-side-rendering-csr)|
+| 10.|[What is the difference between a `<span>` and a `<div>`?](#q-what-is-the-difference-between-a-span-and-a-div)|
+| 11.|[Name 5 common block-level and inline HTML elements?](#q-name-5-common-block-level-and-inline-html-elements)|
+| 12.|[What are semantic and non-semantic elements?](#q-what-are-semantic-and-non-semantic-elements)|
+| 13.|[What is the purpose of `main` element?](#q-what-is-the-purpose-of-main-element)|
+| 14.|[Define semantic markup. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, <footer>` and when/how should each be used in structuring html markup?](#q-define-semantic-markup-what-are-the-semantic-meanings-for-section-article-aside-nav-header-footer-and-when-how-should-each-be-used-in-structuring-html-markup)|
+| 15.|[When should you use `section`, `div` or `article`?](#q-when-should-you-use-section-div-or-article)|
+| 16.|[What is the purpose of meta tags?](#q-what-is-the-purpose-of-meta-tags)|
+| 17.|[What does async and defer refer in script tag? Describe the difference between `<script>`, `<script async>` and `<script defer>`](#q-what-does-async-and-defer-refer-in-script-tag-describe-the-difference-between-script-script-async-and-script-defer)|
+| 18.|[Can you describe the difference between progressive enhancement and graceful degradation?](#q-can-you-describe-the-difference-between-progressive-enhancement-and-graceful-degradation)|
+| 19.|[What is the purpose of cache busting and how can you achieve it?](#q-what-is-the-purpose-of-cache-busting-and-how-can-you-achieve-it)|
+| 20.|[Name 3 ways to decrease page load?](#q-name-3-ways-to-decrease-page-load)|
+| 21.|[What ARIA and screenreaders are, and how to make a website accessible?](#q-what-aria-and-screenreaders-are-and-how-to-make-a-website-accessible)|
+| 22.|[What is the purpose of the `alt` attribute on images?](#q-what-is-the-purpose-of-the-alt-attribute-on-images)|
+| 23.|[Explain some of the pros and cons for CSS animations versus JavaScript animations?](#q-explain-some-of-the-pros-and-cons-for-css-animations-versus-javascript-animations)|
+| 24.|[What does CORS stand for and what issue does it address?](#q-what-does-cors-stand-for-and-what-issue-does-it-address)|
+| 25.|[Ways to improve website performance](#q-ways-to-improve-website-performance)|
+| 26.|[Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?](#q-comparison-of-browsers-engines-like-chrome-firefox-internet-explorer-safari)|
+| 27.|[What does the lang attribute in html do?](#q-what-does-the-lang-attribute-in-html-do)|
+| 28.|[What is desktop first and mobile first design approach?](#q-what-is-desktop-first-and-mobile-first-design-approach)|
+| 29.|[What are `data-` attributes good for?](#q-what-are-data-attributes-good-for)|
+| 30.|[Explain the difference between layout, painting and compositing?](#q-explain-the-difference-between-layout-painting-and-compositing)|
+| 31.|[Explain about HTML Canvas?](#q-explain-about-html-canvas)|
+| 32.|[Explain about HTML Layout Engines used by browsers?](#q-explain-about-html-layout-engines-used-by-browsers)|
+| 33.|[What are the semantic tags available in html5?](#q-what-are-the-semantic-tags-available-in-html5)|
+| 34.|[Why you would like to use semantic tag?](#q-why-you-would-like-to-use-semantic-tag)|
+| 35.|[How to make page responsive?](#q-how-to-make-page-responsive)|
+| 36.|[What are optional closing tag?](#q-what-are-optional-closing-tag)|
+| 37.|[What is a self closing tag?](#q-what-is-a-self-closing-tag)|
+| 38.|[Does the following trigger http request at the time of page load?](#q-does-the-following-trigger-http-request-at-the-time-of-page-load)|
+| 39.|[How Geo-location API works in html5?](#q-how-geo-location-api-works-in-html5)|
+| 40.|[What is difference between SVG and Canvas?](#q-what-is-difference-between-svg-and-canvas)|
+| 41.|[Explain Drag and Drop in HTML5?](#q-explain-drag-and-drop-in-html5)|
+| 42.|[Explain Application Cache in HTML5. OR What is a manifest file in HTML?](#q-explain-application-cache-in-html5-or-what-is-a-manifest-file-in-html)|
+| 43.|[Explain Microdata in HTML5?](#q-explain-microdata-in-html5)|
+| 44.|[List the API available in HTML5?](#q-list-the-api-available-in-html5)|
+| 45.|[What are different new form element types provided by HTML5?](#q-what-are-different-new-form-element-types-provided-by-html5)|
+| 46.|[How you can Use Modernizr in HTML5?](#q-how-you-can-use-modernizr-in-html5)|
+| 47.|[What is the use of WebSocket API?](#q-what-is-the-use-of-websocket-api)|
 
-<br/>
-## Q. ***What is the DOM? How does the DOM work?*** 
+### 1.  ***What is the DOM? How does the DOM work?*** 
 
 The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
 
@@ -65,7 +64,7 @@ The DOM (Document Object Model) is a cross-platform API that treats HTML documen
 
 * Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
 
-## Q. ***How does the browser rendering engine work?***
+### 2.  ***How does the browser rendering engine work?***
 
 In order to render content the browser has to go through a series of steps:
 
@@ -77,7 +76,7 @@ In order to render content the browser has to go through a series of steps:
 
 <img src="./images/layers.png" alt="Browser Rendering Engine" />
 
-## Q. ***What does a `<DOCTYPE html>` do?***
+### 3. ***What does a `<DOCTYPE html>` do?***
 
 A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines how documents of a certain type should be structured (i.e. a `button` can contain a `span` but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. It is used to tell user agents what version of the HTML specifications your document respects. 
 
