@@ -728,24 +728,24 @@ Dependency injection (DI), is an important application design pattern in which a
 
 ## Give an example of custom pipe?
 
-  You can create custom reusable pipes for the transformation of existing value. For example, let us create a custom pipe for finding file size based on an extension,
-      ```javascript
-      import { Pipe, PipeTransform } from '@angular/core';
+You can create custom reusable pipes for the transformation of existing value. For example, let us create a custom pipe for finding file size based on an extension,
+    ```javascript
+    import { Pipe, PipeTransform } from '@angular/core';
 
-      @Pipe({name: 'customFileSizePipe'})
-      export class FileSizePipe implements PipeTransform {
-        transform(size: number, extension: string = 'MB'): string {
-          return (size / (1024 * 1024)).toFixed(2) + extension;
-        }
+    @Pipe({name: 'customFileSizePipe'})
+    export class FileSizePipe implements PipeTransform {
+      transform(size: number, extension: string = 'MB'): string {
+        return (size / (1024 * 1024)).toFixed(2) + extension;
       }
-      ```
-  Now you can use the above pipe in template expression as below,
-      ```javascript
-        template: `
-          <h2>Find the size of a file</h2>
-          <p>Size: {{288966 | customFileSizePipe: 'GB'}}</p>
-        `
-      ```
+    }
+    ```
+Now you can use the above pipe in template expression as below,
+    ```javascript
+      template: `
+        <h2>Find the size of a file</h2>
+        <p>Size: {{288966 | customFileSizePipe: 'GB'}}</p>
+      `
+    ```
 
 ## What is the difference between pure and impure pipe?
 
