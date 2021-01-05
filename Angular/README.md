@@ -1682,7 +1682,7 @@ Now you can use the above pipe in template expression as below,
 
   Angular Animations are a powerful way to implement sophisticated and compelling animations for your Angular single page web application.
 
-    ```javascript
+    ```ts
     import { Component, OnInit, Input } from '@angular/core';
     import { trigger, state, style, animate, transition } from '@angular/animations';
 
