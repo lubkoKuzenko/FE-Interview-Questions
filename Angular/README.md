@@ -106,56 +106,56 @@
 | 98 | [How to inject the dynamic script in angular?](#how-to-inject-the-dynamic-script-in-angular)                                                         |
 | 99 | [What is a service worker and its role in Angular?](#what-is-a-service-worker-and-its-role-in-angular)                                               |
 | 100 | [What are the design goals of service workers?](#what-are-the-design-goals-of-service-workers)                                                       |
-| 111 | [What is Angular Ivy?](#what-is-angular-ivy)                                                                                                         |
-| 112 | [What are the features included in ivy preview?](#what-are-the-features-included-in-ivy-preview)                                                     |
-| 118 | [How do you add web workers in your application?](#how-do-you-add-web-workers-in-your-application)                                                   |
-| 119 | [What are the limitations with web workers?](#what-are-the-limitations-with-web-workers)                                                             |
-| 124 | [What are the case types in Angular?](#what-are-the-case-types-in-angular)                                                                           |
-| 125 | [What are the class decorators in Angular?](#what-are-the-class-decorators-in-angular)                                                               |
-| 126 | [What are class field decorators?](#what-are-class-field-decorators)                                                                                 |
-| 127 | [What is declarable in Angular?](#what-is-declarable-in-angular)                                                                                     |
-| 128 | [What are the restrictions on declarable classes?](#what-are-the-restrictions-on-declarable-classes)                                                 |
-| 129 | [What is a DI token?](#what-is-a-di-token)                                                                                                           |
-| 130 | [What is Angular DSL?](#what-is-angular-dsl)                                                                                                         |
-| 131 | [What is an rxjs Subject?](#what-is-an-rxjs-Subject)                                                                                                 |
-| 132 | [What is Bazel tool?](#what-is-bazel-tool)                                                                                                           |
-| 133 | [What are the advantages of Bazel tool?](#what-are-the-advantages-of-bazel-tool)                                                                     |
-| 134 | [How do you use Bazel with Angular CLI?](#how-do-you-use-bazel-with-angular-cli)                                                                     |
-| 135 | [How do you run Bazel directly?](#how-do-you-run-bazel-directly)                                                                                     |
-| 136 | [What is platform in Angular?](#what-is-platform-in-angular)                                                                                         |
-| 137 | [What happens if I import the same module twice?](#what-happens-if-i-import-the-same-module-twice)                                                   |
-| 138 | [How do you select an element with in a component template?](#how-do-you-select-an-element-with-in-a-component-template)                             |
-| 139 | [How do you detect route change in Angular?](#how-do-you-detect-route-change-in-angular)                                                             |
-| 140 | [How do you pass headers for HTTP client?](#how-do-you-pass-headers-for-http-client)                                                                 |
-| 141 | [What is the purpose of differential loading in CLI?](#what-is-the-purpose-of-differential-loading-in-cli)                                           |
-| 142 | [Is Angular supports dynamic imports?](#is-angular-supports-dynamic-imports)                                                                         |
-| 143 | [What is lazy loading?](#what-is-lazy-loading)                                                                                                       |
-| 144 | [What are workspace APIs?](#what-are-workspace-apis)                                                                                                 |
-| 145 | [How do you upgrade angular version?](#how-do-you-upgrade-angular-version)                                                                           |
-| 146 | [What is Angular Material?](#what-is-angular-material)                                                                                               |
-| 148 | [What is NgUpgrade?](#what-is-ngupgrade)                                                                                                             |
-| 150 | [How to use polyfills in Angular application?](#how-to-use-polyfills-in-angular-application)                                                         |
-| 151 | [What are the ways to trigger change detection in Angular?](#what-are-the-ways-to-trigger-change-detection-in-angular)                               |
-| 153 | [What are the security principles in angular?](#what-are-the-security-principles-in-angular)                                                         |
-| 158 | [What is schematic](#what-is-schematic)                                                                                                              |
-| 159 | [What is rule in Schematics?](#what-is-rule-in-schematics)                                                                                           |
-| 160 | [What is Schematics CLI?](#what-is-schematics-cli)                                                                                                   |
-| 161 | [What are the best practices for security in angular?](#what-are-the-best-practices-for-security-in-angular)                                         |
-| 162 | [What is Angular security model for preventing XSS attacks?](#what-is-angular-security-model-for-preventing-xss-attacks)                             |
-| 163 | [What is the role of template compiler for prevention of XSS attacks?](#what-is-the-role-of-template-compiler-for-prevention-of-xss-attacks)         |
-| 164 | [What are the various security contexts in Angular?](#what-are-the-various-security-contexts-in-Angular)                                             |
-| 165 | [What is Sanitization? Is angular supports it?](#what-is-sanitization?Is-angular-supports-it)                                                        |
-| 166 | [What is the purpose of innerHTML?](#what-is-the-purpose-of-innerhtml)                                                                               |
-| 167 | [What is the difference between interpolated content and innerHTML?](#what-is-the-difference-between-interpolated-content-and-innerhtml)             |
-| 168 | [How do you prevent automatic sanitization?](#how-do-you-prevent-automatic-sanitization)                                                             |
-| 169 | [Is safe to use direct DOM API methods in terms of security?](#is-safe-to-use-direct-dom-api-methods-in-terms-of-security)                           |
-| 170 | [What is DOM sanitizer?](#what-is-dom-sanitizer)                                                                                                     |
-| 171 | [How do you support server side XSS protection in Angular application?](#how-do-you-support-server-side-xss-protection-in-angular-application)       |
-| 172 | [Is angular prevents http level vulnerabilities?](#is-angular-prevents-http-level-vulnerabilities)                                                   |
-| 173 | [What are Http Interceptors?](#what-are-http-interceptors)                                                                                           |
-| 174 | [What are the applications of HTTP interceptors?](#what-are-the-applications-of-http-interceptors)                                                   |
-| 175 | [Is multiple interceptors supported in Angular?](#is-multiple-interceptors-supported-in-angular)                                                     |
-| 176 | [How can I use interceptor for an entire application?](#how-can-i-use-interceptor-for-an-entire-application)                                         |
+| 101 | [What is Angular Ivy?](#what-is-angular-ivy)                                                                                                         |
+| 102 | [What are the features included in ivy preview?](#what-are-the-features-included-in-ivy-preview)                                                     |
+| 103 | [How do you add web workers in your application?](#how-do-you-add-web-workers-in-your-application)                                                   |
+| 104 | [What are the limitations with web workers?](#what-are-the-limitations-with-web-workers)                                                             |
+| 105 | [What are the case types in Angular?](#what-are-the-case-types-in-angular)                                                                           |
+| 106 | [What are the class decorators in Angular?](#what-are-the-class-decorators-in-angular)                                                               |
+| 107 | [What are class field decorators?](#what-are-class-field-decorators)                                                                                 |
+| 108 | [What is declarable in Angular?](#what-is-declarable-in-angular)                                                                                     |
+| 109 | [What are the restrictions on declarable classes?](#what-are-the-restrictions-on-declarable-classes)                                                 |
+| 110 | [What is a DI token?](#what-is-a-di-token)                                                                                                           |
+| 111 | [What is Angular DSL?](#what-is-angular-dsl)                                                                                                         |
+| 112 | [What is an rxjs Subject?](#what-is-an-rxjs-Subject)                                                                                                 |
+| 113 | [What is Bazel tool?](#what-is-bazel-tool)                                                                                                           |
+| 114 | [What are the advantages of Bazel tool?](#what-are-the-advantages-of-bazel-tool)                                                                     |
+| 115 | [How do you use Bazel with Angular CLI?](#how-do-you-use-bazel-with-angular-cli)                                                                     |
+| 116 | [How do you run Bazel directly?](#how-do-you-run-bazel-directly)                                                                                     |
+| 117 | [What is platform in Angular?](#what-is-platform-in-angular)                                                                                         |
+| 118 | [What happens if I import the same module twice?](#what-happens-if-i-import-the-same-module-twice)                                                   |
+| 119 | [How do you select an element with in a component template?](#how-do-you-select-an-element-with-in-a-component-template)                             |
+| 120 | [How do you detect route change in Angular?](#how-do-you-detect-route-change-in-angular)                                                             |
+| 121 | [How do you pass headers for HTTP client?](#how-do-you-pass-headers-for-http-client)                                                                 |
+| 122 | [What is the purpose of differential loading in CLI?](#what-is-the-purpose-of-differential-loading-in-cli)                                           |
+| 123 | [Is Angular supports dynamic imports?](#is-angular-supports-dynamic-imports)                                                                         |
+| 124 | [What is lazy loading?](#what-is-lazy-loading)                                                                                                       |
+| 125 | [What are workspace APIs?](#what-are-workspace-apis)                                                                                                 |
+| 126 | [How do you upgrade angular version?](#how-do-you-upgrade-angular-version)                                                                           |
+| 127 | [What is Angular Material?](#what-is-angular-material)                                                                                               |
+| 128 | [What is NgUpgrade?](#what-is-ngupgrade)                                                                                                             |
+| 129 | [How to use polyfills in Angular application?](#how-to-use-polyfills-in-angular-application)                                                         |
+| 130 | [What are the ways to trigger change detection in Angular?](#what-are-the-ways-to-trigger-change-detection-in-angular)                               |
+| 131 | [What are the security principles in angular?](#what-are-the-security-principles-in-angular)                                                         |
+| 132 | [What is schematic](#what-is-schematic)                                                                                                              |
+| 133 | [What is rule in Schematics?](#what-is-rule-in-schematics)                                                                                           |
+| 134 | [What is Schematics CLI?](#what-is-schematics-cli)                                                                                                   |
+| 135 | [What are the best practices for security in angular?](#what-are-the-best-practices-for-security-in-angular)                                         |
+| 136 | [What is Angular security model for preventing XSS attacks?](#what-is-angular-security-model-for-preventing-xss-attacks)                             |
+| 137 | [What is the role of template compiler for prevention of XSS attacks?](#what-is-the-role-of-template-compiler-for-prevention-of-xss-attacks)         |
+| 138 | [What are the various security contexts in Angular?](#what-are-the-various-security-contexts-in-Angular)                                             |
+| 139 | [What is Sanitization? Is angular supports it?](#what-is-sanitization?Is-angular-supports-it)                                                        |
+| 140 | [What is the purpose of innerHTML?](#what-is-the-purpose-of-innerhtml)                                                                               |
+| 141 | [What is the difference between interpolated content and innerHTML?](#what-is-the-difference-between-interpolated-content-and-innerhtml)             |
+| 142 | [How do you prevent automatic sanitization?](#how-do-you-prevent-automatic-sanitization)                                                             |
+| 143 | [Is safe to use direct DOM API methods in terms of security?](#is-safe-to-use-direct-dom-api-methods-in-terms-of-security)                           |
+| 144 | [What is DOM sanitizer?](#what-is-dom-sanitizer)                                                                                                     |
+| 145 | [How do you support server side XSS protection in Angular application?](#how-do-you-support-server-side-xss-protection-in-angular-application)       |
+| 146 | [Is angular prevents http level vulnerabilities?](#is-angular-prevents-http-level-vulnerabilities)                                                   |
+| 147 | [What are Http Interceptors?](#what-are-http-interceptors)                                                                                           |
+| 148 | [What are the applications of HTTP interceptors?](#what-are-the-applications-of-http-interceptors)                                                   |
+| 149 | [Is multiple interceptors supported in Angular?](#is-multiple-interceptors-supported-in-angular)                                                     |
+| 150 | [How can I use interceptor for an entire application?](#how-can-i-use-interceptor-for-an-entire-application)                                         |
 | 189 | [What is an angular library?](#what-is-an-angular-library)                                                                                           |
 | 191 | [How do you select an element in component template?](#how-do-you-select-an-element-in-component-template)                                           |
 | 192 | [What is TestBed?](#what-is-testbed)                                                                                                                 |
