@@ -1738,7 +1738,7 @@ Now you can use the above pipe in template expression as below,
 
   Using DomSanitizer we can inject the dynamic Html,Style,Script,Url.
 
-  ```
+  ```javascript
   import { Component, OnInit } from '@angular/core';
   import { DomSanitizer } from '@angular/platform-browser';
   @Component({
