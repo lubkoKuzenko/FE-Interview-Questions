@@ -76,36 +76,36 @@
 | 68  | [What is Angular Universal?](#what-is-angular-universal)                                                                                             |
 | 69  | [What are different types of compilation in Angular?](#what-are-different-types-of-compilation-in-angular)                                           |
 | 70  | [What is JIT?](#what-is-jit)                                                                                                                         |
-| 78  | [What is AOT?](#what-is-aot)                                                                                                                         |
-| 79  | [Why do we need compilation process?](#why-do-we-need-compilation-process)                                                                           |
-| 80  | [What are the advantages with AOT?](#what-are-the-advantages-with-aot)                                                                               |
-| 81  | [What are the ways to control AOT compilation?](#what-are-the-ways-to-control-aot-compilation)                                                       |
-| 82  | [What are the restrictions of metadata?](#what-are-the-restrictions-of-metadata)                                                                     |
-| 83  | [What are the two phases of AOT?](#what-are-the-two-phases-of-aot)                                                                                   |
-| 84  | [Can I use arrow functions in AOT?](#can-i-use-arrow-functions-in-aot)                                                                               |
-| 85  | [What is the purpose of metadata json files?](#what-is-the-purpose-of-metadata-json-files)                                                           |
-| 86  | [Can I use any javascript feature for expression syntax in AOT?](#can-i-use-any-javascript-feature-for-expression-syntax-in-aot)                     |
-| 89  | [Give an example of few metadata errors?](#give-an-example-of-few-metadata-errors)                                                                   |
-| 90  | [What is metadata rewriting?](#what-is-metadata-rewriting)                                                                                           |
-| 91  | [How do you provide configuration inheritance?](#how-do-you-provide-configuration-inheritance)                                                       |
-| 92  | [How do you specify angular template compiler options?](#how-do-you-specify-angular-template-compiler-options)                                       |
-| 93  | [How do you enable binding expression validation?](#how-do-you-enable-binding-expression-validation)                                                 |
-| 94  | [What is the purpose of any type cast function?](#what-is-the-purpose-of-any-type-cast-function)                                                     |
-| 95  | [What is Non null type assertion operator?](#what-is-non-null-type-assertion-operator)                                                               |
-| 96  | [What is type narrowing?](#what-is-type-narrowing)                                                                                                   |
-| 97  | [How do you describe various dependencies in angular application?](#how-do-you-describe-various-dependencies-in-angular-application)                 |
-| 98  | [What is zone?](#what-is-zone)                                                                                                                       |
-| 99  | [What is the purpose of common module?](#what-is-the-purpose-of-common-module)                                                                       |
-| 100 | [What is codelyzer?](#what-is-codelyzer)                                                                                                             |
-| 101 | [What is angular animation?](#what-is-angular-animation)                                                                                             |
-| 102 | [What are the steps to use animation module?](#what-are-the-steps-to-use-animation-module)                                                           |
-| 103 | [What is State function?](#what-is-state-function)                                                                                                   |
-| 104 | [What is Style function?](#what-is-style-function)                                                                                                   |
-| 105 | [What is the purpose of animate function?](#what-is-the-purpose-of-animate-function)                                                                 |
-| 106 | [What is transition function?](#what-is-transition-function)                                                                                         |
-| 107 | [How to inject the dynamic script in angular?](#how-to-inject-the-dynamic-script-in-angular)                                                         |
-| 108 | [What is a service worker and its role in Angular?](#what-is-a-service-worker-and-its-role-in-angular)                                               |
-| 109 | [What are the design goals of service workers?](#what-are-the-design-goals-of-service-workers)                                                       |
+| 71  | [What is AOT?](#what-is-aot)                                                                                                                         |
+| 72  | [Why do we need compilation process?](#why-do-we-need-compilation-process)                                                                           |
+| 73  | [What are the advantages with AOT?](#what-are-the-advantages-with-aot)                                                                               |
+| 74  | [What are the ways to control AOT compilation?](#what-are-the-ways-to-control-aot-compilation)                                                       |
+| 75  | [What are the restrictions of metadata?](#what-are-the-restrictions-of-metadata)                                                                     |
+| 76  | [What are the two phases of AOT?](#what-are-the-two-phases-of-aot)                                                                                   |
+| 77  | [Can I use arrow functions in AOT?](#can-i-use-arrow-functions-in-aot)                                                                               |
+| 78  | [What is the purpose of metadata json files?](#what-is-the-purpose-of-metadata-json-files)                                                           |
+| 79  | [Can I use any javascript feature for expression syntax in AOT?](#can-i-use-any-javascript-feature-for-expression-syntax-in-aot)                     |
+| 80  | [Give an example of few metadata errors?](#give-an-example-of-few-metadata-errors)                                                                   |
+| 81  | [What is metadata rewriting?](#what-is-metadata-rewriting)                                                                                           |
+| 82  | [How do you provide configuration inheritance?](#how-do-you-provide-configuration-inheritance)                                                       |
+| 83  | [How do you specify angular template compiler options?](#how-do-you-specify-angular-template-compiler-options)                                       |
+| 84  | [How do you enable binding expression validation?](#how-do-you-enable-binding-expression-validation)                                                 |
+| 85  | [What is the purpose of any type cast function?](#what-is-the-purpose-of-any-type-cast-function)                                                     |
+| 86  | [What is Non null type assertion operator?](#what-is-non-null-type-assertion-operator)                                                               |
+| 87  | [What is type narrowing?](#what-is-type-narrowing)                                                                                                   |
+| 88  | [How do you describe various dependencies in angular application?](#how-do-you-describe-various-dependencies-in-angular-application)                 |
+| 89  | [What is zone?](#what-is-zone)                                                                                                                       |
+| 90  | [What is the purpose of common module?](#what-is-the-purpose-of-common-module)                                                                       |
+| 91 | [What is codelyzer?](#what-is-codelyzer)                                                                                                             |
+| 92 | [What is angular animation?](#what-is-angular-animation)                                                                                             |
+| 93 | [What are the steps to use animation module?](#what-are-the-steps-to-use-animation-module)                                                           |
+| 94 | [What is State function?](#what-is-state-function)                                                                                                   |
+| 95 | [What is Style function?](#what-is-style-function)                                                                                                   |
+| 96 | [What is the purpose of animate function?](#what-is-the-purpose-of-animate-function)                                                                 |
+| 97 | [What is transition function?](#what-is-transition-function)                                                                                         |
+| 98 | [How to inject the dynamic script in angular?](#how-to-inject-the-dynamic-script-in-angular)                                                         |
+| 99 | [What is a service worker and its role in Angular?](#what-is-a-service-worker-and-its-role-in-angular)                                               |
+| 100 | [What are the design goals of service workers?](#what-are-the-design-goals-of-service-workers)                                                       |
 | 111 | [What is Angular Ivy?](#what-is-angular-ivy)                                                                                                         |
 | 112 | [What are the features included in ivy preview?](#what-are-the-features-included-in-ivy-preview)                                                     |
 | 118 | [How do you add web workers in your application?](#how-do-you-add-web-workers-in-your-application)                                                   |
