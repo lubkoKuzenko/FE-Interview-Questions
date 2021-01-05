@@ -206,30 +206,30 @@
 | 198 | [What classes should not be added to declarations?](#what-classes-should-not-be-added-to-declarations)                                               |
 | 199 | [Wat is ngzone?](#what-is-ngzone)                                                                                                                    |
 | 200 | [What is NoopZone?](#what-is-noopzone)                                                                                                               |
-| 246 | [What are the possible data change scenarios for change detection?](#what-are-the-possible-data-change-scenarios-for-change-detection)               |
-| 247 | [What is a zone context?](#what-is-a-zone-context)                                                                                                   |
-| 248 | [What are the lifecycle hooks of a zone?](#what-are-the-lifecycle-hooks-of-a-zone)                                                                   |
-| 249 | [Which are the methods of NgZone used to control change detection?](#which-are-the-methods-of-ngzone-used-to-control-change-detection)               |
-| 250 | [How do you change the settings of zonejs?](#how-do-you-change-the-settings-of-zonejs)                                                               |
-| 251 | [How do you trigger an animation?](#how-do-you-trigger-an-animation)                                                                                 |
-| 252 | [How do you configure injectors with providers at different levels?](#how-do-you-configure-injectors-with-providers-at-different-levels)             |
-| 253 | [Is it mandatory to use injectable on every service class?](#is-it-mandatory-to-use-injectable-on-every-service-class)                               |
-| 254 | [What is an optional dependency?](#what-is-an-optional-dependency)                                                                                   |
-| 255 | [What are the types of injector hierarchies?](#what-are-the-types-of-injector-hierarchies)                                                           |
-| 256 | [What are reactive forms?](#what-are-reactive-forms)                                                                                                 |
-| 257 | [What are dynamic forms?](#what-are-dynamic-forms)                                                                                                   |
-| 260 | [What are the different ways to group form controls?](#what-are-the-different-ways-to-group-form-controls)                                           |
-| 261 | [How do you update specific properties of a form model?](#how-do-you-update-specific-properties-of-a-form-model)                                     |
-| 262 | [What is the purpose of FormBuilder?](#what-is-the-purpose-of-formbuilder)                                                                           |
-| 263 | [How do you verify the model changes in forms?](#how-do-you-verify-the-model-changes-in-forms)                                                       |
-| 264 | [What are the state CSS classes provided by ngModel?](#what-are-the-state-css-classes-provided-by-ngmodel)                                           |
-| 265 | [How do you reset the form?](#how-do-you-reset-the-form)                                                                                             |
-| 266 | [What are the types of validator functions?](#what-are-the-types-of-validator-functions)                                                             |
-| 267 | [Can you give an example of built-in validators?](#can-you-give-an-example-of-built-in-validators)                                                   |
-| 268 | [How do you optimize the performance of async validators?](#how-do-you-optimize-the-performance-of-async-validators)                                 |
-| 269 | [How to set ngFor and ngIf on the same element?](#how-to-set-ngfor-and-ngif-on-the-same-element)                                                     |
-| 270 | [What is host property in css?](#what-is-host-property-in-css)                                                                                       |
-| 271 | [How do you get the current route?](#how-do-you-get-the-current-route)                                                                               |
+| 201 | [What are the possible data change scenarios for change detection?](#what-are-the-possible-data-change-scenarios-for-change-detection)               |
+| 202 | [What is a zone context?](#what-is-a-zone-context)                                                                                                   |
+| 203 | [What are the lifecycle hooks of a zone?](#what-are-the-lifecycle-hooks-of-a-zone)                                                                   |
+| 204 | [Which are the methods of NgZone used to control change detection?](#which-are-the-methods-of-ngzone-used-to-control-change-detection)               |
+| 205 | [How do you change the settings of zonejs?](#how-do-you-change-the-settings-of-zonejs)                                                               |
+| 206 | [How do you trigger an animation?](#how-do-you-trigger-an-animation)                                                                                 |
+| 207 | [How do you configure injectors with providers at different levels?](#how-do-you-configure-injectors-with-providers-at-different-levels)             |
+| 208 | [Is it mandatory to use injectable on every service class?](#is-it-mandatory-to-use-injectable-on-every-service-class)                               |
+| 209 | [What is an optional dependency?](#what-is-an-optional-dependency)                                                                                   |
+| 210 | [What are the types of injector hierarchies?](#what-are-the-types-of-injector-hierarchies)                                                           |
+| 211 | [What are reactive forms?](#what-are-reactive-forms)                                                                                                 |
+| 212 | [What are dynamic forms?](#what-are-dynamic-forms)                                                                                                   |
+| 213 | [What are the different ways to group form controls?](#what-are-the-different-ways-to-group-form-controls)                                           |
+| 214 | [How do you update specific properties of a form model?](#how-do-you-update-specific-properties-of-a-form-model)                                     |
+| 215 | [What is the purpose of FormBuilder?](#what-is-the-purpose-of-formbuilder)                                                                           |
+| 216 | [How do you verify the model changes in forms?](#how-do-you-verify-the-model-changes-in-forms)                                                       |
+| 217 | [What are the state CSS classes provided by ngModel?](#what-are-the-state-css-classes-provided-by-ngmodel)                                           |
+| 218 | [How do you reset the form?](#how-do-you-reset-the-form)                                                                                             |
+| 219 | [What are the types of validator functions?](#what-are-the-types-of-validator-functions)                                                             |
+| 220 | [Can you give an example of built-in validators?](#can-you-give-an-example-of-built-in-validators)                                                   |
+| 221 | [How do you optimize the performance of async validators?](#how-do-you-optimize-the-performance-of-async-validators)                                 |
+| 222 | [How to set ngFor and ngIf on the same element?](#how-to-set-ngfor-and-ngif-on-the-same-element)                                                     |
+| 223 | [What is host property in css?](#what-is-host-property-in-css)                                                                                       |
+| 224 | [How do you get the current route?](#how-do-you-get-the-current-route)                                                                               |
 
 ## What is Angular Framework?
 
