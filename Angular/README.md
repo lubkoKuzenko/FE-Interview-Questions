@@ -1653,1740 +1653,1740 @@ Now you can use the above pipe in template expression as below,
 
 ## What is State function?
 
-    Angular's state() function is used to define different states to call at the end of each transition. This function takes two arguments: a unique name like open or closed and a style() function.
+  Angular's state() function is used to define different states to call at the end of each transition. This function takes two arguments: a unique name like open or closed and a style() function.
 
-    For example, you can write a open state function
+  For example, you can write a open state function
 
-    ```javascript
-    state('open', style({
-      height: '300px',
-      opacity: 0.5,
-      backgroundColor: 'blue'
-    })),
-    ```
+  ```javascript
+  state('open', style({
+    height: '300px',
+    opacity: 0.5,
+    backgroundColor: 'blue'
+  })),
+  ```
 
 ## What is Style function?
 
-    The style function is used to define a set of styles to associate with a given state name. You need to use it along with state() function to set CSS style attributes. For example, in the close state, the button has a height of 100 pixels, an opacity of 0.8, and a background color of green.
+  The style function is used to define a set of styles to associate with a given state name. You need to use it along with state() function to set CSS style attributes. For example, in the close state, the button has a height of 100 pixels, an opacity of 0.8, and a background color of green.
 
-    ```javascript
-    state('close', style({
-      height: '100px',
-      opacity: 0.8,
-      backgroundColor: 'green'
-    })),
-    ```
-    **Note:** The style attributes must be in camelCase.
+  ```javascript
+  state('close', style({
+    height: '100px',
+    opacity: 0.8,
+    backgroundColor: 'green'
+  })),
+  ```
+  **Note:** The style attributes must be in camelCase.
 
 ## What is the purpose of animate function?
 
-    Angular Animations are a powerful way to implement sophisticated and compelling animations for your Angular single page web application.
+  Angular Animations are a powerful way to implement sophisticated and compelling animations for your Angular single page web application.
 
-      ```javascript
-      import { Component, OnInit, Input } from '@angular/core';
-      import { trigger, state, style, animate, transition } from '@angular/animations';
+    ```javascript
+    import { Component, OnInit, Input } from '@angular/core';
+    import { trigger, state, style, animate, transition } from '@angular/animations';
 
-      @Component({
-      selector: 'app-animate',
-      templateUrl: `<div [@changeState]="currentState" class="myblock mx-auto"></div>`,
-      styleUrls: `.myblock {
-          background-color: green;
-          width: 300px;
-          height: 250px;
-          border-radius: 5px;
-          margin: 5rem;
-          }`,
-      animations: [
-          trigger('changeState', [
-          state('state1', style({
-              backgroundColor: 'green',
-              transform: 'scale(1)'
-          })),
-          state('state2', style({
-              backgroundColor: 'red',
-              transform: 'scale(1.5)'
-          })),
-          transition('*=>state1', animate('300ms')),
-          transition('*=>state2', animate('2000ms'))
-          ])
-      ]
-      })
-      export class AnimateComponent implements OnInit {
+    @Component({
+    selector: 'app-animate',
+    templateUrl: `<div [@changeState]="currentState" class="myblock mx-auto"></div>`,
+    styleUrls: `.myblock {
+        background-color: green;
+        width: 300px;
+        height: 250px;
+        border-radius: 5px;
+        margin: 5rem;
+        }`,
+    animations: [
+        trigger('changeState', [
+        state('state1', style({
+            backgroundColor: 'green',
+            transform: 'scale(1)'
+        })),
+        state('state2', style({
+            backgroundColor: 'red',
+            transform: 'scale(1.5)'
+        })),
+        transition('*=>state1', animate('300ms')),
+        transition('*=>state2', animate('2000ms'))
+        ])
+    ]
+    })
+    export class AnimateComponent implements OnInit {
 
-          @Input() currentState;
+        @Input() currentState;
 
-          constructor() { }
+        constructor() { }
 
-          ngOnInit() {
-          }
-      }
-      ```
+        ngOnInit() {
+        }
+    }
+    ```
 
 ## What is transition function?
 
-    The animation transition function is used to specify the changes that occur between one state and another over a period of time. It accepts two arguments: the first argument accepts an expression that defines the direction between two transition states, and the second argument accepts an animate() function.
+  The animation transition function is used to specify the changes that occur between one state and another over a period of time. It accepts two arguments: the first argument accepts an expression that defines the direction between two transition states, and the second argument accepts an animate() function.
 
-    Let's take an example state transition from open to closed with an half second transition between states.
+  Let's take an example state transition from open to closed with an half second transition between states.
 
-    ```javascript
-    transition('open => closed', [
-      animate('500ms')
-    ]),
-    ```
+  ```javascript
+  transition('open => closed', [
+    animate('500ms')
+  ]),
+  ```
 
 ## How to inject the dynamic script in angular?
 
-    Using DomSanitizer we can inject the dynamic Html,Style,Script,Url.
+  Using DomSanitizer we can inject the dynamic Html,Style,Script,Url.
 
-    ```
-    import { Component, OnInit } from '@angular/core';
-    import { DomSanitizer } from '@angular/platform-browser';
-    @Component({
-      selector: 'my-app',
-      template: `
-          <div [innerHtml]="htmlSnippet"></div>
-      `,
-    })
-    export class App {
-          constructor(protected sanitizer: DomSanitizer) {}
-          htmlSnippet: string = this.sanitizer.bypassSecurityTrustScript("<script>safeCode()</script>");
-      }
-    ```
+  ```
+  import { Component, OnInit } from '@angular/core';
+  import { DomSanitizer } from '@angular/platform-browser';
+  @Component({
+    selector: 'my-app',
+    template: `
+        <div [innerHtml]="htmlSnippet"></div>
+    `,
+  })
+  export class App {
+        constructor(protected sanitizer: DomSanitizer) {}
+        htmlSnippet: string = this.sanitizer.bypassSecurityTrustScript("<script>safeCode()</script>");
+    }
+  ```
 
 ## What is a service worker and its role in Angular?
 
-    A service worker is a script that runs in the web browser and manages caching for an application. Starting from 5.0.0 version, Angular ships with a service worker implementation. Angular service worker is designed to optimize the end user experience of using an application over a slow or unreliable network connection, while also minimizing the risks of serving outdated content.
+  A service worker is a script that runs in the web browser and manages caching for an application. Starting from 5.0.0 version, Angular ships with a service worker implementation. Angular service worker is designed to optimize the end user experience of using an application over a slow or unreliable network connection, while also minimizing the risks of serving outdated content.
 
 ## What are the design goals of service workers?
 
-    Below are the list of design goals of Angular's service workers,
+  Below are the list of design goals of Angular's service workers,
 
-    1. It caches an application just like installing a native application
-    2. A running application continues to run with the same version of all files without any incompatible files
-    3. When you refresh the application, it loads the latest fully cached version
-    4. When changes are published then it immediately updates in the background
-    5. Service workers saves the bandwidth by downloading the resources only when they changed.
+  1. It caches an application just like installing a native application
+  2. A running application continues to run with the same version of all files without any incompatible files
+  3. When you refresh the application, it loads the latest fully cached version
+  4. When changes are published then it immediately updates in the background
+  5. Service workers saves the bandwidth by downloading the resources only when they changed.
 
 ## What is Angular Ivy?
 
-    Angular Ivy is a new rendering engine for Angular. You can choose to opt in a preview version of Ivy from Angular version 8.
+  Angular Ivy is a new rendering engine for Angular. You can choose to opt in a preview version of Ivy from Angular version 8.
 
-    1. You can enable ivy in a new project by using the --enable-ivy flag with the ng new command
+  1. You can enable ivy in a new project by using the --enable-ivy flag with the ng new command
 
-        ```bash
-        ng new ivy-demo-app --enable-ivy
-        ```
-    2. You can add it to an existing project by adding `enableIvy` option in the `angularCompilerOptions` in your project's `tsconfig.app.json`.
+      ```bash
+      ng new ivy-demo-app --enable-ivy
+      ```
+  2. You can add it to an existing project by adding `enableIvy` option in the `angularCompilerOptions` in your project's `tsconfig.app.json`.
 
-        ```javascript
-        {
-          "compilerOptions": { ... },
-          "angularCompilerOptions": {
-            "enableIvy": true
-          }
+      ```javascript
+      {
+        "compilerOptions": { ... },
+        "angularCompilerOptions": {
+          "enableIvy": true
         }
-        ```
+      }
+      ```
 
 ## What are the features included in ivy preview?
 
-    You can expect below features with Ivy preview,
+  You can expect below features with Ivy preview,
 
-    1. Generated code that is easier to read and debug at runtime
-    2. Faster re-build time
-    3. Improved payload size
-    4. Improved template type checking
+  1. Generated code that is easier to read and debug at runtime
+  2. Faster re-build time
+  3. Improved payload size
+  4. Improved template type checking
 
 ## How do you add web workers in your application?
 
-    You can add web worker anywhere in your application. For example, If the file that contains your expensive computation is `src/app/app.component.ts`, you can add a Web Worker using `ng generate web-worker app` command which will create `src/app/app.worker.ts` web worker file. This command will perform below actions,
+  You can add web worker anywhere in your application. For example, If the file that contains your expensive computation is `src/app/app.component.ts`, you can add a Web Worker using `ng generate web-worker app` command which will create `src/app/app.worker.ts` web worker file. This command will perform below actions,
 
-    1. Configure your project to use Web Workers
-    2. Adds app.worker.ts to receive messages
-        ```javascript
-        addEventListener('message', ({ data }) => {
-          const response = `worker response to ${data}`;
-          postMessage(response);
-        });
-        ```
-    3. The component `app.component.ts` file updated with web worker file
-        ```javascript
-        if (typeof Worker !== 'undefined') {
-          // Create a new
-          const worker = new Worker('./app.worker', { type: 'module' });
-          worker.onmessage = ({ data }) => {
-            console.log('page got message: $\{data\}');
-          };
-          worker.postMessage('hello');
-        } else {
-          // Web Workers are not supported in this environment.
-        }
-        ```
+  1. Configure your project to use Web Workers
+  2. Adds app.worker.ts to receive messages
+      ```javascript
+      addEventListener('message', ({ data }) => {
+        const response = `worker response to ${data}`;
+        postMessage(response);
+      });
+      ```
+  3. The component `app.component.ts` file updated with web worker file
+      ```javascript
+      if (typeof Worker !== 'undefined') {
+        // Create a new
+        const worker = new Worker('./app.worker', { type: 'module' });
+        worker.onmessage = ({ data }) => {
+          console.log('page got message: $\{data\}');
+        };
+        worker.postMessage('hello');
+      } else {
+        // Web Workers are not supported in this environment.
+      }
+      ```
 
-    **Note:** You may need to refactor your initial scaffolding web worker code for sending messages to and from.
+  **Note:** You may need to refactor your initial scaffolding web worker code for sending messages to and from.
 
 ## What are the limitations with web workers?
 
-    You need to remember two important things when using Web Workers in Angular projects,
+  You need to remember two important things when using Web Workers in Angular projects,
 
-    1. Some environments or platforms(like @angular/platform-server) used in Server-side Rendering, don't support Web Workers. In this case you need to provide a fallback mechanism to perform the computations to work in this environments.
-    2. Running Angular in web worker using `@angular/platform-webworker` is not yet supported in Angular CLI.
+  1. Some environments or platforms(like @angular/platform-server) used in Server-side Rendering, don't support Web Workers. In this case you need to provide a fallback mechanism to perform the computations to work in this environments.
+  2. Running Angular in web worker using `@angular/platform-webworker` is not yet supported in Angular CLI.
 
 ## What are the case types in Angular?
 
-    Angular uses capitalization conventions to distinguish the names of various types. Angular follows the list of the below case types.
+  Angular uses capitalization conventions to distinguish the names of various types. Angular follows the list of the below case types.
 
-    1. **camelCase :** Symbols, properties, methods, pipe names, non-component directive selectors, constants uses lowercase on the first letter of the item. For example, "selectedUser"
-    2. **UpperCamelCase (or PascalCase):** Class names, including classes that define components, interfaces, NgModules, directives, and pipes uses uppercase on the first letter of the item.
-    3. **dash-case (or "kebab-case"):** The descriptive part of file names, component selectors uses dashes between the words. For example, "app-user-list".
-    4. **UPPER_UNDERSCORE_CASE:** All constants uses capital letters connected with underscores. For example, "NUMBER_OF_USERS".
+  1. **camelCase :** Symbols, properties, methods, pipe names, non-component directive selectors, constants uses lowercase on the first letter of the item. For example, "selectedUser"
+  2. **UpperCamelCase (or PascalCase):** Class names, including classes that define components, interfaces, NgModules, directives, and pipes uses uppercase on the first letter of the item.
+  3. **dash-case (or "kebab-case"):** The descriptive part of file names, component selectors uses dashes between the words. For example, "app-user-list".
+  4. **UPPER_UNDERSCORE_CASE:** All constants uses capital letters connected with underscores. For example, "NUMBER_OF_USERS".
 
 ## What are the class decorators in Angular?
 
-    A class decorator is a decorator that appears immediately before a class definition, which declares the class to be of the given type, and provides metadata suitable to the type
+  A class decorator is a decorator that appears immediately before a class definition, which declares the class to be of the given type, and provides metadata suitable to the type
 
-    The following list of decorators comes under class decorators,
+  The following list of decorators comes under class decorators,
 
-    1. @Component()
-    2. @Directive()
-    3. @Pipe()
-    4. @Injectable()
-    5. @NgModule()
+  1. @Component()
+  2. @Directive()
+  3. @Pipe()
+  4. @Injectable()
+  5. @NgModule()
 
 ## What are class field decorators?
 
-    The class field decorators are the statements declared immediately before a field in a class definition that defines the type of that field. Some of the examples are: @input and @output,
+  The class field decorators are the statements declared immediately before a field in a class definition that defines the type of that field. Some of the examples are: @input and @output,
 
-    ```javascript
-    @Input() myProperty;
-    @Output() myEvent = new EventEmitter();
-    ```
+  ```javascript
+  @Input() myProperty;
+  @Output() myEvent = new EventEmitter();
+  ```
 
 ## What is declarable in Angular?
 
-    Declarable is a class type that you can add to the declarations list of an NgModule. The class types such as components, directives, and pipes comes can be declared in the module. The structure of declarations would be,
+  Declarable is a class type that you can add to the declarations list of an NgModule. The class types such as components, directives, and pipes comes can be declared in the module. The structure of declarations would be,
 
-    ```javascript
-    declarations: [
-      YourComponent,
-      YourPipe,
-      YourDirective
-    ],
-    ```
+  ```javascript
+  declarations: [
+    YourComponent,
+    YourPipe,
+    YourDirective
+  ],
+  ```
 
 ## What are the restrictions on declarable classes?
 
-    Below classes shouldn't be declared,
+  Below classes shouldn't be declared,
 
-    1. A class that's already declared in another NgModule
-    2. Ngmodule classes
-    3. Service classes
-    4. Helper classes
+  1. A class that's already declared in another NgModule
+  2. Ngmodule classes
+  3. Service classes
+  4. Helper classes
 
 ## What is a DI token?
 
-    A DI token is a lookup token associated with a dependency provider in dependency injection system. The injector maintains an internal token-provider map that it references when asked for a dependency and the DI token is the key to the map. Let's take example of DI Token usage,
+  A DI token is a lookup token associated with a dependency provider in dependency injection system. The injector maintains an internal token-provider map that it references when asked for a dependency and the DI token is the key to the map. Let's take example of DI Token usage,
 
-    ```javascript
-    const BASE_URL = new InjectionToken<string>('BaseUrl');
-    const injector =
-        Injector.create({providers: [{provide: BASE_URL, useValue: 'http://some-domain.com'}]});
-    const url = injector.get(BASE_URL);
-    ```
+  ```javascript
+  const BASE_URL = new InjectionToken<string>('BaseUrl');
+  const injector =
+      Injector.create({providers: [{provide: BASE_URL, useValue: 'http://some-domain.com'}]});
+  const url = injector.get(BASE_URL);
+  ```
 
 ## What is Angular DSL?
 
-    A domain-specific language (DSL) is a computer language specialized to a particular application domain. Angular has its own Domain Specific Language (DSL) which allows us to write Angular specific html-like syntax on top of normal html. It has its own compiler that compiles this syntax to html that the browser can understand. This DSL is defined in NgModules such as animations, forms, and routing and navigation.
+  A domain-specific language (DSL) is a computer language specialized to a particular application domain. Angular has its own Domain Specific Language (DSL) which allows us to write Angular specific html-like syntax on top of normal html. It has its own compiler that compiles this syntax to html that the browser can understand. This DSL is defined in NgModules such as animations, forms, and routing and navigation.
 
-    Basically you will see 3 main syntax in Angular DSL.
+  Basically you will see 3 main syntax in Angular DSL.
 
-    1. `()`: Used for Output and DOM events.
-    2. `[]`: Used for Input and specific DOM element attributes.
-    3. `*`: Structural directives(*ngFor or *ngIf) will affect/change the DOM structure.
+  1. `()`: Used for Output and DOM events.
+  2. `[]`: Used for Input and specific DOM element attributes.
+  3. `*`: Structural directives(*ngFor or *ngIf) will affect/change the DOM structure.
 
 ## what is an rxjs subject in Angular
 
-    An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers. While plain Observables are unicast (each subscribed Observer owns an independent execution of the Observable), Subjects are multicast.
+  An RxJS Subject is a special type of Observable that allows values to be multicasted to many Observers. While plain Observables are unicast (each subscribed Observer owns an independent execution of the Observable), Subjects are multicast.
 
-    A Subject is like an Observable, but can multicast to many Observers. Subjects are like EventEmitters: they maintain a registry of many listeners.
+  A Subject is like an Observable, but can multicast to many Observers. Subjects are like EventEmitters: they maintain a registry of many listeners.
 
-    ``` typescript
-    import { Subject } from 'rxjs';
+  ``` typescript
+  import { Subject } from 'rxjs';
 
-      const subject = new Subject<number>();
+    const subject = new Subject<number>();
 
-      subject.subscribe({
-        next: (v) => console.log(`observerA: ${v}`)
-      });
-      subject.subscribe({
-        next: (v) => console.log(`observerB: ${v}`)
-      });
+    subject.subscribe({
+      next: (v) => console.log(`observerA: ${v}`)
+    });
+    subject.subscribe({
+      next: (v) => console.log(`observerB: ${v}`)
+    });
 
-      subject.next(1);
-      subject.next(2);
-    ```
+    subject.next(1);
+    subject.next(2);
+  ```
 
 ## What is Bazel tool?
 
-    Bazel is a powerful build tool developed and massively used by Google and it can keep track of the dependencies between different packages and build targets. In Angular8, you can build your CLI application with Bazel.
-    **Note:** The Angular framework itself is built with Bazel.
+  Bazel is a powerful build tool developed and massively used by Google and it can keep track of the dependencies between different packages and build targets. In Angular8, you can build your CLI application with Bazel.
+  **Note:** The Angular framework itself is built with Bazel.
 
 ## What are the advantages of Bazel tool?
 
-    Below are the list of key advantages of Bazel tool,
+  Below are the list of key advantages of Bazel tool,
 
-    1. It creates the possibility of building your back-ends and front-ends with the same tool
-    2. The incremental build and tests
-    3. It creates the possibility to have remote builds and cache on a build farm.
+  1. It creates the possibility of building your back-ends and front-ends with the same tool
+  2. The incremental build and tests
+  3. It creates the possibility to have remote builds and cache on a build farm.
 
 ## How do you use Bazel with Angular CLI?
 
-    The @angular/bazel package provides a builder that allows Angular CLI to use Bazel as the build tool.
-    1. **Use in an existing applciation:** Add @angular/bazel using CLI
-        ```javascript
-        ng add @angular/bazel
-        ```
-    2. **Use in a new application:** Install the package and create the application with collection option
-        ```javascript
-        npm install -g @angular/bazel
-        ng new --collection=@angular/bazel
-        ```
-    When you use ng build and ng serve commands, Bazel is used behind the scenes and outputs the results in dist/bin folder.
+  The @angular/bazel package provides a builder that allows Angular CLI to use Bazel as the build tool.
+  1. **Use in an existing applciation:** Add @angular/bazel using CLI
+      ```javascript
+      ng add @angular/bazel
+      ```
+  2. **Use in a new application:** Install the package and create the application with collection option
+      ```javascript
+      npm install -g @angular/bazel
+      ng new --collection=@angular/bazel
+      ```
+  When you use ng build and ng serve commands, Bazel is used behind the scenes and outputs the results in dist/bin folder.
 
 ## How do you run Bazel directly?
 
-    Sometimes you may want to bypass the Angular CLI builder and run Bazel directly using Bazel CLI. You can install it globally using @bazel/bazel npm package. i.e, Bazel CLI is available under @bazel/bazel package. After you can apply the below common commands,
+  Sometimes you may want to bypass the Angular CLI builder and run Bazel directly using Bazel CLI. You can install it globally using @bazel/bazel npm package. i.e, Bazel CLI is available under @bazel/bazel package. After you can apply the below common commands,
 
-    ```javascrippt
-    bazel build [targets] // Compile the default output artifacts of the given targets.
-    bazel test [targets] // Run the tests with *_test targets found in the pattern.
-    bazel run [target]: Compile the program represented by target and then run it.
-    ```
+  ```javascrippt
+  bazel build [targets] // Compile the default output artifacts of the given targets.
+  bazel test [targets] // Run the tests with *_test targets found in the pattern.
+  bazel run [target]: Compile the program represented by target and then run it.
+  ```
 
 ## What is platform in Angular?
 
-    A platform is the context in which an Angular application runs. The most common platform for Angular applications is a web browser, but it can also be an operating system for a mobile device, or a web server. The runtime-platform is provided by the @angular/platform-* packages and these packages allow applications that make use of `@angular/core` and `@angular/common` to execute in different environments.
-    i.e, Angular can be used as platform-independent framework in different environments, For example,
+  A platform is the context in which an Angular application runs. The most common platform for Angular applications is a web browser, but it can also be an operating system for a mobile device, or a web server. The runtime-platform is provided by the @angular/platform-* packages and these packages allow applications that make use of `@angular/core` and `@angular/common` to execute in different environments.
+  i.e, Angular can be used as platform-independent framework in different environments, For example,
 
-    1. While running in the browser, it uses `platform-browser` package.
-    2. When SSR(server-side rendering ) is used, it uses `platform-server` package for providing web server implementation.
+  1. While running in the browser, it uses `platform-browser` package.
+  2. When SSR(server-side rendering ) is used, it uses `platform-server` package for providing web server implementation.
 
 ## What happens if I import the same module twice?
 
-    If multiple modules imports the same module then angular evaluates it only once (When it encounters the module first time). It follows this condition even the module appears at any level in a hierarchy of imported NgModules.
+  If multiple modules imports the same module then angular evaluates it only once (When it encounters the module first time). It follows this condition even the module appears at any level in a hierarchy of imported NgModules.
 
 ## How do you select an element with in a component template?
 
-    You can use `@ViewChild` directive to access elements in the view directly. Let's take input element with a reference,
+  You can use `@ViewChild` directive to access elements in the view directly. Let's take input element with a reference,
 
-    ```html
-    <input #uname>
-    ```
-    and define view child directive and access it in ngAfterViewInit lifecycle hook
+  ```html
+  <input #uname>
+  ```
+  and define view child directive and access it in ngAfterViewInit lifecycle hook
 
-    ```javascript
-    @ViewChild('uname') input;
+  ```javascript
+  @ViewChild('uname') input;
 
-    ngAfterViewInit() {
-      console.log(this.input.nativeElement.value);
-    }
-    ```
+  ngAfterViewInit() {
+    console.log(this.input.nativeElement.value);
+  }
+  ```
 
 ## How do you detect route change in Angular?
 
-    In Angular7, you can subscribe to router to detect the changes. The subscription for router events would be as below,
+  In Angular7, you can subscribe to router to detect the changes. The subscription for router events would be as below,
 
-    ```javascript
-    this.router.events.subscribe((event: Event) => {})
-    ```
-    Let's take a simple component to detect router changes
+  ```javascript
+  this.router.events.subscribe((event: Event) => {})
+  ```
+  Let's take a simple component to detect router changes
 
-    ```javascript
-    import { Component } from '@angular/core';
-    import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
+  ```javascript
+  import { Component } from '@angular/core';
+  import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
 
-    @Component({
-        selector: 'app-root',
-        template: `<router-outlet></router-outlet>`
-    })
-    export class AppComponent {
+  @Component({
+      selector: 'app-root',
+      template: `<router-outlet></router-outlet>`
+  })
+  export class AppComponent {
 
-        constructor(private router: Router) {
+      constructor(private router: Router) {
 
-            this.router.events.subscribe((event: Event) => {
-                if (event instanceof NavigationStart) {
-                    // Show loading indicator and perform an action
-                }
+          this.router.events.subscribe((event: Event) => {
+              if (event instanceof NavigationStart) {
+                  // Show loading indicator and perform an action
+              }
 
-                if (event instanceof NavigationEnd) {
-                    // Hide loading indicator and perform an action
-                }
+              if (event instanceof NavigationEnd) {
+                  // Hide loading indicator and perform an action
+              }
 
-                if (event instanceof NavigationError) {
-                    // Hide loading indicator and perform an action
-                    console.log(event.error); // It logs an error for debugging
-                }
-            });
-      }
+              if (event instanceof NavigationError) {
+                  // Hide loading indicator and perform an action
+                  console.log(event.error); // It logs an error for debugging
+              }
+          });
     }
-    ```
+  }
+  ```
 
 ## How do you pass headers for HTTP client?
 
-    You can directly pass object map for http client or create HttpHeaders class to supply the headers.
+  You can directly pass object map for http client or create HttpHeaders class to supply the headers.
 
-    ```javascript
-    constructor(private _http: HttpClient) {}
-    this._http.get('someUrl',{
-      headers: {'header1':'value1','header2':'value2'}
-    });
+  ```javascript
+  constructor(private _http: HttpClient) {}
+  this._http.get('someUrl',{
+    headers: {'header1':'value1','header2':'value2'}
+  });
 
-    (or)
-    let headers = new HttpHeaders().set('header1', headerValue1); // create header object
-    headers = headers.append('header2', headerValue2); // add a new header, creating a new object
-    headers = headers.append('header3', headerValue3); // add another header
+  (or)
+  let headers = new HttpHeaders().set('header1', headerValue1); // create header object
+  headers = headers.append('header2', headerValue2); // add a new header, creating a new object
+  headers = headers.append('header3', headerValue3); // add another header
 
-    let params = new HttpParams().set('param1', value1); // create params object
-    params = params.append('param2', value2); // add a new param, creating a new object
-    params = params.append('param3', value3); // add another param
+  let params = new HttpParams().set('param1', value1); // create params object
+  params = params.append('param2', value2); // add a new param, creating a new object
+  params = params.append('param3', value3); // add another param
 
-    return this._http.get<any[]>('someUrl', { headers: headers, params: params })
-    ```
+  return this._http.get<any[]>('someUrl', { headers: headers, params: params })
+  ```
 
 ## What is the purpose of differential loading in CLI?
 
-    From Angular8 release onwards, the applications are built using differential loading strategy from CLI to build two separate bundles as part of your deployed application.
+  From Angular8 release onwards, the applications are built using differential loading strategy from CLI to build two separate bundles as part of your deployed application.
 
-    1. The first build contains ES2015 syntax which takes the advantage of built-in support in modern browsers, ships less polyfills, and results in a smaller bundle size.
-    2. The second build contains old ES5 syntax to support older browsers with all necessary polyfills. But this results in a larger bundle size.
+  1. The first build contains ES2015 syntax which takes the advantage of built-in support in modern browsers, ships less polyfills, and results in a smaller bundle size.
+  2. The second build contains old ES5 syntax to support older browsers with all necessary polyfills. But this results in a larger bundle size.
 
-    **Note:** This strategy is used to support multiple browsers but it only load the code that the browser needs.
+  **Note:** This strategy is used to support multiple browsers but it only load the code that the browser needs.
 
 ## Is Angular supports dynamic imports?
 
-    Yes, Angular 8 supports dynamic imports in router configuration. i.e, You can use the import statement for lazy loading the module using `loadChildren` method and it will be understood by the IDEs(VSCode and WebStorm), webpack, etc.
-    Previously, you have been written as below to lazily load the feature module. By mistake, if you have typo in the module name it still accepts the string and throws an error during build time.
-    ```javascript
-    {path: ‘user’, loadChildren: ‘./users/user.module#UserModulee’},
-    ```
-    This problem is resolved by using dynamic imports and IDEs are able to find it during compile time itself.
-    ```javascript
-    {path: ‘user’, loadChildren: () => import(‘./users/user.module’).then(m => m.UserModule)};
-    ```
+  Yes, Angular 8 supports dynamic imports in router configuration. i.e, You can use the import statement for lazy loading the module using `loadChildren` method and it will be understood by the IDEs(VSCode and WebStorm), webpack, etc.
+  Previously, you have been written as below to lazily load the feature module. By mistake, if you have typo in the module name it still accepts the string and throws an error during build time.
+  ```javascript
+  {path: ‘user’, loadChildren: ‘./users/user.module#UserModulee’},
+  ```
+  This problem is resolved by using dynamic imports and IDEs are able to find it during compile time itself.
+  ```javascript
+  {path: ‘user’, loadChildren: () => import(‘./users/user.module’).then(m => m.UserModule)};
+  ```
 
 ## What is lazy loading?
 
-    Lazy loading is one of the most useful concepts of Angular Routing. It helps us to download the web pages in chunks instead of downloading everything in a big bundle. It is used for lazy loading by asynchronously loading the feature module for routing whenever required using the property `loadChildren`. Let's load both `Customer` and `Order` feature modules lazily as below,
-    ```javascript
-    const routes: Routes = [
-      {
-        path: 'customers',
-        loadChildren: () => import('./customers/customers.module').then(module => module.CustomersModule)
-      },
-      {
-        path: 'orders',
-        loadChildren: () => import('./orders/orders.module').then(module => module.OrdersModule)
-      },
-      {
-        path: '',
-        redirectTo: '',
-        pathMatch: 'full'
-      }
-    ];
-    ```
+  Lazy loading is one of the most useful concepts of Angular Routing. It helps us to download the web pages in chunks instead of downloading everything in a big bundle. It is used for lazy loading by asynchronously loading the feature module for routing whenever required using the property `loadChildren`. Let's load both `Customer` and `Order` feature modules lazily as below,
+  ```javascript
+  const routes: Routes = [
+    {
+      path: 'customers',
+      loadChildren: () => import('./customers/customers.module').then(module => module.CustomersModule)
+    },
+    {
+      path: 'orders',
+      loadChildren: () => import('./orders/orders.module').then(module => module.OrdersModule)
+    },
+    {
+      path: '',
+      redirectTo: '',
+      pathMatch: 'full'
+    }
+  ];
+  ```
 
 ## What are workspace APIs?
 
-    Angular 8.0 release introduces Workspace APIs to make it easier for developers to read and modify the angular.json file instead of manually modifying it. Currently, the only supported storage3 format is the JSON-based format used by the Angular CLI. You can enable or add optimization option for build target as below,
-    ```javascript
-    import { NodeJsSyncHost } from '@angular-devkit/core/node';
-    import { workspaces } from '@angular-devkit/core';
+  Angular 8.0 release introduces Workspace APIs to make it easier for developers to read and modify the angular.json file instead of manually modifying it. Currently, the only supported storage3 format is the JSON-based format used by the Angular CLI. You can enable or add optimization option for build target as below,
+  ```javascript
+  import { NodeJsSyncHost } from '@angular-devkit/core/node';
+  import { workspaces } from '@angular-devkit/core';
 
-    async function addBuildTargetOption() {
-        const host = workspaces.createWorkspaceHost(new NodeJsSyncHost());
-        const workspace = await workspaces.readWorkspace('path/to/workspace/directory/', host);
+  async function addBuildTargetOption() {
+      const host = workspaces.createWorkspaceHost(new NodeJsSyncHost());
+      const workspace = await workspaces.readWorkspace('path/to/workspace/directory/', host);
 
-        const project = workspace.projects.get('my-app');
-        if (!project) {
-          throw new Error('my-app does not exist');
-        }
+      const project = workspace.projects.get('my-app');
+      if (!project) {
+        throw new Error('my-app does not exist');
+      }
 
-        const buildTarget = project.targets.get('build');
-        if (!buildTarget) {
-          throw new Error('build target does not exist');
-        }
+      const buildTarget = project.targets.get('build');
+      if (!buildTarget) {
+        throw new Error('build target does not exist');
+      }
 
-        buildTarget.options.optimization = true;
+      buildTarget.options.optimization = true;
 
-        await workspaces.writeWorkspace(workspace, host);
-    }
+      await workspaces.writeWorkspace(workspace, host);
+  }
 
-    addBuildTargetOption();
-    ```
+  addBuildTargetOption();
+  ```
 
 ## How do you upgrade angular version?
 
-    The Angular upgrade is quite easier using Angular CLI `ng update` command as mentioned below. For example, if you upgrade from Angular 7 to 8 then your lazy loaded route imports will be migrated to the new import syntax automatically.
-    ```bash
-    $ ng update @angular/cli @angular/core
-    ```
+  The Angular upgrade is quite easier using Angular CLI `ng update` command as mentioned below. For example, if you upgrade from Angular 7 to 8 then your lazy loaded route imports will be migrated to the new import syntax automatically.
+  ```bash
+  $ ng update @angular/cli @angular/core
+  ```
 
 ## What is Angular Material?
 
-    Angular Material is a collection of Material Design components for Angular framework following the Material Design spec. You can apply Material Design very easily using Angular Material. The installation can be done through npm or yarn,
-    ```bash
-    npm install --save @angular/material @angular/cdk @angular/animations
-    (OR)
-    yarn add @angular/material @angular/cdk @angular/animations
-    ```
-    It supports the most recent two versions of all major browsers. The latest version of Angular material is 8.1.1
+  Angular Material is a collection of Material Design components for Angular framework following the Material Design spec. You can apply Material Design very easily using Angular Material. The installation can be done through npm or yarn,
+  ```bash
+  npm install --save @angular/material @angular/cdk @angular/animations
+  (OR)
+  yarn add @angular/material @angular/cdk @angular/animations
+  ```
+  It supports the most recent two versions of all major browsers. The latest version of Angular material is 8.1.1
 
 ## What is NgUpgrade?
 
-    NgUpgrade is a library put together by the Angular team, which you can use in your applications to mix and match AngularJS and Angular components and bridge the AngularJS and Angular dependency injection systems.
+  NgUpgrade is a library put together by the Angular team, which you can use in your applications to mix and match AngularJS and Angular components and bridge the AngularJS and Angular dependency injection systems.
 
 ## How to use polyfills in Angular application?
 
-    The Angular CLI provides support for polyfills officially. When you create a new project with the ng new command, a `src/polyfills.ts` configuration file is created as part of your project folder. This file includes the mandatory and many of the optional polyfills as JavaScript import statements. Let's categorize the polyfills,
+  The Angular CLI provides support for polyfills officially. When you create a new project with the ng new command, a `src/polyfills.ts` configuration file is created as part of your project folder. This file includes the mandatory and many of the optional polyfills as JavaScript import statements. Let's categorize the polyfills,
 
-    1. **Mandatory polyfills:** These are installed automatically when you create your project with ng new command and the respective import statements enabled in 'src/polyfills.ts' file.
-    2. **Optional polyfills:** You need to install its npm package and then create import statement in 'src/polyfills.ts' file.
-      For example, first you need to install below npm package for adding web animations (optional) polyfill.
-          ```bash
-            npm install --save web-animations-js
-          ```
-      and create import statement in polyfill file.
-          ```javascript
-          import 'web-animations-js';
-          ```
+  1. **Mandatory polyfills:** These are installed automatically when you create your project with ng new command and the respective import statements enabled in 'src/polyfills.ts' file.
+  2. **Optional polyfills:** You need to install its npm package and then create import statement in 'src/polyfills.ts' file.
+    For example, first you need to install below npm package for adding web animations (optional) polyfill.
+        ```bash
+          npm install --save web-animations-js
+        ```
+    and create import statement in polyfill file.
+        ```javascript
+        import 'web-animations-js';
+        ```
 
 ## What are the ways to trigger change detection in Angular?
 
-    You can inject either ApplicationRef or NgZone, or ChangeDetectorRef into your component and apply below specific methods to trigger change detection in Angular. i.e, There are 3 possible ways,
+  You can inject either ApplicationRef or NgZone, or ChangeDetectorRef into your component and apply below specific methods to trigger change detection in Angular. i.e, There are 3 possible ways,
 
-    1. **ApplicationRef.tick():** Invoke this method to explicitly process change detection and its side-effects. It check the full component tree.
-    2. **NgZone.run(callback):** It evaluate the callback function inside the Angular zone.
-    3. **ChangeDetectorRef.detectChanges():** It detects only the components and it's children.
+  1. **ApplicationRef.tick():** Invoke this method to explicitly process change detection and its side-effects. It check the full component tree.
+  2. **NgZone.run(callback):** It evaluate the callback function inside the Angular zone.
+  3. **ChangeDetectorRef.detectChanges():** It detects only the components and it's children.
 
 ## What are the security principles in angular?
 
-    Below are the list of security principles in angular,
+  Below are the list of security principles in angular,
 
-    1.	You should avoid direct use of the DOM APIs.
-    2.  You should enable Content Security Policy (CSP) and configure your web server to return appropriate CSP HTTP headers.
-    3.  You should Use the offline template compiler.
-    4.  You should Use Server Side XSS protection.
-    5.  You should Use DOM Sanitizer.
-    6.  You should Preventing CSRF or XSRF attacks.
+  1.	You should avoid direct use of the DOM APIs.
+  2.  You should enable Content Security Policy (CSP) and configure your web server to return appropriate CSP HTTP headers.
+  3.  You should Use the offline template compiler.
+  4.  You should Use Server Side XSS protection.
+  5.  You should Use DOM Sanitizer.
+  6.  You should Preventing CSRF or XSRF attacks.
 
 ## What is schematic?
 
-    It's a scaffolding library that defines how to generate or transform a programming project by creating, modifying, refactoring, or moving files and code. It defines rules that operate on a virtual file system called a tree.
+  It's a scaffolding library that defines how to generate or transform a programming project by creating, modifying, refactoring, or moving files and code. It defines rules that operate on a virtual file system called a tree.
 
 ## What is rule in Schematics?
 
-    In schematics world, it's a function that operates on a file tree to create, delete, or modify files in a specific manner.
+  In schematics world, it's a function that operates on a file tree to create, delete, or modify files in a specific manner.
 
 ## What is Schematics CLI?
 
-    Schematics come with their own command-line tool known as Schematics CLI. It is used to install the schematics executable, which you can use to create a new schematics collection with an initial named schematic. The collection folder is a workspace for schematics. You can also use the schematics command to add a new schematic to an existing collection, or extend an existing schematic. You can install Schematic CLI globally as below,
-    ```bash
-    npm install -g @angular-devkit/schematics-cli
-    ```
+  Schematics come with their own command-line tool known as Schematics CLI. It is used to install the schematics executable, which you can use to create a new schematics collection with an initial named schematic. The collection folder is a workspace for schematics. You can also use the schematics command to add a new schematic to an existing collection, or extend an existing schematic. You can install Schematic CLI globally as below,
+  ```bash
+  npm install -g @angular-devkit/schematics-cli
+  ```
 
 ## What are the best practices for security in angular?
 
-    Below are the best practices of security in angular,
+  Below are the best practices of security in angular,
 
-    1. Use the latest Angular library releases
-    2. Don't modify your copy of Angular
-    3. Avoid Angular APIs marked in the documentation as “Security Risk.”
+  1. Use the latest Angular library releases
+  2. Don't modify your copy of Angular
+  3. Avoid Angular APIs marked in the documentation as “Security Risk.”
 
 ## What is Angular security model for preventing XSS attacks?
 
-    Angular treats all values as untrusted by default. i.e, Angular sanitizes and escapes untrusted values When a value is inserted into the DOM from a template, via property, attribute, style, class binding, or interpolation.
+  Angular treats all values as untrusted by default. i.e, Angular sanitizes and escapes untrusted values When a value is inserted into the DOM from a template, via property, attribute, style, class binding, or interpolation.
 
 ## What is the role of template compiler for prevention of XSS attacks?
 
-    The offline template compiler prevents vulnerabilities caused by template injection, and greatly improves application performance. So it is recommended to use offline template compiler in production deployments without dynamically generating any template.
+  The offline template compiler prevents vulnerabilities caused by template injection, and greatly improves application performance. So it is recommended to use offline template compiler in production deployments without dynamically generating any template.
 
 ## What are the various security contexts in Angular?
 
-    Angular defines the following security contexts for sanitization,
+  Angular defines the following security contexts for sanitization,
 
-    1. **HTML:** It is used when interpreting a value as HTML such as binding to innerHtml.
-    2. **Style:** It is used when binding CSS into the style property.
-    3. **URL:** It is used for URL properties such as `<a href>`.
-    4. **Resource URL:** It is a URL that will be loaded and executed as code such as `<script src>`.
+  1. **HTML:** It is used when interpreting a value as HTML such as binding to innerHtml.
+  2. **Style:** It is used when binding CSS into the style property.
+  3. **URL:** It is used for URL properties such as `<a href>`.
+  4. **Resource URL:** It is a URL that will be loaded and executed as code such as `<script src>`.
 
 ## What is Sanitization? Is angular supports it?
 
-    **Sanitization** is the inspection of an untrusted value, turning it into a value that's safe to insert into the DOM. Yes, Angular suppports sanitization. It sanitizes untrusted values for HTML, styles, and URLs but sanitizing resource URLs isn't possible because they contain arbitrary code.
+  **Sanitization** is the inspection of an untrusted value, turning it into a value that's safe to insert into the DOM. Yes, Angular suppports sanitization. It sanitizes untrusted values for HTML, styles, and URLs but sanitizing resource URLs isn't possible because they contain arbitrary code.
 
 ## What is the purpose of innerHTML?
 
-    The innerHtml is a property of HTML-Elements, which allows you to set it's html-content programmatically. Let's display the below html code snippet in a `<div>` tag as below using innerHTML binding,
+  The innerHtml is a property of HTML-Elements, which allows you to set it's html-content programmatically. Let's display the below html code snippet in a `<div>` tag as below using innerHTML binding,
 
-    ```html
-    <div [innerHTML]="htmlSnippet"></div>
-    ```
-    and define the htmlSnippet property from any component
-    ```javascript
-    export class myComponent {
-      htmlSnippet: string = '<b>Hello World</b>, Angular';
-    }
-    ```
-    Unfortunately this property could cause Cross Site Scripting (XSS) security bugs when improperly handled.
+  ```html
+  <div [innerHTML]="htmlSnippet"></div>
+  ```
+  and define the htmlSnippet property from any component
+  ```javascript
+  export class myComponent {
+    htmlSnippet: string = '<b>Hello World</b>, Angular';
+  }
+  ```
+  Unfortunately this property could cause Cross Site Scripting (XSS) security bugs when improperly handled.
 
 ## What is the difference between interpolated content and innerHTML?
 
-    The main difference between interpolated and innerHTML code is the behavior of code interpreted. Interpolated content is always escaped i.e,  HTML isn't interpreted and the browser displays angle brackets in the element's text content. Where as in innerHTML binding, the content is interpreted i.e, the browser will convert < and > characters as HTMLEntities. For example, the usage in template would be as below,
+  The main difference between interpolated and innerHTML code is the behavior of code interpreted. Interpolated content is always escaped i.e,  HTML isn't interpreted and the browser displays angle brackets in the element's text content. Where as in innerHTML binding, the content is interpreted i.e, the browser will convert < and > characters as HTMLEntities. For example, the usage in template would be as below,
 
-    ```html
-    <p>Interpolated value:</p>
-    <div >{{htmlSnippet}}</div>
-    <p>Binding of innerHTML:</p>
-    <div [innerHTML]="htmlSnippet"></div>
-    ```
-    and the property defined in a component.
+  ```html
+  <p>Interpolated value:</p>
+  <div >{{htmlSnippet}}</div>
+  <p>Binding of innerHTML:</p>
+  <div [innerHTML]="htmlSnippet"></div>
+  ```
+  and the property defined in a component.
 
-    ```javascript
-    export class InnerHtmlBindingComponent {
-      htmlSnippet = 'Template <script>alert("XSS Attack")</script> <b>Code attached</b>';
-    }
-    ```
-    Even though innerHTML binding create a chance of XSS attack, Angular recognizes the value as unsafe and automatically sanitizes it.
+  ```javascript
+  export class InnerHtmlBindingComponent {
+    htmlSnippet = 'Template <script>alert("XSS Attack")</script> <b>Code attached</b>';
+  }
+  ```
+  Even though innerHTML binding create a chance of XSS attack, Angular recognizes the value as unsafe and automatically sanitizes it.
 
 ## How do you prevent automatic sanitization?
 
-    Sometimes the applications genuinely need to include executable code such as displaying `<iframe>` from an URL. In this case, you need to prevent automatic sanitization in Angular by saying that you inspected a value, checked how it was generated, and made sure it will always be secure. Basically it involves 2 steps,
+  Sometimes the applications genuinely need to include executable code such as displaying `<iframe>` from an URL. In this case, you need to prevent automatic sanitization in Angular by saying that you inspected a value, checked how it was generated, and made sure it will always be secure. Basically it involves 2 steps,
 
-    1. Inject DomSanitizer: You can inject DomSanitizer in component as parameter in constructor
-    2. Mark the trusted value by calling some of the below methods
+  1. Inject DomSanitizer: You can inject DomSanitizer in component as parameter in constructor
+  2. Mark the trusted value by calling some of the below methods
 
-        1. bypassSecurityTrustHtml
-        2. bypassSecurityTrustScript
-        3. bypassSecurityTrustStyle
-        4. bypassSecurityTrustUrl
-        5. bypassSecurityTrustResourceUrl
+      1. bypassSecurityTrustHtml
+      2. bypassSecurityTrustScript
+      3. bypassSecurityTrustStyle
+      4. bypassSecurityTrustUrl
+      5. bypassSecurityTrustResourceUrl
 
-    For example,The  usage of dangerous url to trusted url would be as below,
+  For example,The  usage of dangerous url to trusted url would be as below,
 
-    ```javascript
-    constructor(private sanitizer: DomSanitizer) {
-      this.dangerousUrl = 'javascript:alert("XSS attack")';
-      this.trustedUrl = sanitizer.bypassSecurityTrustUrl(this.dangerousUrl);
-    ```
+  ```javascript
+  constructor(private sanitizer: DomSanitizer) {
+    this.dangerousUrl = 'javascript:alert("XSS attack")';
+    this.trustedUrl = sanitizer.bypassSecurityTrustUrl(this.dangerousUrl);
+  ```
 
 ## Is safe to use direct DOM API methods in terms of security?
 
-    No,the built-in browser DOM APIs or methods don't automatically protect you from security vulnerabilities. In this case it is recommended to use Angular templates instead of directly interacting with DOM. If it is unavoidable then use the built-in Angular sanitization functions.
+  No,the built-in browser DOM APIs or methods don't automatically protect you from security vulnerabilities. In this case it is recommended to use Angular templates instead of directly interacting with DOM. If it is unavoidable then use the built-in Angular sanitization functions.
 
 ## What is DOM sanitizer?
 
-    `DomSanitizer` is used to help preventing Cross Site Scripting Security bugs (XSS) by sanitizing values to be safe to use in the different DOM contexts.
+  `DomSanitizer` is used to help preventing Cross Site Scripting Security bugs (XSS) by sanitizing values to be safe to use in the different DOM contexts.
 
 ## How do you support server side XSS protection in Angular application?
 
-    The server-side XSS protection is supported in an angular application by using a templating language that automatically escapes values to prevent XSS vulnerabilities on the server. But don't use a templating language to generate Angular templates on the server side which creates a high risk of introducing template-injection vulnerabilities.
+  The server-side XSS protection is supported in an angular application by using a templating language that automatically escapes values to prevent XSS vulnerabilities on the server. But don't use a templating language to generate Angular templates on the server side which creates a high risk of introducing template-injection vulnerabilities.
 
 ## Is angular prevents http level vulnerabilities?
 
-    Angular has built-in support for preventing http level vulnerabilities such as as cross-site request forgery (CSRF or XSRF) and cross-site script inclusion (XSSI). Even though these vulnerabilities need to be mitigated on server-side, Angular provides helpers to make the integration easier on the client side.
-    1. HttpClient supports a token mechanism used to prevent XSRF attacks
-    2. HttpClient library recognizes the convention of prefixed JSON responses(which non-executable js code with ")]}',\\n" characters) and automatically strips the string ")]}',\\n" from all responses before further parsing
+  Angular has built-in support for preventing http level vulnerabilities such as as cross-site request forgery (CSRF or XSRF) and cross-site script inclusion (XSSI). Even though these vulnerabilities need to be mitigated on server-side, Angular provides helpers to make the integration easier on the client side.
+  1. HttpClient supports a token mechanism used to prevent XSRF attacks
+  2. HttpClient library recognizes the convention of prefixed JSON responses(which non-executable js code with ")]}',\\n" characters) and automatically strips the string ")]}',\\n" from all responses before further parsing
 
 ## What are Http Interceptors?
 
-    Http Interceptors are part of @angular/common/http, which inspect and transform HTTP requests from your application to the server and vice-versa on HTTP responses. These interceptors can perform a variety of implicit tasks, from authentication to logging.
+  Http Interceptors are part of @angular/common/http, which inspect and transform HTTP requests from your application to the server and vice-versa on HTTP responses. These interceptors can perform a variety of implicit tasks, from authentication to logging.
 
-    The syntax of HttpInterceptor interface looks like as below,
+  The syntax of HttpInterceptor interface looks like as below,
 
-    ```javascript
-    interface HttpInterceptor {
-      intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
-    }
-    ```
-    You can use interceptors by declaring a service class that implements the intercept() method of the HttpInterceptor interface.
+  ```javascript
+  interface HttpInterceptor {
+    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>
+  }
+  ```
+  You can use interceptors by declaring a service class that implements the intercept() method of the HttpInterceptor interface.
 
-    ```javascript
-    @Injectable()
-    export class MyInterceptor implements HttpInterceptor {
-        constructor() {}
-        intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-            ...
-        }
-    }
-    ```
-    After that you can use it in your module,
+  ```javascript
+  @Injectable()
+  export class MyInterceptor implements HttpInterceptor {
+      constructor() {}
+      intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+          ...
+      }
+  }
+  ```
+  After that you can use it in your module,
 
-    ```javascript
-    @NgModule({
-        ...
-        providers: [
-            {
-                provide: HTTP_INTERCEPTORS,
-                useClass: MyInterceptor,
-                multi: true
-            }
-        ]
-        ...
-    })
-    export class AppModule {}
-    ```
+  ```javascript
+  @NgModule({
+      ...
+      providers: [
+          {
+              provide: HTTP_INTERCEPTORS,
+              useClass: MyInterceptor,
+              multi: true
+          }
+      ]
+      ...
+  })
+  export class AppModule {}
+  ```
 
 ## What are the applications of HTTP interceptors?
 
-    The HTTP Interceptors can be used for different variety of tasks,
+  The HTTP Interceptors can be used for different variety of tasks,
 
-    1. Authentication
-    2. Logging
-    3. Caching
-    4. Fake backend
-    5. URL transformation
-    6. Modifying headers
+  1. Authentication
+  2. Logging
+  3. Caching
+  4. Fake backend
+  5. URL transformation
+  6. Modifying headers
 
 ## Is multiple interceptors supported in Angular?
 
-    Yes, Angular supports multiple interceptors at a time. You could define multiple interceptors in providers property:
-    ```javascript
-    providers: [
-      { provide: HTTP_INTERCEPTORS, useClass: MyFirstInterceptor, multi: true },
-      { provide: HTTP_INTERCEPTORS, useClass: MySecondInterceptor, multi: true }
-    ],
-    ```
-    The interceptors will be called in the order in which they were provided. i.e, MyFirstInterceptor will be called first in the above interceptors configuration.
+  Yes, Angular supports multiple interceptors at a time. You could define multiple interceptors in providers property:
+  ```javascript
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: MyFirstInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: MySecondInterceptor, multi: true }
+  ],
+  ```
+  The interceptors will be called in the order in which they were provided. i.e, MyFirstInterceptor will be called first in the above interceptors configuration.
 
 ## How can I use interceptor for an entire application?
 
-    You can use same instance of `HttpInterceptors` for the entire app by importing the `HttpClientModule` only in your AppModule, and add the interceptors to the root application injector.
-    For example, let's define a class that is injectable in root application.
-    ```javascript
-    @Injectable()
-    export class MyInterceptor implements HttpInterceptor {
-      intercept(
-        req: HttpRequest<any>,
-        next: HttpHandler
-      ): Observable<HttpEvent<any>> {
+  You can use same instance of `HttpInterceptors` for the entire app by importing the `HttpClientModule` only in your AppModule, and add the interceptors to the root application injector.
+  For example, let's define a class that is injectable in root application.
+  ```javascript
+  @Injectable()
+  export class MyInterceptor implements HttpInterceptor {
+    intercept(
+      req: HttpRequest<any>,
+      next: HttpHandler
+    ): Observable<HttpEvent<any>> {
 
-        return next.handle(req).do(event => {
-          if (eventt instanceof HttpResponse) {
-                // Code goes here
-          }
-        });
+      return next.handle(req).do(event => {
+        if (eventt instanceof HttpResponse) {
+              // Code goes here
+        }
+      });
 
-      }
     }
-    ```
-    After that import HttpClientModule in AppModule
-    ```javascript
-    @NgModule({
-      declarations: [AppComponent],
-      imports: [BrowserModule, HttpClientModule],
-      providers: [
-        { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true }
-      ],
-      bootstrap: [AppComponent]
-    })
-    export class AppModule {}
-    ```
+  }
+  ```
+  After that import HttpClientModule in AppModule
+  ```javascript
+  @NgModule({
+    declarations: [AppComponent],
+    imports: [BrowserModule, HttpClientModule],
+    providers: [
+      { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true }
+    ],
+    bootstrap: [AppComponent]
+  })
+  export class AppModule {}
+  ```
 
 ## What is an angular library?
 
-    An Angular library is an Angular project that differs from an app in that it cannot run on its own. It must be imported and used in an app. For example,  you can import or add `service worker` library to an Angular application which turns an application into a Progressive Web App (PWA).
+  An Angular library is an Angular project that differs from an app in that it cannot run on its own. It must be imported and used in an app. For example,  you can import or add `service worker` library to an Angular application which turns an application into a Progressive Web App (PWA).
 
-    **Note:** You can create own third party library and publish it as npm package to be used in an Application.
+  **Note:** You can create own third party library and publish it as npm package to be used in an Application.
 
 ## How do you select an element in component template?
 
-    You can control any DOM element via ElementRef by injecting it into your component's constructor. i.e, The component should have constructor with ElementRef parameter,
-    ```javascript
-    constructor(myElement: ElementRef) {
-      el.nativeElement.style.backgroundColor = 'yellow';
-    }
-    ```
+  You can control any DOM element via ElementRef by injecting it into your component's constructor. i.e, The component should have constructor with ElementRef parameter,
+  ```javascript
+  constructor(myElement: ElementRef) {
+    el.nativeElement.style.backgroundColor = 'yellow';
+  }
+  ```
 
 ## What is TestBed?
 
-    TestBed is an api for writing unit tests for Angular applications and it's libraries. Even though We still write our tests in Jasmine and run using Karma, this API provides an easier way to create components, handle injection, test asynchronous behaviour and interact with our application.
+  TestBed is an api for writing unit tests for Angular applications and it's libraries. Even though We still write our tests in Jasmine and run using Karma, this API provides an easier way to create components, handle injection, test asynchronous behaviour and interact with our application.
 
 ## What is protractor?
 
-    Protractor is an end-to-end test framework for Angular and AngularJS applications. It runs tests against your application running in a real browser, interacting with it as a user would.
-    ```javascript
-    npm install -g protractor
-    ```
+  Protractor is an end-to-end test framework for Angular and AngularJS applications. It runs tests against your application running in a real browser, interacting with it as a user would.
+  ```javascript
+  npm install -g protractor
+  ```
 
 ## How do you create schematics for libraries?
 
-    You can create your own schematic collections to integrate your library with the Angular CLI. These collections are classified as 3 main schematics,
-    1. **Add schematics:** These schematics are used to install library in an Angular workspace using `ng add` command.
-      For example, @angular/material schematic tells the add command to install and set up Angular Material and theming.
-    2. **Generate schematics**: These schematics are used to modify projects, add configurations and scripts, and scaffold artifacts in library using `ng generate` command.
-      For example, @angular/material generation schematic supplies generation schematics for the UI components. Let's say the table component is generated using `ng generate @angular/material:table `.
-    3. **Update schematics:** These schematics are used to update library's dependencies and adjust for breaking changes in a new library release using `ng update` command.
-      For example, @angular/material update schematic updates material and cdk dependencies using `ng update @angular/material` command.
+  You can create your own schematic collections to integrate your library with the Angular CLI. These collections are classified as 3 main schematics,
+  1. **Add schematics:** These schematics are used to install library in an Angular workspace using `ng add` command.
+    For example, @angular/material schematic tells the add command to install and set up Angular Material and theming.
+  2. **Generate schematics**: These schematics are used to modify projects, add configurations and scripts, and scaffold artifacts in library using `ng generate` command.
+    For example, @angular/material generation schematic supplies generation schematics for the UI components. Let's say the table component is generated using `ng generate @angular/material:table `.
+  3. **Update schematics:** These schematics are used to update library's dependencies and adjust for breaking changes in a new library release using `ng update` command.
+    For example, @angular/material update schematic updates material and cdk dependencies using `ng update @angular/material` command.
 
 ## How do you use jquery in Angular?
 
-    You can use jquery in Angular using 3 simple steps,
-    1. **Install the dependency:** At first, install the jquery dependency using npm
-        ```cmd
-          npm install --save jquery
-        ```
-    2. **Add the jquery script:** In Angular-CLI project, add the relative path to jquery in the angular.json file.
-        ```javascript
-        "scripts": [
-          "node_modules/jquery/dist/jquery.min.js"
-        ]
-        ```
-    3. **Start using jquery:** Define the element in template. Whereas declare the jquery variable and apply CSS classes on the element.
-        ```html
-        <div id="elementId">
-          <h1>JQuery integration</h1>
-        </div>
-        ```
-        ```javascript
-        import {Component, OnInit} from '@angular/core';
+  You can use jquery in Angular using 3 simple steps,
+  1. **Install the dependency:** At first, install the jquery dependency using npm
+      ```cmd
+        npm install --save jquery
+      ```
+  2. **Add the jquery script:** In Angular-CLI project, add the relative path to jquery in the angular.json file.
+      ```javascript
+      "scripts": [
+        "node_modules/jquery/dist/jquery.min.js"
+      ]
+      ```
+  3. **Start using jquery:** Define the element in template. Whereas declare the jquery variable and apply CSS classes on the element.
+      ```html
+      <div id="elementId">
+        <h1>JQuery integration</h1>
+      </div>
+      ```
+      ```javascript
+      import {Component, OnInit} from '@angular/core';
 
-        declare var $: any; // (or) import * as $ from 'jquery';
+      declare var $: any; // (or) import * as $ from 'jquery';
 
-        @Component({
-          selector: 'app-root',
-          templateUrl: './app.component.html',
-          styleUrls: ['./app.component.css']
-        })
-        export class AppComponent implements OnInit {
-          ngOnInit(): void {
-            $(document).ready(() => {
-              $('#elementId').css({'text-color': 'blue', 'font-size': '150%'});
-            });
-          }
+      @Component({
+        selector: 'app-root',
+        templateUrl: './app.component.html',
+        styleUrls: ['./app.component.css']
+      })
+      export class AppComponent implements OnInit {
+        ngOnInit(): void {
+          $(document).ready(() => {
+            $('#elementId').css({'text-color': 'blue', 'font-size': '150%'});
+          });
         }
-        ```
+      }
+      ```
 
 ## What is the reason for No provider for HTTP exception?
 
-    This exception is due to missing HttpClientModule in your module. You just need to import in module as below,
-    ```javascript
-    import { HttpClientModule } from '@angular/common/http';
+  This exception is due to missing HttpClientModule in your module. You just need to import in module as below,
+  ```javascript
+  import { HttpClientModule } from '@angular/common/http';
 
-    @NgModule({
-      imports: [
-        BrowserModule,
-        HttpClientModule,
-      ],
-      declarations: [ AppComponent ],
-      bootstrap:    [ AppComponent ]
-    })
-    export class AppModule { }
-    ```
+  @NgModule({
+    imports: [
+      BrowserModule,
+      HttpClientModule,
+    ],
+    declarations: [ AppComponent ],
+    bootstrap:    [ AppComponent ]
+  })
+  export class AppModule { }
+  ```
 
 ## How can I use SASS in angular project?
 
-    When you are creating your project with angular cli, you can use `ng new`command. It generates all your components with predefined sass files.
-    ```javascript
-    ng new My_New_Project --style=sass
-    ```
-    But if you are changing your existing style in your project then use `ng set` command,
-    ```javascript
-    ng set defaults.styleExt scss
-    ```
+  When you are creating your project with angular cli, you can use `ng new`command. It generates all your components with predefined sass files.
+  ```javascript
+  ng new My_New_Project --style=sass
+  ```
+  But if you are changing your existing style in your project then use `ng set` command,
+  ```javascript
+  ng set defaults.styleExt scss
+  ```
 
 ## What is the purpose of hidden property?
 
-    The hidden property is used  to show or hide the associated DOM element, based on an expression. It can be compared close to `ng-show` directive in AngularJS. Let's say you want to show user name based on the availability of user using `hidden` property.
-    ```javascript
-    <div [hidden]="!user.name">
-      My name is: {{user.name}}
-    </div>
-    ```
+  The hidden property is used  to show or hide the associated DOM element, based on an expression. It can be compared close to `ng-show` directive in AngularJS. Let's say you want to show user name based on the availability of user using `hidden` property.
+  ```javascript
+  <div [hidden]="!user.name">
+    My name is: {{user.name}}
+  </div>
+  ```
 
 ## What is the difference between ngIf and hidden property?
 
-    The main difference is that *ngIf will remove the element from the DOM, while [hidden] actually plays with the CSS style by setting `display:none`. Generally it is expensive to add and remove stuff from the DOM for frequent actions.
+  The main difference is that *ngIf will remove the element from the DOM, while [hidden] actually plays with the CSS style by setting `display:none`. Generally it is expensive to add and remove stuff from the DOM for frequent actions.
 
 ## What is slice pipe?
 
-    The slice pipe is used to create a new Array or String containing a subset (slice) of the elements. The syntax looks like as below,
-    ```javascript
-    {{ value_expression | slice : start [ : end ] }}
-    ```
-    For example, you can provide 'hello' list based on a greeting array,
-    ```javascript
-    @Component({
-      selector: 'list-pipe',
-      template: `<ul>
-        <li *ngFor="let i of greeting | slice:0:5">{{i}}</li>
-      </ul>`
-    })
-    export class PipeListComponent {
-      greeting: string[] = ['h', 'e', 'l', 'l', 'o', 'm','o', 'r', 'n', 'i', 'n', 'g'];
-    }
-    ```
+  The slice pipe is used to create a new Array or String containing a subset (slice) of the elements. The syntax looks like as below,
+  ```javascript
+  {{ value_expression | slice : start [ : end ] }}
+  ```
+  For example, you can provide 'hello' list based on a greeting array,
+  ```javascript
+  @Component({
+    selector: 'list-pipe',
+    template: `<ul>
+      <li *ngFor="let i of greeting | slice:0:5">{{i}}</li>
+    </ul>`
+  })
+  export class PipeListComponent {
+    greeting: string[] = ['h', 'e', 'l', 'l', 'o', 'm','o', 'r', 'n', 'i', 'n', 'g'];
+  }
+  ```
 
 ## What is index property in ngFor directive?
 
-    The index property of the NgFor directive is used to return the zero-based index of the item in each iteration. You can capture the index in a template input variable and use it in the template.
+  The index property of the NgFor directive is used to return the zero-based index of the item in each iteration. You can capture the index in a template input variable and use it in the template.
 
-    For example, you can capture the index in a variable named indexVar and displays it with the todo's name using ngFor directive as below.
-    ```javascript
-    <div *ngFor="let todo of todos; let i=index">{{i + 1}} - {{todo.name}}</div>
-    ```
+  For example, you can capture the index in a variable named indexVar and displays it with the todo's name using ngFor directive as below.
+  ```javascript
+  <div *ngFor="let todo of todos; let i=index">{{i + 1}} - {{todo.name}}</div>
+  ```
 
 ## What is the purpose of ngFor trackBy?
 
-    The main purpose of using *ngFor with trackBy option is performance optimization. Normally if you use NgFor with large data sets, a small change to one item by removing or adding an item, can trigger a cascade of DOM manipulations. In this case, Angular sees only a fresh list of new object references and to replace the old DOM elements with all new DOM elements. You can help Angular to track which items added or removed by providing a `trackBy` function which takes the index and the current item as arguments and needs to return the unique identifier for this item.
+  The main purpose of using *ngFor with trackBy option is performance optimization. Normally if you use NgFor with large data sets, a small change to one item by removing or adding an item, can trigger a cascade of DOM manipulations. In this case, Angular sees only a fresh list of new object references and to replace the old DOM elements with all new DOM elements. You can help Angular to track which items added or removed by providing a `trackBy` function which takes the index and the current item as arguments and needs to return the unique identifier for this item.
 
-    For example, lets set trackBy to the trackByTodos() method
-    ```javascript
-    <div *ngFor="let todo of todos; trackBy: trackByTodos">
-      ({{todo.id}}) {{todo.name}}
-    </div>
-    ```
-    and define the trackByTodos method,
-    ```javascript
-    trackByTodos(index: number, item: Todo): number { return todo.id; }
-    ```
+  For example, lets set trackBy to the trackByTodos() method
+  ```javascript
+  <div *ngFor="let todo of todos; trackBy: trackByTodos">
+    ({{todo.id}}) {{todo.name}}
+  </div>
+  ```
+  and define the trackByTodos method,
+  ```javascript
+  trackByTodos(index: number, item: Todo): number { return todo.id; }
+  ```
 
 ## What is the purpose of ngSwitch directive?
 
-    **NgSwitch** directive is similar to JavaScript switch statement which displays one element from among several possible elements, based on a switch condition. In this case only the selected element placed into the DOM. It has been used along with `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` directives.
+  **NgSwitch** directive is similar to JavaScript switch statement which displays one element from among several possible elements, based on a switch condition. In this case only the selected element placed into the DOM. It has been used along with `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` directives.
 
-    For example, let's display the browser details based on selected browser using ngSwitch directive.
-    ```javascript
-    <div [ngSwitch]="currentBrowser.name">
-      <chrome-browser    *ngSwitchCase="'chrome'"    [item]="currentBrowser"></chrome-browser>
-      <firefox-browser   *ngSwitchCase="'firefox'"     [item]="currentBrowser"></firefox-browser>
-      <opera-browser     *ngSwitchCase="'opera'"  [item]="currentBrowser"></opera-browser>
-      <safari-browser     *ngSwitchCase="'safari'"   [item]="currentBrowser"></safari-browser>
-      <ie-browser  *ngSwitchDefault           [item]="currentItem"></ie-browser>
-    </div>
-    ```
+  For example, let's display the browser details based on selected browser using ngSwitch directive.
+  ```javascript
+  <div [ngSwitch]="currentBrowser.name">
+    <chrome-browser    *ngSwitchCase="'chrome'"    [item]="currentBrowser"></chrome-browser>
+    <firefox-browser   *ngSwitchCase="'firefox'"     [item]="currentBrowser"></firefox-browser>
+    <opera-browser     *ngSwitchCase="'opera'"  [item]="currentBrowser"></opera-browser>
+    <safari-browser     *ngSwitchCase="'safari'"   [item]="currentBrowser"></safari-browser>
+    <ie-browser  *ngSwitchDefault           [item]="currentItem"></ie-browser>
+  </div>
+  ```
 
 ## Is it possible to do aliasing for inputs and outputs?
 
-    Yes, it is possible to do aliasing for inputs and outputs in two ways.
-    1. **Aliasing in metadata:** The inputs and outputs in the metadata aliased using a colon-delimited (:) string with the directive property name on the left and the public alias on the right. i.e. It will be in the format of propertyName:alias.
-        ```javascript
-        inputs: ['input1: buyItem'],
-        outputs: ['outputEvent1: completedEvent']
-        ```
-    2. **Aliasing with @Input()/@Output() decorator:** The alias can be specified for the property name by passing the alias name to the @Input()/@Output() decorator.i.e. It will be in the form of @Input(alias) or @Output(alias).
-        ```javascript
-        @Input('buyItem') input1: string;
-        @Output('completedEvent') outputEvent1 = new EventEmitter<string>();
-        ```
+  Yes, it is possible to do aliasing for inputs and outputs in two ways.
+  1. **Aliasing in metadata:** The inputs and outputs in the metadata aliased using a colon-delimited (:) string with the directive property name on the left and the public alias on the right. i.e. It will be in the format of propertyName:alias.
+      ```javascript
+      inputs: ['input1: buyItem'],
+      outputs: ['outputEvent1: completedEvent']
+      ```
+  2. **Aliasing with @Input()/@Output() decorator:** The alias can be specified for the property name by passing the alias name to the @Input()/@Output() decorator.i.e. It will be in the form of @Input(alias) or @Output(alias).
+      ```javascript
+      @Input('buyItem') input1: string;
+      @Output('completedEvent') outputEvent1 = new EventEmitter<string>();
+      ```
 
 ## What is safe navigation operator?
 
-    The safe navigation operator(?)(or known as Elvis Operator) is used to guard against `null` and `undefined` values in property paths when you are not aware whether a path exists or not. i.e. It returns value of the object path if it exists, else it returns the null value.
+  The safe navigation operator(?)(or known as Elvis Operator) is used to guard against `null` and `undefined` values in property paths when you are not aware whether a path exists or not. i.e. It returns value of the object path if it exists, else it returns the null value.
 
-    For example, you can access nested properties of a user profile easily without null reference errors as below,
-    ```javascript
-    <p>The user firstName is: {{user?.fullName.firstName}}</p>
-    ```
-    Using this safe navigation operator, Angular framework stops evaluating the expression when it hits the first null value and renders the view without any errors.
+  For example, you can access nested properties of a user profile easily without null reference errors as below,
+  ```javascript
+  <p>The user firstName is: {{user?.fullName.firstName}}</p>
+  ```
+  Using this safe navigation operator, Angular framework stops evaluating the expression when it hits the first null value and renders the view without any errors.
 
 ## Is mandatory to pass static flag for ViewChild?
 
-    In Angular 8, the static flag is required for ViewChild. Whereas in Angular9, you no longer need to pass this property. Once you updated to Angular9 using `ng update`, the migration will remove { static: false } script everywhere.
-    ```javascript
-    @ViewChild(ChildDirective) child: ChildDirective; // Angular9 usage
-    @ViewChild(ChildDirective, { static: false }) child: ChildDirective; //Angular8 usage
-    ```
+  In Angular 8, the static flag is required for ViewChild. Whereas in Angular9, you no longer need to pass this property. Once you updated to Angular9 using `ng update`, the migration will remove { static: false } script everywhere.
+  ```javascript
+  @ViewChild(ChildDirective) child: ChildDirective; // Angular9 usage
+  @ViewChild(ChildDirective, { static: false }) child: ChildDirective; //Angular8 usage
+  ```
 
 ## What are the list of template expression operators?
 
-    The Angular template expression language supports three special template expression operators.
-    1. Pipe operator
-    2. Safe navigation operator
-    3. Non-null assertion operator
+  The Angular template expression language supports three special template expression operators.
+  1. Pipe operator
+  2. Safe navigation operator
+  3. Non-null assertion operator
 
 ## What is the precedence between pipe and ternary operators?
 
-    The pipe operator has a higher precedence than the ternary operator (?:). For example, the expression `first ? second : third | fourth` is parsed as `first ? second : (third | fourth)`.
+  The pipe operator has a higher precedence than the ternary operator (?:). For example, the expression `first ? second : third | fourth` is parsed as `first ? second : (third | fourth)`.
 
 ## What is an entry component?
 
-    An entry component is any component that Angular loads imperatively(i.e, not referencing it in the template) by type. Due to this behavior, they can’t be found by the Angular compiler during compilation. These components created dynamically with `ComponentFactoryResolver`.
+  An entry component is any component that Angular loads imperatively(i.e, not referencing it in the template) by type. Due to this behavior, they can’t be found by the Angular compiler during compilation. These components created dynamically with `ComponentFactoryResolver`.
 
-    Basically, there are two main kinds of entry components which are following -
-    1. The bootstrapped root component
-    2. A component you specify in a route
+  Basically, there are two main kinds of entry components which are following -
+  1. The bootstrapped root component
+  2. A component you specify in a route
 
 ## What is a bootstrapped component?
 
-    A bootstrapped component is an entry component that Angular loads into the DOM during the bootstrap process or application launch time. Generally, this bootstrapped or root component is named as `AppComponent` in your root module using `bootstrap` property as below.
-    ```js
-    @NgModule({
-      declarations: [
-        AppComponent
-      ],
-      imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule,
-        AppRoutingModule
-      ],
-      providers: [],
-      bootstrap: [AppComponent] // bootstrapped entry component need to be declared here
-    })
-    ```
+  A bootstrapped component is an entry component that Angular loads into the DOM during the bootstrap process or application launch time. Generally, this bootstrapped or root component is named as `AppComponent` in your root module using `bootstrap` property as below.
+  ```js
+  @NgModule({
+    declarations: [
+      AppComponent
+    ],
+    imports: [
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent] // bootstrapped entry component need to be declared here
+  })
+  ```
 
 ## How do you manually bootstrap an application?
 
-    You can use `ngDoBootstrap` hook for a manual bootstrapping of the application instead of using bootstrap array in `@NgModule` annotation. This hook is part of `DoBootstap` interface.
-    ```js
-    interface DoBootstrap {
-      ngDoBootstrap(appRef: ApplicationRef): void
+  You can use `ngDoBootstrap` hook for a manual bootstrapping of the application instead of using bootstrap array in `@NgModule` annotation. This hook is part of `DoBootstap` interface.
+  ```js
+  interface DoBootstrap {
+    ngDoBootstrap(appRef: ApplicationRef): void
+  }
+  ```
+  The module needs to be implement the above interface to use the hook for bootstrapping.
+  ```js
+  class AppModule implements DoBootstrap {
+    ngDoBootstrap(appRef: ApplicationRef) {
+      appRef.bootstrap(AppComponent); // bootstrapped entry component need to be passed
     }
-    ```
-    The module needs to be implement the above interface to use the hook for bootstrapping.
-    ```js
-    class AppModule implements DoBootstrap {
-      ngDoBootstrap(appRef: ApplicationRef) {
-        appRef.bootstrap(AppComponent); // bootstrapped entry component need to be passed
-      }
-    }
-    ```
+  }
+  ```
 
 ## Is it necessary for bootstrapped component to be entry component?
 
-    Yes, the bootstrapped component needs to be an entry component. This is because the bootstrapping process is an imperative process.
+  Yes, the bootstrapped component needs to be an entry component. This is because the bootstrapping process is an imperative process.
 
 ## What is a routed entry component?
 
-    The components referenced in router configuration are called as routed entry components. This routed entry component defined in a route definition as below,
-    ```js
-    const routes: Routes = [
-      {
-        path: '',
-        component: TodoListComponent // router entry component
-      }
-    ];
-    ```
-    Since router definition requires you to add the component in two places (router and entryComponents), these components are always entry components.
+  The components referenced in router configuration are called as routed entry components. This routed entry component defined in a route definition as below,
+  ```js
+  const routes: Routes = [
+    {
+      path: '',
+      component: TodoListComponent // router entry component
+    }
+  ];
+  ```
+  Since router definition requires you to add the component in two places (router and entryComponents), these components are always entry components.
 
-    **Note:** The compilers are smart enough to recognize a router definition and automatically add the router component into `entryComponents`.
+  **Note:** The compilers are smart enough to recognize a router definition and automatically add the router component into `entryComponents`.
 
 ## Why is not necessary to use entryComponents array every time?
 
-    Most of the time, you don't need to explicity to set entry components in entryComponents array of ngModule decorator. Because angular adds components from both @NgModule.bootstrap and route definitions to entry components automatically.
+  Most of the time, you don't need to explicity to set entry components in entryComponents array of ngModule decorator. Because angular adds components from both @NgModule.bootstrap and route definitions to entry components automatically.
 
 ## Do I still need to use entryComponents array in Angular9?
 
-    No. In previous angular releases, the entryComponents array of ngModule decorator is used to tell the compiler which components would be created and inserted dynamically in the view. In Angular9, this is not required anymore with Ivy.
+  No. In previous angular releases, the entryComponents array of ngModule decorator is used to tell the compiler which components would be created and inserted dynamically in the view. In Angular9, this is not required anymore with Ivy.
 
 ## Is it all components generated in production build?
 
-    No, only the entry components and template components appears in production builds. If a component isn't an entry component and isn't found in a template, the tree shaker will throw it away. Due to this reason, make sure to add only true entry components to reduce the bundle size.
+  No, only the entry components and template components appears in production builds. If a component isn't an entry component and isn't found in a template, the tree shaker will throw it away. Due to this reason, make sure to add only true entry components to reduce the bundle size.
 
 ## What is Angular compiler?
 
-    The Angular compiler is used to convert the application code into JavaScript code. It reads the template markup, combines it with the corresponding component class code, and emits component factories which creates JavaScript representation of the component along with elements of @Component metadata.
+  The Angular compiler is used to convert the application code into JavaScript code. It reads the template markup, combines it with the corresponding component class code, and emits component factories which creates JavaScript representation of the component along with elements of @Component metadata.
 
 ## What is the role of ngModule metadata in compilation process?
 
-    The `@NgModule` metadata is used to tell the Angular compiler what components to be compiled for this module and how to link this module with other modules.
+  The `@NgModule` metadata is used to tell the Angular compiler what components to be compiled for this module and how to link this module with other modules.
 
 ## How does angular finds components, directives and pipes?
 
-    The Angular compiler finds a component or directive in a template when it can match the selector of that component or directive in that template. Whereas it finds a pipe if the pipe's name appears within the pipe syntax of the template HTML.
+  The Angular compiler finds a component or directive in a template when it can match the selector of that component or directive in that template. Whereas it finds a pipe if the pipe's name appears within the pipe syntax of the template HTML.
 
 ## Give few examples for NgModules?
 
-    The Angular core libraries and third-party libraries are available as NgModules.
-    1. Angular libraries such as FormsModule, HttpClientModule, and RouterModule are NgModules.
-    2. Many third-party libraries such as Material Design, Ionic, and AngularFire2 are NgModules.
+  The Angular core libraries and third-party libraries are available as NgModules.
+  1. Angular libraries such as FormsModule, HttpClientModule, and RouterModule are NgModules.
+  2. Many third-party libraries such as Material Design, Ionic, and AngularFire2 are NgModules.
 
 ## What are feature modules?
 
-    Feature modules are NgModules, which are used for the purpose of organizing code. The feature module can be created with Angular CLI using the below command in the root directory,
-    ```javascript
-    ng generate module MyCustomFeature //
-    ```
-    Angular CLI creates a folder called `my-custom-feature` with a file inside called `my-custom-feature.module.ts` with the following contents
-    ```javascript
-    import { NgModule } from '@angular/core';
-    import { CommonModule } from '@angular/common';
+  Feature modules are NgModules, which are used for the purpose of organizing code. The feature module can be created with Angular CLI using the below command in the root directory,
+  ```javascript
+  ng generate module MyCustomFeature //
+  ```
+  Angular CLI creates a folder called `my-custom-feature` with a file inside called `my-custom-feature.module.ts` with the following contents
+  ```javascript
+  import { NgModule } from '@angular/core';
+  import { CommonModule } from '@angular/common';
 
-    @NgModule({
-      imports: [
-        CommonModule
-      ],
-      declarations: []
-    })
-    export class MyCustomFeature { }
-    ```
+  @NgModule({
+    imports: [
+      CommonModule
+    ],
+    declarations: []
+  })
+  export class MyCustomFeature { }
+  ```
 
-    **Note:**  The "Module" suffix shouldn't present in the name because the CLI appends it.
+  **Note:**  The "Module" suffix shouldn't present in the name because the CLI appends it.
 
 ## What are the imported modules in CLI generated feature modules?
 
-    In the CLI generated feature module, there are two JavaScript import statements at the top of the file
-    1. **NgModule:** InOrder to use the `@NgModule` decorator
-    2. **CommonModule:** It provides many common directives such as `ngIf` and `ngFor`.
+  In the CLI generated feature module, there are two JavaScript import statements at the top of the file
+  1. **NgModule:** InOrder to use the `@NgModule` decorator
+  2. **CommonModule:** It provides many common directives such as `ngIf` and `ngFor`.
 
 ## What are the differences between ngmodule and javascript module?
 
-    Below are the main differences between Angular NgModule and javascript module,
+  Below are the main differences between Angular NgModule and javascript module,
 
-    | NgModule | JavaScript module |
-    |---- | --------- |
-    | NgModule bounds declarable classes only | There is no restriction classes |
-    | List the module's classes in declarations array only | Can define all member classes in one giant file |
-    | It only export the declarable classes it owns or imports from other modules| It can export any classes |
-    | Extend the entire application with services by adding providers to provides array | Can't extend the application with services |
+  | NgModule | JavaScript module |
+  |---- | --------- |
+  | NgModule bounds declarable classes only | There is no restriction classes |
+  | List the module's classes in declarations array only | Can define all member classes in one giant file |
+  | It only export the declarable classes it owns or imports from other modules| It can export any classes |
+  | Extend the entire application with services by adding providers to provides array | Can't extend the application with services |
 
 ## What are the possible errors with declarations?
 
-    There are two common possible errors with declarations array,
-    1. If you use a component without declaring it, Angular returns an error message.
-    2. If you try to declare the same class in more than one module then compiler emits an error.
+  There are two common possible errors with declarations array,
+  1. If you use a component without declaring it, Angular returns an error message.
+  2. If you try to declare the same class in more than one module then compiler emits an error.
 
 ## What are the steps to use declaration elements?
 
-    Below are the steps to be followed to use declaration elements.
-    1. Create the element(component, directive and pipes) and export it from the file where you wrote it
-    2. Import it into the appropriate module.
-    3. Declare it in the @NgModule declarations array.
+  Below are the steps to be followed to use declaration elements.
+  1. Create the element(component, directive and pipes) and export it from the file where you wrote it
+  2. Import it into the appropriate module.
+  3. Declare it in the @NgModule declarations array.
 
 ## What happens if browserModule used in feature module?
 
-    If you do import `BrowserModule` into a lazy loaded feature module, Angular returns an error telling you to use `CommonModule` instead. Because BrowserModule’s providers are for the entire app so it should only be in the root module, not in feature module. Whereas Feature modules only need the common directives in CommonModule.
+  If you do import `BrowserModule` into a lazy loaded feature module, Angular returns an error telling you to use `CommonModule` instead. Because BrowserModule’s providers are for the entire app so it should only be in the root module, not in feature module. Whereas Feature modules only need the common directives in CommonModule.
 
-    ![ScreenShot](images/browser-module-error.gif)
+  ![ScreenShot](images/browser-module-error.gif)
 
 ## What are the types of feature modules?
 
-    Below are the five categories of feature modules,
-    1. **Domain:** Deliver a user experience dedicated to a particular application domain(For example, place an order, registration etc)
-    2. **Routed:** These are domain feature modules whose top components are the targets of router navigation routes.
-    3. **Routing:** It provides routing configuration for another module.
-    4. **Service:** It provides utility services such as data access and messaging(For example, HttpClientModule)
-    5. **Widget:** It makes components, directives, and pipes available to external modules(For example, third-party libraries such as Material UI)
+  Below are the five categories of feature modules,
+  1. **Domain:** Deliver a user experience dedicated to a particular application domain(For example, place an order, registration etc)
+  2. **Routed:** These are domain feature modules whose top components are the targets of router navigation routes.
+  3. **Routing:** It provides routing configuration for another module.
+  4. **Service:** It provides utility services such as data access and messaging(For example, HttpClientModule)
+  5. **Widget:** It makes components, directives, and pipes available to external modules(For example, third-party libraries such as Material UI)
 
 ## What is a provider?
 
-    A provider is an instruction to the Dependency Injection system on how to obtain a value for a dependency(aka services created). The service can be provided using Angular CLI as below,
-    ```javascript
-    ng generate service my-service
-    ```
-    The created service by CLI would be as below,
-    ```js
-    import { Injectable } from '@angular/core';
+  A provider is an instruction to the Dependency Injection system on how to obtain a value for a dependency(aka services created). The service can be provided using Angular CLI as below,
+  ```javascript
+  ng generate service my-service
+  ```
+  The created service by CLI would be as below,
+  ```js
+  import { Injectable } from '@angular/core';
 
-    @Injectable({
-      providedIn: 'root', //Angular provide the service in root injector
-    })
-    export class MyService {
-    }
-    ```
+  @Injectable({
+    providedIn: 'root', //Angular provide the service in root injector
+  })
+  export class MyService {
+  }
+  ```
 
 ## What is the recommendation for provider scope?
 
-    You should always provide your service in the root injector unless there is a case where you want the service to be available only if you import a particular @NgModule.
+  You should always provide your service in the root injector unless there is a case where you want the service to be available only if you import a particular @NgModule.
 
 ## How do you restrict provider scope to a module?
 
-    It is possible to restrict service provider scope to a specific module instead making available to entire application. There are two possible ways to do it.
-    1. **Using providedIn in service:**
-        ```js
-        import { Injectable } from '@angular/core';
-        import { SomeModule } from './some.module';
+  It is possible to restrict service provider scope to a specific module instead making available to entire application. There are two possible ways to do it.
+  1. **Using providedIn in service:**
+      ```js
+      import { Injectable } from '@angular/core';
+      import { SomeModule } from './some.module';
 
-        @Injectable({
-          providedIn: SomeModule,
-        })
-        export class SomeService {
-        }
-        ```
-    2. **Declare provider for the service in module:**
-        ```js
-        import { NgModule } from '@angular/core';
+      @Injectable({
+        providedIn: SomeModule,
+      })
+      export class SomeService {
+      }
+      ```
+  2. **Declare provider for the service in module:**
+      ```js
+      import { NgModule } from '@angular/core';
 
-        import { SomeService } from './some.service';
+      import { SomeService } from './some.service';
 
-        @NgModule({
-          providers: [SomeService],
-        })
-        export class SomeModule {
-        }
-        ```
+      @NgModule({
+        providers: [SomeService],
+      })
+      export class SomeModule {
+      }
+      ```
 
 ## How do you provide a singleton service?
 
-    There are two possible ways to provide a singleton service.
-    1. Set the providedIn property of the @Injectable() to "root". This is the preferred way(starting from Angular 6.0) of creating a singleton service since it makes your services tree-shakable.
+  There are two possible ways to provide a singleton service.
+  1. Set the providedIn property of the @Injectable() to "root". This is the preferred way(starting from Angular 6.0) of creating a singleton service since it makes your services tree-shakable.
 
-        ```js
-        import { Injectable } from '@angular/core';
+      ```js
+      import { Injectable } from '@angular/core';
 
-        @Injectable({
-          providedIn: 'root',
-        })
-        export class MyService {
-        }
-        ```
-    2. Include the service in root module or in a module that is only imported by root module. It has been used to register services before Angular 6.0.
+      @Injectable({
+        providedIn: 'root',
+      })
+      export class MyService {
+      }
+      ```
+  2. Include the service in root module or in a module that is only imported by root module. It has been used to register services before Angular 6.0.
 
-        ```js
-        @NgModule({
-          ...
-          providers: [MyService],
-          ...
-        })
-        ```
+      ```js
+      @NgModule({
+        ...
+        providers: [MyService],
+        ...
+      })
+      ```
 
 ## What are the different ways to remove duplicate service registration?
 
-    If a module defines provides and declarations then loading the module in multiple feature modules will duplicate the registration of the service. Below are the different ways to prevent this duplicate behavior.
-    1. Use the providedIn syntax instead of registering the service in the module.
-    2. Separate your services into their own module.
-    3. Define forRoot() and forChild() methods in the module.
+  If a module defines provides and declarations then loading the module in multiple feature modules will duplicate the registration of the service. Below are the different ways to prevent this duplicate behavior.
+  1. Use the providedIn syntax instead of registering the service in the module.
+  2. Separate your services into their own module.
+  3. Define forRoot() and forChild() methods in the module.
 
 ## How does forRoot method helpful to avoid duplicate router instances?
 
-    If the `RouterModule` module didn’t have forRoot() static method then each feature module would instantiate a new Router instance, which leads to broken application due to duplicate instances. After using forRoot() method, the root application module imports `RouterModule.forRoot(...)` and gets a Router, and all feature modules import `RouterModule.forChild(...)` which does not instantiate another Router.
+  If the `RouterModule` module didn’t have forRoot() static method then each feature module would instantiate a new Router instance, which leads to broken application due to duplicate instances. After using forRoot() method, the root application module imports `RouterModule.forRoot(...)` and gets a Router, and all feature modules import `RouterModule.forChild(...)` which does not instantiate another Router.
 
 ## What is a shared module?
 
-    The Shared Module is the module in which you put commonly used directives, pipes, and components into one module that is shared(import it) throughout the application.
+  The Shared Module is the module in which you put commonly used directives, pipes, and components into one module that is shared(import it) throughout the application.
 
-    For example, the below shared module imports CommonModule, FormsModule for common directives and components, pipes and directives based on the need,
-    ```js
-    import { CommonModule } from '@angular/common';
-    import { NgModule } from '@angular/core';
-    import { FormsModule } from '@angular/forms';
-    import { UserComponent } from './user.component';
-    import { NewUserDirective } from './new-user.directive';
-    import { OrdersPipe } from './orders.pipe';
+  For example, the below shared module imports CommonModule, FormsModule for common directives and components, pipes and directives based on the need,
+  ```js
+  import { CommonModule } from '@angular/common';
+  import { NgModule } from '@angular/core';
+  import { FormsModule } from '@angular/forms';
+  import { UserComponent } from './user.component';
+  import { NewUserDirective } from './new-user.directive';
+  import { OrdersPipe } from './orders.pipe';
 
-    @NgModule({
-    imports:      [ CommonModule ],
-    declarations: [ UserComponent, NewUserDirective, OrdersPipe ],
-    exports:      [ UserComponent, NewUserDirective, OrdersPipe,
-                    CommonModule, FormsModule ]
-    })
-    export class SharedModule { }
-    ```
+  @NgModule({
+  imports:      [ CommonModule ],
+  declarations: [ UserComponent, NewUserDirective, OrdersPipe ],
+  exports:      [ UserComponent, NewUserDirective, OrdersPipe,
+                  CommonModule, FormsModule ]
+  })
+  export class SharedModule { }
+  ```
 
 ## Can I share services using modules?
 
-    No, it is not recommended to share services by importing module. i.e Import modules when you want to use directives, pipes, and components only. The best approach to get a hold of shared services is through 'Angular dependency injection' because importing a module will result in a new service instance.
+  No, it is not recommended to share services by importing module. i.e Import modules when you want to use directives, pipes, and components only. The best approach to get a hold of shared services is through 'Angular dependency injection' because importing a module will result in a new service instance.
 
 ## What is ngcc?
 
-    The ngcc(Angular Compatibility Compiler) is a tool which upgrades node_module compiled with non-ivy ngc into ivy compliant format. The `postinstall` script from package.json will make sure your node_modules will be compatible with the Ivy renderer.
-    ```js
-    "scripts": {
-      "postinstall": "ngcc"
-    }
-    ```
+  The ngcc(Angular Compatibility Compiler) is a tool which upgrades node_module compiled with non-ivy ngc into ivy compliant format. The `postinstall` script from package.json will make sure your node_modules will be compatible with the Ivy renderer.
+  ```js
+  "scripts": {
+    "postinstall": "ngcc"
+  }
+  ```
 
-    Whereas, Ivy compiler (ngtsc), which compiles Ivy-compatible code.
+  Whereas, Ivy compiler (ngtsc), which compiles Ivy-compatible code.
 
 ## What classes should not be added to declarations?
 
-    The below class types shouldn't be added to declarations
-    1. A class which is already declared in any another module.
-    2. Directives imported from another module.
-    3. Module classes.
-    4. Service classes.
-    5. Non-Angular classes and objects, such as strings, numbers, functions, entity models, configurations, business logic, and helper classes.
+  The below class types shouldn't be added to declarations
+  1. A class which is already declared in any another module.
+  2. Directives imported from another module.
+  3. Module classes.
+  4. Service classes.
+  5. Non-Angular classes and objects, such as strings, numbers, functions, entity models, configurations, business logic, and helper classes.
 
 ## What is NgZone?
 
-    Angular provides a service called NgZone which creates a zone named `angular` to automatically trigger change detection when the following conditions are satisfied.
-    1. When a sync or async function is executed.
-    2. When there is no microTask scheduled.
+  Angular provides a service called NgZone which creates a zone named `angular` to automatically trigger change detection when the following conditions are satisfied.
+  1. When a sync or async function is executed.
+  2. When there is no microTask scheduled.
 
 ## What is NoopZone?
 
-    Zone is loaded/required by default in Angular applications and it helps Angular to know when to trigger the change detection. This way, it make sures developers focus on application development rather core part of Angular. You can also use Angular without Zone but the change detection need to be implemented on your own and `noop zone` need to be configured in bootstrap process.
-    Let's follow the below two steps to remove zone.js,
-    1. Remove the zone.js import from polyfills.ts.
-        ```js
-        /***************************************************************************************************
-        * Zone JS is required by default for Angular itself.
-        */
-        // import 'zone.js/dist/zone';  // Included with Angular CLI.
-        ```
-    2. Bootstrap Angular with noop zone in src/main.ts.
-        ```js
-        platformBrowserDynamic().bootstrapModule(AppModule, {ngZone: 'noop'})
-          .catch(err => console.error(err));
-        ```
+  Zone is loaded/required by default in Angular applications and it helps Angular to know when to trigger the change detection. This way, it make sures developers focus on application development rather core part of Angular. You can also use Angular without Zone but the change detection need to be implemented on your own and `noop zone` need to be configured in bootstrap process.
+  Let's follow the below two steps to remove zone.js,
+  1. Remove the zone.js import from polyfills.ts.
+      ```js
+      /***************************************************************************************************
+      * Zone JS is required by default for Angular itself.
+      */
+      // import 'zone.js/dist/zone';  // Included with Angular CLI.
+      ```
+  2. Bootstrap Angular with noop zone in src/main.ts.
+      ```js
+      platformBrowserDynamic().bootstrapModule(AppModule, {ngZone: 'noop'})
+        .catch(err => console.error(err));
+      ```
 
 ## What are the possible data update scenarios for change detection?
 
-    The change detection works in the following scenarios where the data changes needs to update the application HTML.
-    1. **Component initialization:** While bootstrapping the Angular application, Angular triggers the `ApplicationRef.tick()` to call change detection and View Rendering.
-    2. **Event listener:**  The DOM event listener can update the data in an Angular component and trigger the change detection too.
-        ```js
-        @Component({
-          selector: 'app-event-listener',
-          template: `
-            <button (click)="onClick()">Click</button>
-            {{message}}`
-        })
-        export class EventListenerComponent {
-          message = '';
+  The change detection works in the following scenarios where the data changes needs to update the application HTML.
+  1. **Component initialization:** While bootstrapping the Angular application, Angular triggers the `ApplicationRef.tick()` to call change detection and View Rendering.
+  2. **Event listener:**  The DOM event listener can update the data in an Angular component and trigger the change detection too.
+      ```js
+      @Component({
+        selector: 'app-event-listener',
+        template: `
+          <button (click)="onClick()">Click</button>
+          {{message}}`
+      })
+      export class EventListenerComponent {
+        message = '';
 
-          onClick() {
-            this.message = 'data updated';
-          }
+        onClick() {
+          this.message = 'data updated';
         }
-        ```
-    3. **HTTP Data Request:** You can get data from a server through an HTTP request
-        ```js
-        data = 'default value';
-        constructor(private httpClient: HttpClient) {}
+      }
+      ```
+  3. **HTTP Data Request:** You can get data from a server through an HTTP request
+      ```js
+      data = 'default value';
+      constructor(private httpClient: HttpClient) {}
 
-          ngOnInit() {
-            this.httpClient.get(this.serverUrl).subscribe(response => {
-              this.data = response.data; // change detection will happen automatically
-            });
-          }
-        ```
-    4. **Macro tasks setTimeout() or setInterval():** You can update the data in the callback function of setTimeout or setInterval
-        ```js
-        data = 'default value';
+        ngOnInit() {
+          this.httpClient.get(this.serverUrl).subscribe(response => {
+            this.data = response.data; // change detection will happen automatically
+          });
+        }
+      ```
+  4. **Macro tasks setTimeout() or setInterval():** You can update the data in the callback function of setTimeout or setInterval
+      ```js
+      data = 'default value';
 
-          ngOnInit() {
-            setTimeout(() => {
-              this.data = 'data updated'; // Change detection will happen automatically
-            });
-          }
-        ```
-    5. **Micro tasks Promises:** You can update the data in the callback function of promise
-        ```js
-        data = 'initial value';
+        ngOnInit() {
+          setTimeout(() => {
+            this.data = 'data updated'; // Change detection will happen automatically
+          });
+        }
+      ```
+  5. **Micro tasks Promises:** You can update the data in the callback function of promise
+      ```js
+      data = 'initial value';
 
-          ngOnInit() {
-            Promise.resolve(1).then(v => {
-              this.data = v; // Change detection will happen automatically
-            });
-          }
-        ```
-    6. **Async operations like Web sockets and Canvas:** The data can be updated asynchronously using WebSocket.onmessage() and Canvas.toBlob().
+        ngOnInit() {
+          Promise.resolve(1).then(v => {
+            this.data = v; // Change detection will happen automatically
+          });
+        }
+      ```
+  6. **Async operations like Web sockets and Canvas:** The data can be updated asynchronously using WebSocket.onmessage() and Canvas.toBlob().
 
 ## What is a zone context?
 
-    Execution Context is an abstract concept that holds information about the environment within the current code being executed. A zone provides an execution context that persists across asynchronous operations is called as zone context. For example, the zone context will be same in both outside and inside setTimeout callback function,
-    ```js
-    zone.run(() => {
-      // outside zone
+  Execution Context is an abstract concept that holds information about the environment within the current code being executed. A zone provides an execution context that persists across asynchronous operations is called as zone context. For example, the zone context will be same in both outside and inside setTimeout callback function,
+  ```js
+  zone.run(() => {
+    // outside zone
+    expect(zoneThis).toBe(zone);
+    setTimeout(function() {
+      // the same outside zone exist here
       expect(zoneThis).toBe(zone);
-      setTimeout(function() {
-        // the same outside zone exist here
-        expect(zoneThis).toBe(zone);
-      });
     });
-    ```
-    The current zone is retrieved through `Zone.current`.
+  });
+  ```
+  The current zone is retrieved through `Zone.current`.
 
 ## What are the lifecycle hooks of a zone?
 
-    There are four lifecycle hooks for asynchronous operations from zone.js.
-    1. **onScheduleTask:** This hook triggers when a new asynchronous task is scheduled. For example, when you call setTimeout()
-        ```js
-        onScheduleTask: function(delegate, curr, target, task) {
-            console.log('new task is scheduled:', task.type, task.source);
-            return delegate.scheduleTask(target, task);
-          }
-        ```
-    2. **onInvokeTask:** This hook triggers when an asynchronous task is about to execute. For example, when the callback of setTimeout() is about to execute.
-        ```js
-        onInvokeTask: function(delegate, curr, target, task, applyThis, applyArgs) {
-            console.log('task will be invoked:', task.type, task.source);
-            return delegate.invokeTask(target, task, applyThis, applyArgs);
-          }
-        ```
-    3. **onHasTask:** This hook triggers when the status of one kind of task inside a zone changes from stable(no tasks in the zone) to unstable(a new task is scheduled in the zone) or from unstable to stable.
-        ```js
-          onHasTask: function(delegate, curr, target, hasTaskState) {
-            console.log('task state changed in the zone:', hasTaskState);
-            return delegate.hasTask(target, hasTaskState);
-          }
-        ```
-    4. **onInvoke:** This hook triggers when a synchronous function is going to execute in the zone.
-        ```js
-        onInvoke: function(delegate, curr, target, callback, applyThis, applyArgs) {
-            console.log('the callback will be invoked:', callback);
-            return delegate.invoke(target, callback, applyThis, applyArgs);
-          }
-        ```
+  There are four lifecycle hooks for asynchronous operations from zone.js.
+  1. **onScheduleTask:** This hook triggers when a new asynchronous task is scheduled. For example, when you call setTimeout()
+      ```js
+      onScheduleTask: function(delegate, curr, target, task) {
+          console.log('new task is scheduled:', task.type, task.source);
+          return delegate.scheduleTask(target, task);
+        }
+      ```
+  2. **onInvokeTask:** This hook triggers when an asynchronous task is about to execute. For example, when the callback of setTimeout() is about to execute.
+      ```js
+      onInvokeTask: function(delegate, curr, target, task, applyThis, applyArgs) {
+          console.log('task will be invoked:', task.type, task.source);
+          return delegate.invokeTask(target, task, applyThis, applyArgs);
+        }
+      ```
+  3. **onHasTask:** This hook triggers when the status of one kind of task inside a zone changes from stable(no tasks in the zone) to unstable(a new task is scheduled in the zone) or from unstable to stable.
+      ```js
+        onHasTask: function(delegate, curr, target, hasTaskState) {
+          console.log('task state changed in the zone:', hasTaskState);
+          return delegate.hasTask(target, hasTaskState);
+        }
+      ```
+  4. **onInvoke:** This hook triggers when a synchronous function is going to execute in the zone.
+      ```js
+      onInvoke: function(delegate, curr, target, callback, applyThis, applyArgs) {
+          console.log('the callback will be invoked:', callback);
+          return delegate.invoke(target, callback, applyThis, applyArgs);
+        }
+      ```
 
 ## What are the methods of NgZone used to control change detection?
 
-    NgZone service provides a `run()` method that allows you to execute a function inside the angular zone. This function is used to execute third party APIs which are not handled by Zone and trigger change detection automatically at the correct time.
-    ```js
-    export class AppComponent implements OnInit {
-      constructor(private ngZone: NgZone) {}
-      ngOnInit() {
-        // use ngZone.run() to make the asynchronous operation in the angular zone
-        this.ngZone.run(() => {
-          someNewAsyncAPI(() => {
-            // update the data of the component
-          });
+  NgZone service provides a `run()` method that allows you to execute a function inside the angular zone. This function is used to execute third party APIs which are not handled by Zone and trigger change detection automatically at the correct time.
+  ```js
+  export class AppComponent implements OnInit {
+    constructor(private ngZone: NgZone) {}
+    ngOnInit() {
+      // use ngZone.run() to make the asynchronous operation in the angular zone
+      this.ngZone.run(() => {
+        someNewAsyncAPI(() => {
+          // update the data of the component
         });
-      }
+      });
     }
-    ```
-    Whereas `runOutsideAngular()` method is used when you don't want to trigger change detection.
-    ```js
-    export class AppComponent implements OnInit {
-      constructor(private ngZone: NgZone) {}
-      ngOnInit() {
-        // Use this method when you know no data will be updated
-        this.ngZone.runOutsideAngular(() => {
-          setTimeout(() => {
-            // update component data and don't trigger change detection
-          });
+  }
+  ```
+  Whereas `runOutsideAngular()` method is used when you don't want to trigger change detection.
+  ```js
+  export class AppComponent implements OnInit {
+    constructor(private ngZone: NgZone) {}
+    ngOnInit() {
+      // Use this method when you know no data will be updated
+      this.ngZone.runOutsideAngular(() => {
+        setTimeout(() => {
+          // update component data and don't trigger change detection
         });
-      }
+      });
     }
-    ```
+  }
+  ```
 
 ## How do you change the settings of zonejs?
 
-    You can change the settings of zone by configuring them in a separate file and import it just after zonejs import.
-    For example, you can disable the requestAnimationFrame() monkey patch to prevent change detection for no data update as one setting and prevent DOM events(a mousemove or scroll event) to trigger change detection. Let's say the new file named zone-flags.js,
-    ```js
-    // disable patching requestAnimationFrame
-    (window as any).__Zone_disable_requestAnimationFrame = true;
+  You can change the settings of zone by configuring them in a separate file and import it just after zonejs import.
+  For example, you can disable the requestAnimationFrame() monkey patch to prevent change detection for no data update as one setting and prevent DOM events(a mousemove or scroll event) to trigger change detection. Let's say the new file named zone-flags.js,
+  ```js
+  // disable patching requestAnimationFrame
+  (window as any).__Zone_disable_requestAnimationFrame = true;
 
-    // disable patching specified eventNames
-    (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove'];
-    ```
-    The above configuration file can be imported in a polyfill.ts file as below,
-    ```js
-    /***************************************************************************************************
-    * Zone JS is required by default for Angular.
-    */
-    import `./zone-flags`;
-    import 'zone.js/dist/zone';  // Included with Angular CLI.
-    ```
+  // disable patching specified eventNames
+  (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove'];
+  ```
+  The above configuration file can be imported in a polyfill.ts file as below,
+  ```js
+  /***************************************************************************************************
+  * Zone JS is required by default for Angular.
+  */
+  import `./zone-flags`;
+  import 'zone.js/dist/zone';  // Included with Angular CLI.
+  ```
 
 ## How do you trigger an animation?
 
-    Angular provides a `trigger()` function for animation in order to collect the states and transitions with a specific animation name, so that you can attach it to the triggering element in the HTML template. This function watch for changes and trigger initiates the actions when a change occurs.
-    For example, let's create trigger named `upDown`, and attach it to the button element.
-    ```js
-    content_copy
-    @Component({
-      selector: 'app-up-down',
-      animations: [
-        trigger('upDown', [
-          state('up', style({
-            height: '200px',
-            opacity: 1,
-            backgroundColor: 'yellow'
-          })),
-          state('down', style({
-            height: '100px',
-            opacity: 0.5,
-            backgroundColor: 'green'
-          })),
-          transition('up => down', [
-            animate('1s')
-          ]),
-          transition('down => up', [
-            animate('0.5s')
-          ]),
+  Angular provides a `trigger()` function for animation in order to collect the states and transitions with a specific animation name, so that you can attach it to the triggering element in the HTML template. This function watch for changes and trigger initiates the actions when a change occurs.
+  For example, let's create trigger named `upDown`, and attach it to the button element.
+  ```js
+  content_copy
+  @Component({
+    selector: 'app-up-down',
+    animations: [
+      trigger('upDown', [
+        state('up', style({
+          height: '200px',
+          opacity: 1,
+          backgroundColor: 'yellow'
+        })),
+        state('down', style({
+          height: '100px',
+          opacity: 0.5,
+          backgroundColor: 'green'
+        })),
+        transition('up => down', [
+          animate('1s')
         ]),
-      ],
-      templateUrl: 'up-down.component.html',
-      styleUrls: ['up-down.component.css']
-    })
-    export class UpDownComponent {
-      isUp = true;
+        transition('down => up', [
+          animate('0.5s')
+        ]),
+      ]),
+    ],
+    templateUrl: 'up-down.component.html',
+    styleUrls: ['up-down.component.css']
+  })
+  export class UpDownComponent {
+    isUp = true;
 
-      toggle() {
-        this.isUp = !this.isUp;
-      }
+    toggle() {
+      this.isUp = !this.isUp;
+    }
 
-    ```
+  ```
 
 ## How do you configure injectors with providers at different levels?
 
-    You can configure injectors with providers at different levels of your application by setting a metadata value. The configuration can happen in one of three places,
-    1. In the `@Injectable()` decorator for the service itself
-    2. In the `@NgModule()` decorator for an NgModule
-    3. In the `@Component()` decorator for a component
+  You can configure injectors with providers at different levels of your application by setting a metadata value. The configuration can happen in one of three places,
+  1. In the `@Injectable()` decorator for the service itself
+  2. In the `@NgModule()` decorator for an NgModule
+  3. In the `@Component()` decorator for a component
 
 ## Is it mandatory to use injectable on every service class?
 
-    No. The `@Injectable()` decorator is not strictly required if the class has other Angular decorators on it or does not have any dependencies. But the important thing here is any class that is going to be injected with Angular is decorated.
-    i.e, If we add the decorator, the metadata `design:paramtypes` is added, and the dependency injection can do it's job. That is the exact reason to add the @Injectable() decorator on a service if this service has some dependencies itself.
-    For example, Let's see the different variations of AppService in a root component,
-    1. The below AppService can be injected in AppComponent without any problems. This is because there are no dependency services inside AppService.
-        ```js
-        export class AppService {
-          constructor() {
-            console.log('A new app service');
-          }
+  No. The `@Injectable()` decorator is not strictly required if the class has other Angular decorators on it or does not have any dependencies. But the important thing here is any class that is going to be injected with Angular is decorated.
+  i.e, If we add the decorator, the metadata `design:paramtypes` is added, and the dependency injection can do it's job. That is the exact reason to add the @Injectable() decorator on a service if this service has some dependencies itself.
+  For example, Let's see the different variations of AppService in a root component,
+  1. The below AppService can be injected in AppComponent without any problems. This is because there are no dependency services inside AppService.
+      ```js
+      export class AppService {
+        constructor() {
+          console.log('A new app service');
         }
-        ```
-    2. The below AppService with dummy decorator and httpService can be injected in AppComponent without any problems. This is because meta information is generated with dummy decorator.
-        ```js
-        function SomeDummyDecorator() {
-          return (constructor: Function) => console.log(constructor);
-        }
+      }
+      ```
+  2. The below AppService with dummy decorator and httpService can be injected in AppComponent without any problems. This is because meta information is generated with dummy decorator.
+      ```js
+      function SomeDummyDecorator() {
+        return (constructor: Function) => console.log(constructor);
+      }
 
-        @SomeDummyDecorator()
-        export class AppService {
-          constructor(http: HttpService) {
-            console.log(http);
-          }
+      @SomeDummyDecorator()
+      export class AppService {
+        constructor(http: HttpService) {
+          console.log(http);
         }
-        ```
-    and the generated javascript code of above service has meta information about HttpService,
-        ```js
-        var AppService = (function () {
-            function AppService(http) {
-                console.log(http);
-            }
-            AppService = __decorate([
-                core_1.Injectable(),
-                __metadata('design:paramtypes', [http_service_1.HttpService])
-            ], AppService);
-            return AppService;
-        }());
-        exports.AppService = AppService;
-        ```
-    3. The below AppService with @injectable decorator and httpService can be injected in AppComponent without any problems. This is because meta information is generated with Injectable decorator.
-        ```js
-        @Injectable({
-          providedIn: 'root',
-        })
-        export class AppService {
-          constructor(http: HttpService) {
-            console.log(http);
+      }
+      ```
+  and the generated javascript code of above service has meta information about HttpService,
+      ```js
+      var AppService = (function () {
+          function AppService(http) {
+              console.log(http);
           }
+          AppService = __decorate([
+              core_1.Injectable(),
+              __metadata('design:paramtypes', [http_service_1.HttpService])
+          ], AppService);
+          return AppService;
+      }());
+      exports.AppService = AppService;
+      ```
+  3. The below AppService with @injectable decorator and httpService can be injected in AppComponent without any problems. This is because meta information is generated with Injectable decorator.
+      ```js
+      @Injectable({
+        providedIn: 'root',
+      })
+      export class AppService {
+        constructor(http: HttpService) {
+          console.log(http);
         }
-        ```
+      }
+      ```
 
 ## What is an optional dependency?
 
-    The optional dependency is a parameter decorator to be used on constructor parameters, which marks the parameter as being an optional dependency. Due to this, the DI framework provides null if the dependency is not found.
-    For example, If you don't register a logger provider anywhere, the injector sets the value of logger(or logger service) to null in the below class.
+  The optional dependency is a parameter decorator to be used on constructor parameters, which marks the parameter as being an optional dependency. Due to this, the DI framework provides null if the dependency is not found.
+  For example, If you don't register a logger provider anywhere, the injector sets the value of logger(or logger service) to null in the below class.
 
-  ```js
-  import { Optional } from '@angular/core';
+```js
+import { Optional } from '@angular/core';
 
-  constructor(@Optional() private logger?: Logger) {
-    if (this.logger) {
-      this.logger.log('This is an optional dependency message');
-    } else {
-      console.log('The logger is not registered');
-    }
+constructor(@Optional() private logger?: Logger) {
+  if (this.logger) {
+    this.logger.log('This is an optional dependency message');
+  } else {
+    console.log('The logger is not registered');
   }
+}
 
 ````
 
 
 
 ##  What are the types of injector hierarchies?
-  There are two types of injector hierarchies in Angular
+There are two types of injector hierarchies in Angular
 
-  1. **ModuleInjector hierarchy:** It configure on a module level using an @NgModule() or @Injectable() annotation.
-  2. **ElementInjector hierarchy:** It created implicitly at each DOM element. Also it is empty by default unless you configure it in the providers property on @Directive() or @Component().
+1. **ModuleInjector hierarchy:** It configure on a module level using an @NgModule() or @Injectable() annotation.
+2. **ElementInjector hierarchy:** It created implicitly at each DOM element. Also it is empty by default unless you configure it in the providers property on @Directive() or @Component().
 
 
 
 ##  What are reactive forms?
-  Reactive forms is a model-driven approach for creating forms in a reactive style(form inputs changes over time). These are built around observable streams, where form inputs and values are provided as streams of input values. Let's follow the below steps to create reactive forms,
-  1. Register the reactive forms module which declares reactive-form directives in your app
-      ```js
-      import { ReactiveFormsModule } from '@angular/forms';
+Reactive forms is a model-driven approach for creating forms in a reactive style(form inputs changes over time). These are built around observable streams, where form inputs and values are provided as streams of input values. Let's follow the below steps to create reactive forms,
+1. Register the reactive forms module which declares reactive-form directives in your app
+    ```js
+    import { ReactiveFormsModule } from '@angular/forms';
 
-      @NgModule({
-        imports: [
-          // other imports ...
-          ReactiveFormsModule
-        ],
-      })
-      export class AppModule { }
-      ```
-  2. Create a new FormControl instance and save it in the component.
-      ```js
-      import { Component } from '@angular/core';
-      import { FormControl } from '@angular/forms';
+    @NgModule({
+      imports: [
+        // other imports ...
+        ReactiveFormsModule
+      ],
+    })
+    export class AppModule { }
+    ```
+2. Create a new FormControl instance and save it in the component.
+    ```js
+    import { Component } from '@angular/core';
+    import { FormControl } from '@angular/forms';
 
-      @Component({
-        selector: 'user-profile',
-        styleUrls: ['./user-profile.component.css']
-      })
-      export class UserProfileComponent {
-        userName = new FormControl('');
-      }
-      ```
-  3. Register the FormControl in the template.
-      ```js
-      <label>
-        User name:
-        <input type="text" [formControl]="userName">
-      </label>
-      ```
-  Finally, the component with reactive form control appears as below,
-      ```js
-      import { Component } from '@angular/core';
-      import { FormControl } from '@angular/forms';
+    @Component({
+      selector: 'user-profile',
+      styleUrls: ['./user-profile.component.css']
+    })
+    export class UserProfileComponent {
+      userName = new FormControl('');
+    }
+    ```
+3. Register the FormControl in the template.
+    ```js
+    <label>
+      User name:
+      <input type="text" [formControl]="userName">
+    </label>
+    ```
+Finally, the component with reactive form control appears as below,
+    ```js
+    import { Component } from '@angular/core';
+    import { FormControl } from '@angular/forms';
 
-      @Component({
-        selector: 'user-profile',
-        styleUrls: ['./user-profile.component.css']
-        template: `
-          <label>
-            User name:
-            <input type="text" [formControl]="userName">
-          </label>
-        `
-      })
-      export class UserProfileComponent {
-        userName = new FormControl('');
-      }
-      ```
+    @Component({
+      selector: 'user-profile',
+      styleUrls: ['./user-profile.component.css']
+      template: `
+        <label>
+          User name:
+          <input type="text" [formControl]="userName">
+        </label>
+      `
+    })
+    export class UserProfileComponent {
+      userName = new FormControl('');
+    }
+    ```
 
 
 
 ##  What are dynamic forms?
-  Dynamic forms is a pattern in which we build a form dynamically based on metadata that describes a business object model. You can create them based on reactive form API.
+Dynamic forms is a pattern in which we build a form dynamically based on metadata that describes a business object model. You can create them based on reactive form API.
 
 
 ##  What are the different ways to group form controls?
-  Reactive forms provide two ways of grouping multiple related controls.
-  1. **FormGroup**: It defines a form with a fixed set of controls those can be managed together in an one object. It has same properties and methods similar to a FormControl instance.
-    This FormGroup can be nested to create complex forms as below.
-    ```js
-    import { Component } from '@angular/core';
-    import { FormGroup, FormControl } from '@angular/forms';
+Reactive forms provide two ways of grouping multiple related controls.
+1. **FormGroup**: It defines a form with a fixed set of controls those can be managed together in an one object. It has same properties and methods similar to a FormControl instance.
+  This FormGroup can be nested to create complex forms as below.
+  ```js
+  import { Component } from '@angular/core';
+  import { FormGroup, FormControl } from '@angular/forms';
 
-    @Component({
-      selector: 'user-profile',
-      templateUrl: './user-profile.component.html',
-      styleUrls: ['./user-profile.component.css']
-    })
-    export class UserProfileComponent {
-      userProfile = new FormGroup({
-        firstName: new FormControl(''),
-        lastName: new FormControl(''),
-        address: new FormGroup({
-              street: new FormControl(''),
-              city: new FormControl(''),
-              state: new FormControl(''),
-              zip: new FormControl('')
-            })
-      });
+  @Component({
+    selector: 'user-profile',
+    templateUrl: './user-profile.component.html',
+    styleUrls: ['./user-profile.component.css']
+  })
+  export class UserProfileComponent {
+    userProfile = new FormGroup({
+      firstName: new FormControl(''),
+      lastName: new FormControl(''),
+      address: new FormGroup({
+            street: new FormControl(''),
+            city: new FormControl(''),
+            state: new FormControl(''),
+            zip: new FormControl('')
+          })
+    });
 
-      onSubmit() {
-        // Store this.userProfile.value in DB
-      }
+    onSubmit() {
+      // Store this.userProfile.value in DB
     }
-    ```
-    ```html
-    <form [formGroup]="userProfile" (ngSubmit)="onSubmit()">
+  }
+  ```
+  ```html
+  <form [formGroup]="userProfile" (ngSubmit)="onSubmit()">
+
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+
+    <div formGroupName="address">
+      <h3>Address</h3>
 
       <label>
-        First Name:
-        <input type="text" formControlName="firstName">
+        Street:
+        <input type="text" formControlName="street">
       </label>
 
       <label>
-        Last Name:
-        <input type="text" formControlName="lastName">
+        City:
+        <input type="text" formControlName="city">
       </label>
 
-      <div formGroupName="address">
-        <h3>Address</h3>
+      <label>
+        State:
+        <input type="text" formControlName="state">
+      </label>
 
-        <label>
-          Street:
-          <input type="text" formControlName="street">
-        </label>
+      <label>
+        Zip Code:
+        <input type="text" formControlName="zip">
+      </label>
+      </div>
+      <button type="submit" [disabled]="!userProfile.valid">Submit</button>
 
-        <label>
-          City:
-          <input type="text" formControlName="city">
-        </label>
+  </form>
+  ```
+2. **FormArray:** It defines a dynamic form in an array format, where you can add and remove controls at run time. This is useful for dynamic forms when you don’t know how many controls will be present within the group.
+      ```js
+      import { Component } from '@angular/core';
+      import { FormArray, FormControl } from '@angular/forms';
 
-        <label>
-          State:
-          <input type="text" formControlName="state">
-        </label>
-
-        <label>
-          Zip Code:
-          <input type="text" formControlName="zip">
-        </label>
-        </div>
-        <button type="submit" [disabled]="!userProfile.valid">Submit</button>
-
-    </form>
-    ```
-  2. **FormArray:** It defines a dynamic form in an array format, where you can add and remove controls at run time. This is useful for dynamic forms when you don’t know how many controls will be present within the group.
-        ```js
-        import { Component } from '@angular/core';
-        import { FormArray, FormControl } from '@angular/forms';
-
-        @Component({
-          selector: 'order-form',
-          templateUrl: './order-form.component.html',
-          styleUrls: ['./order-form.component.css']
-        })
-        export class OrderFormComponent {
-          constructor () {
-            this.orderForm = new FormGroup({
-              firstName: new FormControl('John', Validators.minLength(3)),
-              lastName: new FormControl('Rodson'),
-              items: new FormArray([
-                new FormControl(null)
-              ])
-            });
-          }
-
-          onSubmitForm () {
-            // Save the items this.orderForm.value in DB
-          }
-
-          onAddItem () {
-            this.orderForm.controls
-            .items.push(new FormControl(null));
-          }
-
-          onRemoveItem (index) {
-            this.orderForm.controls['items'].removeAt(index);
-          }
+      @Component({
+        selector: 'order-form',
+        templateUrl: './order-form.component.html',
+        styleUrls: ['./order-form.component.css']
+      })
+      export class OrderFormComponent {
+        constructor () {
+          this.orderForm = new FormGroup({
+            firstName: new FormControl('John', Validators.minLength(3)),
+            lastName: new FormControl('Rodson'),
+            items: new FormArray([
+              new FormControl(null)
+            ])
+          });
         }
-        ```
-        ```html
-        <form [formControlName]="orderForm" (ngSubmit)="onSubmit()">
 
-          <label>
-            First Name:
-            <input type="text" formControlName="firstName">
-          </label>
+        onSubmitForm () {
+          // Save the items this.orderForm.value in DB
+        }
 
-          <label>
-            Last Name:
-            <input type="text" formControlName="lastName">
-          </label>
+        onAddItem () {
+          this.orderForm.controls
+          .items.push(new FormControl(null));
+        }
 
-          <div>
-          <p>Add items</p>
-          <ul formArrayName="items">
-            <li *ngFor="let item of orderForm.controls.items.controls; let i = index">
-              <input type="text" formControlName="{{i}}">
-              <button type="button" title="Remove Item" (click)="onRemoveItem(i)">Remove</button>
-            </li>
-          </ul>
-          <button type="button" (click)="onAddItem">
-            Add an item
-          </button>
-        </div>
-        ```
+        onRemoveItem (index) {
+          this.orderForm.controls['items'].removeAt(index);
+        }
+      }
+      ```
+      ```html
+      <form [formControlName]="orderForm" (ngSubmit)="onSubmit()">
+
+        <label>
+          First Name:
+          <input type="text" formControlName="firstName">
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" formControlName="lastName">
+        </label>
+
+        <div>
+        <p>Add items</p>
+        <ul formArrayName="items">
+          <li *ngFor="let item of orderForm.controls.items.controls; let i = index">
+            <input type="text" formControlName="{{i}}">
+            <button type="button" title="Remove Item" (click)="onRemoveItem(i)">Remove</button>
+          </li>
+        </ul>
+        <button type="button" (click)="onAddItem">
+          Add an item
+        </button>
+      </div>
+      ```
 
 
 
