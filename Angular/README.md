@@ -1436,7 +1436,7 @@ Now you can use the above pipe in template expression as below,
       (or)
       let username = 'John'; // initialized
       ```
-    3. **Function calls are not supported:** The compiler does not currently support function expressions or lambda functions. For example, you cannot set a provider's useFactory to an anonymous function or arrow function as below.
+  3. **Function calls are not supported:** The compiler does not currently support function expressions or lambda functions. For example, you cannot set a provider's useFactory to an anonymous function or arrow function as below.
       ```javascript
         providers: [
           { provide: MyStrategy, useFactory: function() { ... } },
@@ -1452,7 +1452,7 @@ Now you can use the above pipe in template expression as below,
           { provide: MyStrategy, useFactory: myStrategy },
           { provide: OtherStrategy, useFactory: otherStrategy },
       ```
-    4. **Destructured variable or constant not supported:** The compiler does not support references to variables assigned by destructuring.
+  4. **Destructured variable or constant not supported:** The compiler does not support references to variables assigned by destructuring.
       For example, you cannot write something like this:
       ```javascript
       import { user } from './user';
