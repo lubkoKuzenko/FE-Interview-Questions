@@ -2,7 +2,11 @@
 
 <img src="./images/developer.gif">
 
-- [HTML](./HTML/README.md)
+|                                            |                         |
+| ------------------------------------------ | ----------------------- |
+| <img src="./images/html.png" width="50" /> | [HTML](.HTML/README.md) |
+| <img src="./images/css.svg" width="50"  /> | [CSS](.CSS/README.md)   |
+
 - [CSS](./CSS/README.md)
 - [JavaScript](./JavaScript/README.md)
 - [TypeScript](./TypeScript/README.md)
