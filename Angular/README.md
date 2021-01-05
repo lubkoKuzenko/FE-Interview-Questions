@@ -26,56 +26,56 @@
 | 18  | [What is the purpose of \*ngFor directive?](#what-is-the-purpose-of-ngfor-directive)                                                                 |
 | 19  | [What is the purpose of ngIf directive?](#what-is-the-purpose-of-ngif-directive)                                                                     |
 | 20  | [What is interpolation?](#what-is-interpolation)                                                                                                     |
-| 25  | [What are template expressions?](#what-are-template-expressions)                                                                                     |
-| 26  | [What are template statements?](#what-are-template-statements)                                                                                       |
-| 27  | [How do you categorize data binding types?](#how-do-you-categorize-data-binding-types)                                                               |
-| 28  | [What are pipes?](#what-are-pipes)                                                                                                                   |
-| 29  | [What is a parameterized pipe?](#what-is-a-parameterized-pipe)                                                                                       |
-| 30  | [How do you chain pipes?](#how-do-you-chain-pipes)                                                                                                   |
-| 31  | [What is a custom pipe?](#what-is-a-custom-pipe)                                                                                                     |
-| 32  | [Give an example of custom pipe?](#give-an-example-of-custom-pipe)                                                                                   |
-| 33  | [What is the difference between pure and impure pipe?](#what-is-the-difference-between-pure-and-impure-pipe)                                         |
-| 34  | [What is a bootstrapping module?](#what-is-a-bootstrapping-module)                                                                                   |
-| 36  | [What is HttpClient and its benefits?](#what-is-httpclient-and-its-benefits)                                                                         |
-| 37  | [Explain on how to use HttpClient with an example?](#explain-on-how-to-use-httpclient-with-an-example)                                               |
-| 39  | [How do you perform Error handling?](#how-do-you-perform-error-handling)                                                                             |
-| 40  | [What is RxJS?](#what-is-rxjs)                                                                                                                       |
-| 41  | [What is subscribing?](#what-is-subscribing)                                                                                                         |
-| 42  | [What is an observable?](#what-is-an-observable)                                                                                                     |
-| 43  | [What is an observer?](#what-is-an-observer)                                                                                                         |
-| 44  | [What is the difference between promise and observable?](#what-is-the-difference-between-promise-and-observable)                                     |
-| 45  | [What is multicasting?](#what-is-multicasting)                                                                                                       |
-| 46  | [How do you perform error handling in observables?](#how-do-you-perform-error-handling-in-observables)                                               |
-| 47  | [What is the short hand notation for subscribe method?](#what-is-the-short-hand-notation-for-subscribe-method)                                       |
-| 48  | [What are the utility functions provided by RxJS?](#what-are-the-utility-functions-provided-by-rxjs)                                                 |
-| 49  | [What are observable creation functions?](#what-are-observable-creation-functions)                                                                   |
-| 50  | [What will happen if you do not supply handler for observer?](#what-will-happen-if-you-do-not-supply-handler-for-observer)                           |
-| 51  | [What are angular elements?](#what-are-angular-elements)                                                                                             |
-| 52  | [What is the browser support of Angular Elements?](#what-is-the-browser-support-of-angular-elements)                                                 |
-| 53  | [What are custom elements?](#what-are-custom-elements)                                                                                               |
-| 54  | [Do I need to bootstrap custom elements?](#do-i-need-to-bootstrap-custom-elements)                                                                   |
-| 55  | [Explain how custom elements works internally?](#explain-how-custom-elements-works-internally)                                                       |
-| 56  | [How to transfer components to custom elements?](#how-to-transfer-components-to-custom-elements)                                                     |
-| 57  | [What are the mapping rules between Angular component and custom element?](#what-are-the-mapping-rules-between-angular-component-and-custom-element) |
-| 58  | [How do you define typings for custom elements?](#how-do-you-define-typings-for-custom-elements)                                                     |
-| 59  | [What are dynamic components?](#what-are-dynamic-components)                                                                                         |
-| 60  | [What are the various kinds of directives?](#what-are-the-various-kinds-of-directives)                                                               |
-| 62  | [Give an example for attribute directives?](#give-an-example-for-attribute-directives)                                                               |
-| 63  | [What is Angular Router?](#what-is-angular-router)                                                                                                   |
-| 64  | [What is the purpose of base href tag?](#what-is-the-purpose-of-base-href-tag)                                                                       |
-| 65  | [What are the router imports?](#what-are-the-router-imports)                                                                                         |
-| 66  | [What is router outlet?](#what-is-router-outlet)                                                                                                     |
-| 67  | [What are router links?](#what-are-router-links)                                                                                                     |
-| 68  | [What are active router links?](#what-are-active-router-links)                                                                                       |
-| 69  | [What is router state?](#what-is-router-state)                                                                                                       |
-| 70  | [What are router events?](#what-are-router-events)                                                                                                   |
-| 71  | [What is activated route?](#what-is-activated-route)                                                                                                 |
-| 72  | [How do you define routes?](#how-do-you-define-routes)                                                                                               |
-| 73  | [What is the purpose of Wildcard route?](#what-is-the-purpose-of-wildcard-route)                                                                     |
-| 74  | [Do I need a Routing Module always?](#do-i-need-a-routing-module-always)                                                                             |
-| 75  | [What is Angular Universal?](#what-is-angular-universal)                                                                                             |
-| 76  | [What are different types of compilation in Angular?](#what-are-different-types-of-compilation-in-angular)                                           |
-| 77  | [What is JIT?](#what-is-jit)                                                                                                                         |
+| 21  | [What are template expressions?](#what-are-template-expressions)                                                                                     |
+| 22  | [What are template statements?](#what-are-template-statements)                                                                                       |
+| 23  | [How do you categorize data binding types?](#how-do-you-categorize-data-binding-types)                                                               |
+| 24  | [What are pipes?](#what-are-pipes)                                                                                                                   |
+| 25  | [What is a parameterized pipe?](#what-is-a-parameterized-pipe)                                                                                       |
+| 26  | [How do you chain pipes?](#how-do-you-chain-pipes)                                                                                                   |
+| 27  | [What is a custom pipe?](#what-is-a-custom-pipe)                                                                                                     |
+| 28  | [Give an example of custom pipe?](#give-an-example-of-custom-pipe)                                                                                   |
+| 29  | [What is the difference between pure and impure pipe?](#what-is-the-difference-between-pure-and-impure-pipe)                                         |
+| 30  | [What is a bootstrapping module?](#what-is-a-bootstrapping-module)                                                                                   |
+| 31  | [What is HttpClient and its benefits?](#what-is-httpclient-and-its-benefits)                                                                         |
+| 32  | [Explain on how to use HttpClient with an example?](#explain-on-how-to-use-httpclient-with-an-example)                                               |
+| 33  | [How do you perform Error handling?](#how-do-you-perform-error-handling)                                                                             |
+| 34  | [What is RxJS?](#what-is-rxjs)                                                                                                                       |
+| 35  | [What is subscribing?](#what-is-subscribing)                                                                                                         |
+| 36  | [What is an observable?](#what-is-an-observable)                                                                                                     |
+| 37  | [What is an observer?](#what-is-an-observer)                                                                                                         |
+| 38  | [What is the difference between promise and observable?](#what-is-the-difference-between-promise-and-observable)                                     |
+| 39  | [What is multicasting?](#what-is-multicasting)                                                                                                       |
+| 40  | [How do you perform error handling in observables?](#how-do-you-perform-error-handling-in-observables)                                               |
+| 41  | [What is the short hand notation for subscribe method?](#what-is-the-short-hand-notation-for-subscribe-method)                                       |
+| 42  | [What are the utility functions provided by RxJS?](#what-are-the-utility-functions-provided-by-rxjs)                                                 |
+| 43  | [What are observable creation functions?](#what-are-observable-creation-functions)                                                                   |
+| 44  | [What will happen if you do not supply handler for observer?](#what-will-happen-if-you-do-not-supply-handler-for-observer)                           |
+| 45  | [What are angular elements?](#what-are-angular-elements)                                                                                             |
+| 46  | [What is the browser support of Angular Elements?](#what-is-the-browser-support-of-angular-elements)                                                 |
+| 47  | [What are custom elements?](#what-are-custom-elements)                                                                                               |
+| 48  | [Do I need to bootstrap custom elements?](#do-i-need-to-bootstrap-custom-elements)                                                                   |
+| 49  | [Explain how custom elements works internally?](#explain-how-custom-elements-works-internally)                                                       |
+| 50  | [How to transfer components to custom elements?](#how-to-transfer-components-to-custom-elements)                                                     |
+| 51  | [What are the mapping rules between Angular component and custom element?](#what-are-the-mapping-rules-between-angular-component-and-custom-element) |
+| 52  | [How do you define typings for custom elements?](#how-do-you-define-typings-for-custom-elements)                                                     |
+| 53  | [What are dynamic components?](#what-are-dynamic-components)                                                                                         |
+| 54  | [What are the various kinds of directives?](#what-are-the-various-kinds-of-directives)                                                               |
+| 55  | [Give an example for attribute directives?](#give-an-example-for-attribute-directives)                                                               |
+| 56  | [What is Angular Router?](#what-is-angular-router)                                                                                                   |
+| 57  | [What is the purpose of base href tag?](#what-is-the-purpose-of-base-href-tag)                                                                       |
+| 58  | [What are the router imports?](#what-are-the-router-imports)                                                                                         |
+| 59  | [What is router outlet?](#what-is-router-outlet)                                                                                                     |
+| 60  | [What are router links?](#what-are-router-links)                                                                                                     |
+| 61  | [What are active router links?](#what-are-active-router-links)                                                                                       |
+| 62  | [What is router state?](#what-is-router-state)                                                                                                       |
+| 63  | [What are router events?](#what-are-router-events)                                                                                                   |
+| 64  | [What is activated route?](#what-is-activated-route)                                                                                                 |
+| 65  | [How do you define routes?](#how-do-you-define-routes)                                                                                               |
+| 66  | [What is the purpose of Wildcard route?](#what-is-the-purpose-of-wildcard-route)                                                                     |
+| 67  | [Do I need a Routing Module always?](#do-i-need-a-routing-module-always)                                                                             |
+| 68  | [What is Angular Universal?](#what-is-angular-universal)                                                                                             |
+| 69  | [What are different types of compilation in Angular?](#what-are-different-types-of-compilation-in-angular)                                           |
+| 70  | [What is JIT?](#what-is-jit)                                                                                                                         |
 | 78  | [What is AOT?](#what-is-aot)                                                                                                                         |
 | 79  | [Why do we need compilation process?](#why-do-we-need-compilation-process)                                                                           |
 | 80  | [What are the advantages with AOT?](#what-are-the-advantages-with-aot)                                                                               |
