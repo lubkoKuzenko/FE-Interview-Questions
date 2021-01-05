@@ -156,56 +156,56 @@
 | 148 | [What are the applications of HTTP interceptors?](#what-are-the-applications-of-http-interceptors)                                                   |
 | 149 | [Is multiple interceptors supported in Angular?](#is-multiple-interceptors-supported-in-angular)                                                     |
 | 150 | [How can I use interceptor for an entire application?](#how-can-i-use-interceptor-for-an-entire-application)                                         |
-| 189 | [What is an angular library?](#what-is-an-angular-library)                                                                                           |
-| 191 | [How do you select an element in component template?](#how-do-you-select-an-element-in-component-template)                                           |
-| 192 | [What is TestBed?](#what-is-testbed)                                                                                                                 |
-| 193 | [What is protractor?](#what-is-protractor)                                                                                                           |
-| 195 | [How do you create schematics for libraries?](#how-do-you-create-schematics-for-libraries)                                                           |
-| 196 | [How do you use jquery in Angular?](#how-do-you-use-jquery-in-angular)                                                                               |
-| 197 | [What is the reason for No provider for HTTP exception?](#what-is-the-reason-for-no-provider-for-http-exception)                                     |
-| 199 | [How can I use SASS in angular project?](#how-can-i-use-sass-in-angular-project)                                                                     |
-| 200 | [What is the purpose of hidden property?](#what-is-the-purpose-of-hidden-property)                                                                   |
-| 201 | [What is the difference between ngIf and hidden property?](#what-is-the-difference-between-ngif-and-hidden-property)                                 |
-| 202 | [What is slice pipe?](#what-is-slice-pipe)                                                                                                           |
-| 203 | [What is index property in ngFor directive?](#what-is-index-property-in-ngfor-directive)                                                             |
-| 204 | [What is the purpose of ngFor trackBy?](#what-is-the-purpose-of-ngfor-trackby)                                                                       |
-| 205 | [What is the purpose of ngSwitch directive?](#what-is-the-purpose-of-ngswitch-directive)                                                             |
-| 206 | [Is it possible to do aliasing for inputs and outputs?](#is-it-possible-to-do-aliasing-for-inputs-and-outputs)                                       |
-| 207 | [What is safe navigation operator?](#what-is-safe-navigation-operator)                                                                               |
-| 210 | [Is mandatory to pass static flag for ViewChild?](#is-mandatory-to-pass-static-flag-for-viewchild)                                                   |
-| 211 | [What are the list of template expression operators?](#what-are-the-list-of-template-expression-operators)                                           |
-| 212 | [What is the precedence between pipe and ternary operators?](#what-is-the-precedence-between-pipe-and-ternary-operators)                             |
-| 213 | [What is an entry component?](#what-is-an-entry-component)                                                                                           |
-| 214 | [What is a bootstrapped component?](#what-is-a-bootstrapped-component)                                                                               |
-| 215 | [How do you manually bootstrap an application?](#how-do-you-manually-bootstrap-an-application)                                                       |
-| 216 | [Is it necessary for bootstrapped component to be entry component?](#is-it-necessary-for-bootstrapped-component-to-be-entry-component)               |
-| 217 | [What is a routed entry component?](#what-is-a-routed-entry-component#)                                                                              |
-| 218 | [Why is not necessary to use entryComponents array every time?](#why-is-not-necessary-to-use-entrycomponents-array-every-time)                       |
-| 219 | [Do I still need to use entryComponents array in Angular9?](do-i-still-need-to-use-entrycomponents-array-in-angular9#)                               |
-| 220 | [Is it all components generated in production build?](#is-it-all-components-generated-in-production-build)                                           |
-| 221 | [What is Angular compiler?](#what-is-angular-compiler)                                                                                               |
-| 222 | [What is the role of ngModule metadata in compilation process?](#what-is-the-role-of-ngmodule-metadata-in-compilation-process)                       |
-| 223 | [How does angular finds components, directives and pipes?](#how-does-angular-finds-components-directives-and-pipes)                                  |
-| 224 | [Give few examples for NgModules?](#give-few-examples-for-ngmodules)                                                                                 |
-| 225 | [What are feature modules?](#what-are-feature-modules)                                                                                               |
-| 226 | [What are the imported modules in CLI generated feature modules?](#what-are-the-imported-modules-in-cli-generated-feature-modules)                   |
-| 227 | [What are the differences between ngmodule and javascript module?](#what-are-the-differences-between-ngmodule-and-javascript-module)                 |
-| 228 | [What are the possible errors with declarations?](#what-are-the-possible-errors-with-declarations)                                                   |
-| 229 | [What are the steps to use declaration elements?](#what-are-the-steps-to-use-declaration-elements)                                                   |
-| 230 | [What happens if browserModule used in feature module?](#what-happens-if-browsermodule-used-in-feature-module)                                       |
-| 231 | [What are the types of feature modules?](#what-are-the-types-of-feature-modules)                                                                     |
-| 232 | [What is a provider?](#what-is-a-provider)                                                                                                           |
-| 233 | [What is the recommendation for provider scope?](#what-is-the-recommendation-for-provider-scope#)                                                    |
-| 234 | [How do you restrict provider scope to a module?](#how-do-you-restrict-provider-scope-to-a-module)                                                   |
-| 235 | [How do you provide a singleton service?](#how-do-you-provide-a-singleton-service)                                                                   |
-| 236 | [What are the different ways to remove duplicate service registration?](#what-are-the-different-ways-to-remove-duplicate-service-registration)       |
-| 237 | [How does forRoot method helpful to avoid duplicate router instances?](#how-does-forroot-method-helpful-to-avoid-duplicate-router-instances)         |
-| 238 | [What is a shared module?](#what-is-a-shared-module)                                                                                                 |
-| 239 | [Can I share services using modules?](#can-i-share-services-using-modules)                                                                           |
-| 241 | [What is ngcc?](#what-is-ngcc)                                                                                                                       |
-| 242 | [What classes should not be added to declarations?](#what-classes-should-not-be-added-to-declarations)                                               |
-| 243 | [Wat is ngzone?](#what-is-ngzone)                                                                                                                    |
-| 244 | [What is NoopZone?](#what-is-noopzone)                                                                                                               |
+| 151 | [What is an angular library?](#what-is-an-angular-library)                                                                                           |
+| 152 | [How do you select an element in component template?](#how-do-you-select-an-element-in-component-template)                                           |
+| 153 | [What is TestBed?](#what-is-testbed)                                                                                                                 |
+| 154 | [What is protractor?](#what-is-protractor)                                                                                                           |
+| 155 | [How do you create schematics for libraries?](#how-do-you-create-schematics-for-libraries)                                                           |
+| 156 | [How do you use jquery in Angular?](#how-do-you-use-jquery-in-angular)                                                                               |
+| 157 | [What is the reason for No provider for HTTP exception?](#what-is-the-reason-for-no-provider-for-http-exception)                                     |
+| 158 | [How can I use SASS in angular project?](#how-can-i-use-sass-in-angular-project)                                                                     |
+| 159 | [What is the purpose of hidden property?](#what-is-the-purpose-of-hidden-property)                                                                   |
+| 160 | [What is the difference between ngIf and hidden property?](#what-is-the-difference-between-ngif-and-hidden-property)                                 |
+| 161 | [What is slice pipe?](#what-is-slice-pipe)                                                                                                           |
+| 162 | [What is index property in ngFor directive?](#what-is-index-property-in-ngfor-directive)                                                             |
+| 163 | [What is the purpose of ngFor trackBy?](#what-is-the-purpose-of-ngfor-trackby)                                                                       |
+| 164 | [What is the purpose of ngSwitch directive?](#what-is-the-purpose-of-ngswitch-directive)                                                             |
+| 165 | [Is it possible to do aliasing for inputs and outputs?](#is-it-possible-to-do-aliasing-for-inputs-and-outputs)                                       |
+| 166 | [What is safe navigation operator?](#what-is-safe-navigation-operator)                                                                               |
+| 167 | [Is mandatory to pass static flag for ViewChild?](#is-mandatory-to-pass-static-flag-for-viewchild)                                                   |
+| 168 | [What are the list of template expression operators?](#what-are-the-list-of-template-expression-operators)                                           |
+| 169 | [What is the precedence between pipe and ternary operators?](#what-is-the-precedence-between-pipe-and-ternary-operators)                             |
+| 170 | [What is an entry component?](#what-is-an-entry-component)                                                                                           |
+| 171 | [What is a bootstrapped component?](#what-is-a-bootstrapped-component)                                                                               |
+| 172 | [How do you manually bootstrap an application?](#how-do-you-manually-bootstrap-an-application)                                                       |
+| 173 | [Is it necessary for bootstrapped component to be entry component?](#is-it-necessary-for-bootstrapped-component-to-be-entry-component)               |
+| 174 | [What is a routed entry component?](#what-is-a-routed-entry-component#)                                                                              |
+| 175 | [Why is not necessary to use entryComponents array every time?](#why-is-not-necessary-to-use-entrycomponents-array-every-time)                       |
+| 176 | [Do I still need to use entryComponents array in Angular9?](do-i-still-need-to-use-entrycomponents-array-in-angular9#)                               |
+| 177 | [Is it all components generated in production build?](#is-it-all-components-generated-in-production-build)                                           |
+| 178 | [What is Angular compiler?](#what-is-angular-compiler)                                                                                               |
+| 179 | [What is the role of ngModule metadata in compilation process?](#what-is-the-role-of-ngmodule-metadata-in-compilation-process)                       |
+| 180 | [How does angular finds components, directives and pipes?](#how-does-angular-finds-components-directives-and-pipes)                                  |
+| 181 | [Give few examples for NgModules?](#give-few-examples-for-ngmodules)                                                                                 |
+| 182 | [What are feature modules?](#what-are-feature-modules)                                                                                               |
+| 183 | [What are the imported modules in CLI generated feature modules?](#what-are-the-imported-modules-in-cli-generated-feature-modules)                   |
+| 184 | [What are the differences between ngmodule and javascript module?](#what-are-the-differences-between-ngmodule-and-javascript-module)                 |
+| 185 | [What are the possible errors with declarations?](#what-are-the-possible-errors-with-declarations)                                                   |
+| 186 | [What are the steps to use declaration elements?](#what-are-the-steps-to-use-declaration-elements)                                                   |
+| 187 | [What happens if browserModule used in feature module?](#what-happens-if-browsermodule-used-in-feature-module)                                       |
+| 188 | [What are the types of feature modules?](#what-are-the-types-of-feature-modules)                                                                     |
+| 189 | [What is a provider?](#what-is-a-provider)                                                                                                           |
+| 190 | [What is the recommendation for provider scope?](#what-is-the-recommendation-for-provider-scope#)                                                    |
+| 191 | [How do you restrict provider scope to a module?](#how-do-you-restrict-provider-scope-to-a-module)                                                   |
+| 192 | [How do you provide a singleton service?](#how-do-you-provide-a-singleton-service)                                                                   |
+| 193 | [What are the different ways to remove duplicate service registration?](#what-are-the-different-ways-to-remove-duplicate-service-registration)       |
+| 194 | [How does forRoot method helpful to avoid duplicate router instances?](#how-does-forroot-method-helpful-to-avoid-duplicate-router-instances)         |
+| 195 | [What is a shared module?](#what-is-a-shared-module)                                                                                                 |
+| 196 | [Can I share services using modules?](#can-i-share-services-using-modules)                                                                           |
+| 197 | [What is ngcc?](#what-is-ngcc)                                                                                                                       |
+| 198 | [What classes should not be added to declarations?](#what-classes-should-not-be-added-to-declarations)                                               |
+| 199 | [Wat is ngzone?](#what-is-ngzone)                                                                                                                    |
+| 200 | [What is NoopZone?](#what-is-noopzone)                                                                                                               |
 | 246 | [What are the possible data change scenarios for change detection?](#what-are-the-possible-data-change-scenarios-for-change-detection)               |
 | 247 | [What is a zone context?](#what-is-a-zone-context)                                                                                                   |
 | 248 | [What are the lifecycle hooks of a zone?](#what-are-the-lifecycle-hooks-of-a-zone)                                                                   |
