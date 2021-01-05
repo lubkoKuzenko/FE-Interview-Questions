@@ -1610,46 +1610,46 @@ Now you can use the above pipe in template expression as below,
 
 ## What are the steps to use animation module?
 
-    You need to follow below steps to implement animation in your angular project,
+  You need to follow below steps to implement animation in your angular project,
 
-    1. **Enabling the animations module:** Import BrowserAnimationsModule to add animation capabilities into your Angular root application module(for example, src/app/app.module.ts).
-        ```javascript
-        import { NgModule } from '@angular/core';
-        import { BrowserModule } from '@angular/platform-browser';
-        import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+  1. **Enabling the animations module:** Import BrowserAnimationsModule to add animation capabilities into your Angular root application module(for example, src/app/app.module.ts).
+      ```javascript
+      import { NgModule } from '@angular/core';
+      import { BrowserModule } from '@angular/platform-browser';
+      import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-        @NgModule({
-          imports: [
-            BrowserModule,
-            BrowserAnimationsModule
-          ],
-          declarations: [ ],
-          bootstrap: [ ]
-        })
-        export class AppModule { }
-        ```
-    2. **Importing animation functions into component files:** Import required animation functions from @angular/animations in component files(for example, src/app/app.component.ts).
-        ```javascript
-        import {
-          trigger,
-          state,
-          style,
-          animate,
-          transition,
-          // ...
-        } from '@angular/animations';
-        ```
-    3. **Adding the animation metadata property:** add a metadata property called animations: within the @Component() decorator in component files(for example, src/app/app.component.ts)
-        ```javascript
-        @Component({
-          selector: 'app-root',
-          templateUrl: 'app.component.html',
-          styleUrls: ['app.component.css'],
-          animations: [
-            // animation triggers go here
-          ]
-        })
-        ```
+      @NgModule({
+        imports: [
+          BrowserModule,
+          BrowserAnimationsModule
+        ],
+        declarations: [ ],
+        bootstrap: [ ]
+      })
+      export class AppModule { }
+      ```
+  2. **Importing animation functions into component files:** Import required animation functions from @angular/animations in component files(for example, src/app/app.component.ts).
+      ```javascript
+      import {
+        trigger,
+        state,
+        style,
+        animate,
+        transition,
+        // ...
+      } from '@angular/animations';
+      ```
+  3. **Adding the animation metadata property:** add a metadata property called animations: within the @Component() decorator in component files(for example, src/app/app.component.ts)
+      ```javascript
+      @Component({
+        selector: 'app-root',
+        templateUrl: 'app.component.html',
+        styleUrls: ['app.component.css'],
+        animations: [
+          // animation triggers go here
+        ]
+      })
+      ```
 
 ## What is State function?
 
