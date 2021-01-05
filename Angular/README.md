@@ -1682,45 +1682,45 @@ Now you can use the above pipe in template expression as below,
 
   Angular Animations are a powerful way to implement sophisticated and compelling animations for your Angular single page web application.
 
-    ```ts
-    import { Component, OnInit, Input } from '@angular/core';
-    import { trigger, state, style, animate, transition } from '@angular/animations';
+  ```javascript
+  import { Component, OnInit, Input } from '@angular/core';
+  import { trigger, state, style, animate, transition } from '@angular/animations';
 
-    @Component({
-    selector: 'app-animate',
-    templateUrl: `<div [@changeState]="currentState" class="myblock mx-auto"></div>`,
-    styleUrls: `.myblock {
-        background-color: green;
-        width: 300px;
-        height: 250px;
-        border-radius: 5px;
-        margin: 5rem;
-        }`,
-    animations: [
-        trigger('changeState', [
-        state('state1', style({
-            backgroundColor: 'green',
-            transform: 'scale(1)'
-        })),
-        state('state2', style({
-            backgroundColor: 'red',
-            transform: 'scale(1.5)'
-        })),
-        transition('*=>state1', animate('300ms')),
-        transition('*=>state2', animate('2000ms'))
-        ])
-    ]
-    })
-    export class AnimateComponent implements OnInit {
+  @Component({
+  selector: 'app-animate',
+  templateUrl: `<div [@changeState]="currentState" class="myblock mx-auto"></div>`,
+  styleUrls: `.myblock {
+      background-color: green;
+      width: 300px;
+      height: 250px;
+      border-radius: 5px;
+      margin: 5rem;
+      }`,
+  animations: [
+      trigger('changeState', [
+      state('state1', style({
+          backgroundColor: 'green',
+          transform: 'scale(1)'
+      })),
+      state('state2', style({
+          backgroundColor: 'red',
+          transform: 'scale(1.5)'
+      })),
+      transition('*=>state1', animate('300ms')),
+      transition('*=>state2', animate('2000ms'))
+      ])
+  ]
+  })
+  export class AnimateComponent implements OnInit {
 
-        @Input() currentState;
+      @Input() currentState;
 
-        constructor() { }
+      constructor() { }
 
-        ngOnInit() {
-        }
-    }
-    ```
+      ngOnInit() {
+      }
+  }
+  ```
 
 ## What is transition function?
 
