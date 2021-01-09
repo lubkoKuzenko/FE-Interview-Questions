@@ -1,6 +1,6 @@
 # React Interview Questions with Answers
 
-<img src="./assets/logo.png" width="960">
+<img src="https://s3.tproger.ru/uploads/2016/10/reactmini.png" width="960">
 
 ### Table of Contents
 
