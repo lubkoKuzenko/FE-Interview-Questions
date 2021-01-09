@@ -185,3 +185,7 @@ TypeScript supports following object oriented terms:
 - Interfaces
 - Data Types
 - Member functions
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>

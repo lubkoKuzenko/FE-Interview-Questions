@@ -235,6 +235,10 @@
 
 Angular is a **TypeScript-based open-source** front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is TypeScript?
 
 TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language.
@@ -258,10 +262,18 @@ document.body.innerHTML = greeter(user);
 
 The greeter method allows only string type as argument.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Write a pictorial diagram of Angular architecture?
 
 The main building blocks of an Angular application is shown in the below diagram
 ![ScreenShot](images/architecture.png)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the key components of Angular?
 
@@ -272,6 +284,10 @@ Angular has the below key components,
 3. **Templates:** This represent the views of an Angular application.
 4. **Services:** It is used to create components which can be shared across the entire application.
 5. **Metadata:** This can be used to add more data to an Angular class.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are directives?
 
@@ -293,6 +309,10 @@ Now this directive extends HTML element behavior with a yellow background as bel
 ```html
 <p myHighlight>Highlight me!</p>
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are components?
 
@@ -316,6 +336,10 @@ title: string = "Welcome to Angular world";
 }
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are the differences between Component and Directive?
 
 In a short note, A component(@component) is a directive-with-a-template.
@@ -329,6 +353,10 @@ Some of the major differences are mentioned in a tabular form
 | Component is used to break up the application into smaller components | Directive is use to design re-usable components               |
 | Only one component can be present per DOM element                     | Many directives can be used per DOM element                   |
 | @View decorator or templateurl/template are mandatory                 | Directive doesn't use View                                    |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a template?
 
@@ -366,6 +394,10 @@ export class AppComponent {
 }
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is a module?
 
   Modules are logical boundaries in your application and the application is divided into separate modules to separate the functionality of your application.
@@ -390,6 +422,10 @@ export class AppComponent {
   4. The providers option is used to configure set of injectable objects that are available in the injector of this module.
   5. The entryComponents option is a set of components dynamically loaded into the view.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are lifecycle hooks available?
 
   Angular application goes through an entire set of processes or has a lifecycle right from its initiation to the end of the application.
@@ -406,6 +442,10 @@ export class AppComponent {
   6. **ngAfterViewInit:** This is called in response after Angular initializes the component's views and child views.
   7. **ngAfterViewChecked:** This is called in response after Angular checks the component's views and child views.
   8. **ngOnDestroy:** This is the cleanup phase just before Angular destroys the directive/component.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a data binding?
 
@@ -431,6 +471,10 @@ export class AppComponent {
       ```html
       <input type="email" [(ngModel)]="user.email">
       ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is metadata?
 
@@ -504,6 +548,10 @@ export class AppComponent {
       }
       ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is the difference between constructor and ngOnInit?
 
   TypeScript classes has a default method called constructor which is normally used for the initialization purpose. Whereas ngOnInit method is specific to Angular, especially used to define Angular bindings. Even though constructor getting called first, it is preferred to move all of your Angular bindings to ngOnInit method.
@@ -520,6 +568,9 @@ export class AppComponent {
     }
   }
   ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a service?
 
@@ -546,9 +597,17 @@ export class AppComponent {
   ```
   The above service uses Http service as a dependency.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is dependency injection in Angular?
 
 Dependency injection (DI), is an important application design pattern in which a class asks for dependencies from external sources rather than creating them itself. Angular comes with its own dependency injection framework for resolving dependencies( services or objects that a class needs to perform its function).So you can have your services depend on other services throughout your application.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of async pipe?
 
@@ -568,6 +627,10 @@ Dependency injection (DI), is an important application design pattern in which a
   }
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is the option to choose between inline and external template file?
 
   You can store your component's template in one of two places. You can define it inline using the **template** property, or you can define the template in a separate HTML file and link to it in the component metadata using the **@Component** decorator's **templateUrl** property.
@@ -576,6 +639,10 @@ Dependency injection (DI), is an important application design pattern in which a
   ```
   ng generate component hero -it
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of ngFor directive?
 
@@ -587,6 +654,10 @@ Dependency injection (DI), is an important application design pattern in which a
   ```
   The user variable in the ngFor double-quoted instruction is a **template input variable**
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is the purpose of ngIf directive?
 
   Sometimes an app needs to display a view or a portion of a view only under specific circumstances. The Angular ngIf directive inserts or removes an element based on a truthy/falsy condition. Let's take an example to display a message if the user age is more than 18,
@@ -594,6 +665,10 @@ Dependency injection (DI), is an important application design pattern in which a
   <p *ngIf="user.age > 18">You are not eligible for student pass!</p>
   ```
   **Note:** Angular isn't showing and hiding the message. It is adding and removing the paragraph element from the DOM. That improves performance, especially in the larger projects with many data bindings.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is interpolation?
 
@@ -607,6 +682,10 @@ Dependency injection (DI), is an important application design pattern in which a
   </h3>
   ```
   In the example above, Angular evaluates the title and url properties and fills in the blanks, first displaying a bold application title and then a URL.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are template expressions?
 
@@ -623,6 +702,10 @@ Dependency injection (DI), is an important application design pattern in which a
   3. chaining expressions with ; or ,
   4. increment and decrement operators (++ and --)
   ----------------------------------
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are template statements?
 
@@ -641,6 +724,10 @@ Dependency injection (DI), is an important application design pattern in which a
   5. the template expression operators
   --------------------------------------
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## How do you categorize data binding types?
 
     Binding types can be grouped into three categories distinguished by the direction of data flow. They are listed as below,
@@ -655,6 +742,10 @@ Dependency injection (DI), is an important application design pattern in which a
     | From the source-to-view(One-way)  | 1. {{expression}} 2. [target]="expression" 3. bind-target="expression" | Interpolation, Property, Attribute, Class, Style|
     | From view-to-source(One-way) | 1. (target)="statement" 2. on-target="statement" | Event |
     | View-to-source-to-view(Two-way)| 1. [(target)]="expression" 2. bindon-target="expression"| Two-way |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are pipes?
 
@@ -671,6 +762,10 @@ Dependency injection (DI), is an important application design pattern in which a
     birthday = new Date(1987, 6, 18); // June 18, 1987
   }
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a parameterized pipe?
 
@@ -689,6 +784,10 @@ Dependency injection (DI), is an important application design pattern in which a
   ```
   **Note:** The parameter value can be any valid template expression, such as a string literal or a component property.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## How do you chain pipes?
 
   You can chain pipes together in potentially useful combinations as per the needs. Let's take a birthday property which uses date pipe(along with parameter) and uppercase pipes as below
@@ -705,6 +804,10 @@ Dependency injection (DI), is an important application design pattern in which a
           }
 
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a custom pipe?
 
@@ -725,6 +828,10 @@ Dependency injection (DI), is an important application design pattern in which a
       ```javascript
       template: `{{someInputValue | myCustomPipe: someOtherValue}}`
       ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Give an example of custom pipe?
 
@@ -747,9 +854,17 @@ Now you can use the above pipe in template expression as below,
       `
     ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is the difference between pure and impure pipe?
 
   A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe. For example, any changes to a primitive input value (String, Number, Boolean, Symbol) or a changed object reference (Date, Array, Function, Object). An impure pipe is called for every change detection cycle no matter whether the value or parameters changes. i.e, An impure pipe is called often, as often as every keystroke or mouse-move.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a bootstrapping module?
 
@@ -780,6 +895,10 @@ Now you can use the above pipe in template expression as below,
       export class AppModule { }
       ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is HttpClient and its benefits?
 
   Most of the Front-end applications communicate with backend services over HTTP protocol using either XMLHttpRequest interface or the fetch() API. Angular provides a simplified client HTTP API known as **HttpClient** which is based on top of XMLHttpRequest interface. This client is avaialble from `@angular/common/http` package.
@@ -795,6 +914,10 @@ Now you can use the above pipe in template expression as below,
   3. Intercept request and response
   4. Supports Observalbe APIs
   5. Supports streamlined error handling
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Explain on how to use HttpClient with an example?
 
@@ -843,6 +966,10 @@ Now you can use the above pipe in template expression as below,
       ```
   Since the above service method returns an Observable which needs to be subscribed in the component.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## How do you perform Error handling?
 
   If the request fails on the server or failed to reach the server due to network issues then HttpClient will return an error object instead of a successful reponse. In this case, you need to handle in the component by passing error object as a second callback to subscribe() method.
@@ -859,6 +986,10 @@ Now you can use the above pipe in template expression as below,
   ```
   It is always a good idea to give the user some meaningful feedback instead of displaying the raw error object returned from HttpClient.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is RxJS?
 
   RxJS is a library for composing asynchronous and callback-based code in a functional, reactive style using Observables. Many APIs such as  HttpClient produce and consume RxJS Observables and also uses operators for processing observables.
@@ -868,6 +999,10 @@ Now you can use the above pipe in template expression as below,
   import { Observable, throwError } from 'rxjs';
   import { catchError, retry } from 'rxjs/operators';
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is subscribing?
 
@@ -895,6 +1030,10 @@ Now you can use the above pipe in template expression as below,
   // => Observer got a complete notification
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is an observable?
 
   An Observable is a unique Object similar to a Promise that can help manage async code. Observables are not part of the JavaScript language so we need to rely on a popular Observable library called RxJS.
@@ -910,6 +1049,10 @@ Now you can use the above pipe in template expression as below,
     }, 2000);
   });
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is an observer?
 
@@ -930,6 +1073,10 @@ Now you can use the above pipe in template expression as below,
   ```
   **Note:** If you don't supply a handler for a notification type, the observer ignores notifications of that type.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is the difference between promise and observable?
 
   Below are the list of differences between promise and observable,
@@ -940,6 +1087,10 @@ Now you can use the above pipe in template expression as below,
       | Provide multiple values over time | Provide only one |
       | Subscribe method is used for error handling which makes centralized and predictable error handling| Push errors to the child promises |
       | Provides chaining and subscription to handle complex applications | Uses only .then() clause |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is multicasting?
 
@@ -962,6 +1113,10 @@ Now you can use the above pipe in template expression as below,
   // This is, under the hood, `s
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## How do you perform error handling in observables?
 
   You can handle errors by specifying an **error callback** on the observer instead of relying on try/catch which are ineffective in asynchronous environment.
@@ -973,6 +1128,10 @@ Now you can use the above pipe in template expression as below,
     error(err) { console.log('Received an errror: ' + err)}
   });
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the short hand notation for subscribe method?
 
@@ -987,6 +1146,10 @@ Now you can use the above pipe in template expression as below,
   );
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are the utility functions provided by RxJS?
 
   The RxJS library also provides below utility functions for creating and working with observables.
@@ -996,6 +1159,10 @@ Now you can use the above pipe in template expression as below,
   3. Mapping values to different types
   4. Filtering streams
   5. Composing multiple streams
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are observable creation functions?
 
@@ -1034,13 +1201,25 @@ Now you can use the above pipe in template expression as below,
         });
       ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What will happen if you do not supply handler for observer?
 
   Normally an observer object can define any combination of next, error and complete notification type handlers. If you don't supply a handler for a notification type, the observer just ignores notifications of that type.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are angular elements?
 
   Angular elements are Angular components packaged as **custom elements**(a web standard for defining new HTML elements in a framework-agnostic way). Angular Elements hosts an Angular component, providing a bridge between the data and logic defined in the component and standard DOM APIs, thus, providing a way to use Angular components in `non-Angular environments`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the browser support of Angular Elements?
 
@@ -1056,13 +1235,25 @@ Now you can use the above pipe in template expression as below,
   | Firefox | Natively supported from 63 version onwards. You need to enable dom.webcomponents.enabled and dom.webcomponents.customelements.enabled in older browsers |
   | Edge| Currently it is in progress|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are custom elements?
 
   Custom elements (or Web Components) are a Web Platform feature which extends HTML by allowing you to define a tag whose content is created and controlled by JavaScript code. The browser maintains a `CustomElementRegistry` of defined custom elements, which maps an instantiable JavaScript class to an HTML tag. Currently this feature is supported by Chrome, Firefox, Opera, and Safari, and available in other browsers through polyfills.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Do I need to bootstrap custom elements?
 
   No, custom elements bootstrap (or start) automatically when they are added to the DOM, and are automatically destroyed when removed from the DOM. Once a custom element is added to the DOM for any page, it looks and behaves like any other HTML element, and does not require any special knowledge of Angular.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Explain how custom elements works internally?
 
@@ -1075,6 +1266,10 @@ Now you can use the above pipe in template expression as below,
 
   ![CustomElement](images/customElement.png)
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## How to transfer components to custom elements?
 
   Transforming components to custom elements involves **two** major steps,
@@ -1084,11 +1279,19 @@ Now you can use the above pipe in template expression as below,
   The detailed structure would be as follows,
   ![CreateElement](images/createElement.png)
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are the mapping rules between Angular component and custom element?
 
   The Component properties and logic maps directly into HTML attributes and the browser's event system. Let us describe them in two steps,
   1. The createCustomElement() API parses the component input properties with corresponding attributes for the custom element. For example, component @Input('myInputProp') converted as custom element attribute `my-input-prop`.
   2. The Component outputs are dispatched as HTML Custom Events, with the name of the custom event matching the output name. For example, component @Output() valueChanged = new EventEmitter() converted as custom element with dispatch event as "valueChanged".
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you define typings for custom elements?
 
@@ -1110,9 +1313,17 @@ Now you can use the above pipe in template expression as below,
       container.greet = 'News';  // <-- ERROR: TypeScript knows there is no `greet` property on `container`.
       ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are dynamic components?
 
   Dynamic components are the components in which components location in the application is not defined at build time.i.e, They are not used in any angular template. But the component is instantiated and placed in the application at runtime.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the various kinds of directives?
 
@@ -1120,6 +1331,10 @@ Now you can use the above pipe in template expression as below,
   1. **Components** — These are directives with a template.
   2. **Structural directives** — These directives change the DOM layout by adding and removing DOM elements.
   3. **Attribute directives** — These directives change the appearance or behavior of an element, component, or another directive.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Give an example for attribute directives?
 
@@ -1147,9 +1362,17 @@ Now you can use the above pipe in template expression as below,
       ng serve
       ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is Angular Router?
 
   Angular Router is a mechanism in which navigation happens from one view to the next as users perform application tasks. It borrows the concepts or model of browser's application navigation.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of base href tag?
 
@@ -1159,6 +1382,10 @@ Now you can use the above pipe in template expression as below,
   <base href="/">
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are the router imports?
 
   The Angular Router which represents a particular component view for a given URL is not part of Angular Core. It is available in library named `@angular/router` to import required router components. For example, we import them in app module as below,
@@ -1166,6 +1393,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   import { RouterModule, Routes } from '@angular/router';
   ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is router outlet?
 
@@ -1175,6 +1406,10 @@ Now you can use the above pipe in template expression as below,
   <router-outlet></router-outlet>
   <!-- Routed components go here -->
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are router links?
 
@@ -1188,6 +1423,10 @@ Now you can use the above pipe in template expression as below,
   </nav>
   <router-outlet></router-outlet>
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are active router links?
 
@@ -1201,6 +1440,10 @@ Now you can use the above pipe in template expression as below,
   </nav>
   <router-outlet></router-outlet>
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is router state?
 
@@ -1218,6 +1461,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are router events?
 
@@ -1241,6 +1488,10 @@ Now you can use the above pipe in template expression as below,
   14. NavigationCancel,
   15. NavigationError
   16. Scroll
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is activated route?
 
@@ -1257,6 +1508,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you define routes?
 
@@ -1289,6 +1544,10 @@ Now you can use the above pipe in template expression as below,
   })
   export class AppModule { }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of Wildcard route?
 
@@ -1298,20 +1557,36 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   { path: '**', component: PageNotFoundComponent }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Do I need a Routing Module always?
 
   No, the Routing Module is a design choice. You can skip routing Module (for example, AppRoutingModule) when the configuration is simple and merge the routing configuration directly into the companion module (for example, AppModule). But it is recommended when the configuration is complex and includes specialized guard and resolver services.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular Universal?
 
   Angular Universal is a server-side rendering module for Angular applications in various scenarios. This is a community driven project and available under @angular/platform-server package. Recently Angular Universal is integrated with Angular CLI.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are different types of compilation in Angular?
 
   Angular offers two ways to compile your application,
   1. Just-in-Time (JIT)
   2. Ahead-of-Time (AOT)
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is JIT?
 
@@ -1321,6 +1596,10 @@ Now you can use the above pipe in template expression as below,
   ng build
   ng serve
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is AOT?
 
@@ -1331,10 +1610,18 @@ Now you can use the above pipe in template expression as below,
   ng serve --aot
   ```
   **Note:** The ng build command with the --prod meta-flag (`ng build --prod`) compiles with AOT by default.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Why do we need compilation process?
 
   The Angular components and templates cannot be understood by the browser directly. Due to that Angular applications require a compilation process before they can run in a browser. For example, In AOT compilation, both Angular HTML and TypeScript code converted into efficient JavaScript code during the build phase before browser runs it.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the advantages with AOT?
 
@@ -1345,12 +1632,20 @@ Now you can use the above pipe in template expression as below,
   3. **Smaller Angular framework download size:** Doesn't require downloading the Angular compiler. Hence it dramatically reduces the application payload.
   4. **Detect template errors earlier:** Detects and reports template binding errors during the build step itself
   5. **Better security:** It compiles HTML templates and components into JavaScript.  So there won't be any injection attacks.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the ways to control AOT compilation?
 
   You can control your app compilation in two ways,
   1. By providing template compiler options in the `tsconfig.json` file
   2. By configuring Angular metadata with decorators
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the restrictions of metadata?
 
@@ -1359,6 +1654,10 @@ Now you can use the above pipe in template expression as below,
   2. The compiler can only reference symbols which are exported
   3. Only call the functions supported by the compiler
   4. Decorated and data-bound class members must be public.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the two phases of AOT?
 
@@ -1366,6 +1665,10 @@ Now you can use the above pipe in template expression as below,
   1. **Code Analysis:** The compiler records a representation of the source
   2. **Code generation:** It handles the interpretation as well as places restrictions on what it interprets.
   3. **Validation:** In this phase, the Angular template compiler uses the TypeScript compiler to validate the binding expressions in templates.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Can I use arrow functions in AOT?
 
@@ -1395,14 +1698,26 @@ Now you can use the above pipe in template expression as below,
 
   If you still use arrow function, it generates an error node in place of the function. When the compiler later interprets this node, it reports an error to turn the arrow function into an exported function.
   **Note:** From Angular5 onwards, the compiler automatically performs this rewriting while emitting the .js file.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of metadata json files?
 
   The metadata.json file can be treated as a diagram of the overall structure of a decorator's metadata, represented as an abstract syntax tree(AST). During the analysis phase, the AOT collector scan the metadata recorded in the Angular decorators and outputs metadata information in .metadata.json files, one per .d.ts file.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Can I use any javascript feature for expression syntax in AOT?
 
   No, the AOT collector understands a subset  of (or limited) JavaScript features. If an expression uses unsupported syntax, the collector writes an error node to the .metadata.json file. Later point of time, the compiler reports an error if it needs that piece of metadata to generate the application code.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Give an example of few metadata errors?
 
@@ -1474,10 +1789,18 @@ Now you can use the above pipe in template expression as below,
           {provide: Age, useValue: user.age},
         ]
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is metadata rewriting?
 
   Metadata rewriting is the process in which the compiler converts the expression initializing the fields such as useClass, useValue, useFactory, and data into an exported variable, which replaces the expression. Remember that the compiler does this rewriting during the emit of the .js file but not in definition files( .d.ts file).
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you provide configuration inheritance?
 
@@ -1497,6 +1820,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you specify angular template compiler options?
 
@@ -1515,6 +1842,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you enable binding expression validation?
 
@@ -1534,6 +1865,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   my.component.ts.MyComponent.html(1,1): : Property 'contacts' does not exist on type 'User'. Did you mean 'contact'?
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of any type cast function?
 
@@ -1547,6 +1882,10 @@ Now you can use the above pipe in template expression as below,
       template:
       '{{ $any(this).contacts.email }}'
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Non null type assertion operator?
 
@@ -1566,6 +1905,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is type narrowing?
 
@@ -1579,6 +1922,10 @@ Now you can use the above pipe in template expression as below,
     user?: User;
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you describe various dependencies in angular application?
 
@@ -1587,14 +1934,26 @@ Now you can use the above pipe in template expression as below,
   1. **Angular packages:** Angular core and optional modules; their package names begin @angular/.
   2. **Support packages:** Third-party libraries that must be present for Angular apps to run.
   3. **Polyfill packages:** Polyfills plug gaps in a browser's JavaScript implementation.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is zone?
 
   A Zone is an execution context that persists across async tasks. Angular relies on zone.js to run Angular's change detection processes when native JavaScript operations raise events
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of common module?
 
   The commonly-needed services, pipes, and directives provided by @angular/common module. Apart from these HttpClientModule is available under @angular/common/http.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is codelyzer?
 
@@ -1603,10 +1962,18 @@ Now you can use the above pipe in template expression as below,
     ng new codelyzer
     ng lint
     ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is angular animation?
 
     Angular's animation system is built on CSS functionality in order to animate any property that the browser considers animatable. These properties includes positions, sizes, transforms, colors, borders etc. The Angular modules for animations are **@angular/animations** and **@angular/platform-browser** and these dependencies are automatically added to your project when you create a project using Angular CLI.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the steps to use animation module?
 
@@ -1650,6 +2017,10 @@ Now you can use the above pipe in template expression as below,
         ]
       })
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is State function?
 
@@ -1664,6 +2035,10 @@ Now you can use the above pipe in template expression as below,
     backgroundColor: 'blue'
   })),
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Style function?
 
@@ -1677,6 +2052,10 @@ Now you can use the above pipe in template expression as below,
   })),
   ```
   **Note:** The style attributes must be in camelCase.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of animate function?
 
@@ -1721,6 +2100,10 @@ Now you can use the above pipe in template expression as below,
       }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is transition function?
 
@@ -1733,6 +2116,10 @@ Now you can use the above pipe in template expression as below,
     animate('500ms')
   ]),
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How to inject the dynamic script in angular?
 
@@ -1752,10 +2139,18 @@ Now you can use the above pipe in template expression as below,
         htmlSnippet: string = this.sanitizer.bypassSecurityTrustScript("<script>safeCode()</script>");
     }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a service worker and its role in Angular?
 
   A service worker is a script that runs in the web browser and manages caching for an application. Starting from 5.0.0 version, Angular ships with a service worker implementation. Angular service worker is designed to optimize the end user experience of using an application over a slow or unreliable network connection, while also minimizing the risks of serving outdated content.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the design goals of service workers?
 
@@ -1766,6 +2161,10 @@ Now you can use the above pipe in template expression as below,
   3. When you refresh the application, it loads the latest fully cached version
   4. When changes are published then it immediately updates in the background
   5. Service workers saves the bandwidth by downloading the resources only when they changed.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular Ivy?
 
@@ -1786,6 +2185,10 @@ Now you can use the above pipe in template expression as below,
         }
       }
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the features included in ivy preview?
 
@@ -1795,6 +2198,10 @@ Now you can use the above pipe in template expression as below,
   2. Faster re-build time
   3. Improved payload size
   4. Improved template type checking
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you add web workers in your application?
 
@@ -1823,6 +2230,10 @@ Now you can use the above pipe in template expression as below,
       ```
 
   **Note:** You may need to refactor your initial scaffolding web worker code for sending messages to and from.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the limitations with web workers?
 
@@ -1830,6 +2241,10 @@ Now you can use the above pipe in template expression as below,
 
   1. Some environments or platforms(like @angular/platform-server) used in Server-side Rendering, don't support Web Workers. In this case you need to provide a fallback mechanism to perform the computations to work in this environments.
   2. Running Angular in web worker using `@angular/platform-webworker` is not yet supported in Angular CLI.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the case types in Angular?
 
@@ -1839,6 +2254,10 @@ Now you can use the above pipe in template expression as below,
   2. **UpperCamelCase (or PascalCase):** Class names, including classes that define components, interfaces, NgModules, directives, and pipes uses uppercase on the first letter of the item.
   3. **dash-case (or "kebab-case"):** The descriptive part of file names, component selectors uses dashes between the words. For example, "app-user-list".
   4. **UPPER_UNDERSCORE_CASE:** All constants uses capital letters connected with underscores. For example, "NUMBER_OF_USERS".
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the class decorators in Angular?
 
@@ -1851,6 +2270,10 @@ Now you can use the above pipe in template expression as below,
   3. @Pipe()
   4. @Injectable()
   5. @NgModule()
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are class field decorators?
 
@@ -1860,6 +2283,10 @@ Now you can use the above pipe in template expression as below,
   @Input() myProperty;
   @Output() myEvent = new EventEmitter();
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is declarable in Angular?
 
@@ -1872,6 +2299,10 @@ Now you can use the above pipe in template expression as below,
     YourDirective
   ],
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the restrictions on declarable classes?
 
@@ -1881,6 +2312,10 @@ Now you can use the above pipe in template expression as below,
   2. Ngmodule classes
   3. Service classes
   4. Helper classes
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a DI token?
 
@@ -1892,6 +2327,10 @@ Now you can use the above pipe in template expression as below,
       Injector.create({providers: [{provide: BASE_URL, useValue: 'http://some-domain.com'}]});
   const url = injector.get(BASE_URL);
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular DSL?
 
@@ -1902,6 +2341,10 @@ Now you can use the above pipe in template expression as below,
   1. `()`: Used for Output and DOM events.
   2. `[]`: Used for Input and specific DOM element attributes.
   3. `*`: Structural directives(*ngFor or *ngIf) will affect/change the DOM structure.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## what is an rxjs subject in Angular
 
@@ -1924,11 +2367,19 @@ Now you can use the above pipe in template expression as below,
     subject.next(1);
     subject.next(2);
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Bazel tool?
 
   Bazel is a powerful build tool developed and massively used by Google and it can keep track of the dependencies between different packages and build targets. In Angular8, you can build your CLI application with Bazel.
   **Note:** The Angular framework itself is built with Bazel.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the advantages of Bazel tool?
 
@@ -1937,6 +2388,10 @@ Now you can use the above pipe in template expression as below,
   1. It creates the possibility of building your back-ends and front-ends with the same tool
   2. The incremental build and tests
   3. It creates the possibility to have remote builds and cache on a build farm.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you use Bazel with Angular CLI?
 
@@ -1951,6 +2406,10 @@ Now you can use the above pipe in template expression as below,
       ng new --collection=@angular/bazel
       ```
   When you use ng build and ng serve commands, Bazel is used behind the scenes and outputs the results in dist/bin folder.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you run Bazel directly?
 
@@ -1961,6 +2420,10 @@ Now you can use the above pipe in template expression as below,
   bazel test [targets] // Run the tests with *_test targets found in the pattern.
   bazel run [target]: Compile the program represented by target and then run it.
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is platform in Angular?
 
@@ -1969,10 +2432,18 @@ Now you can use the above pipe in template expression as below,
 
   1. While running in the browser, it uses `platform-browser` package.
   2. When SSR(server-side rendering ) is used, it uses `platform-server` package for providing web server implementation.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What happens if I import the same module twice?
 
   If multiple modules imports the same module then angular evaluates it only once (When it encounters the module first time). It follows this condition even the module appears at any level in a hierarchy of imported NgModules.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you select an element with in a component template?
 
@@ -1990,6 +2461,10 @@ Now you can use the above pipe in template expression as below,
     console.log(this.input.nativeElement.value);
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you detect route change in Angular?
 
@@ -2029,6 +2504,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you pass headers for HTTP client?
 
@@ -2051,6 +2530,10 @@ Now you can use the above pipe in template expression as below,
 
   return this._http.get<any[]>('someUrl', { headers: headers, params: params })
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of differential loading in CLI?
 
@@ -2060,6 +2543,10 @@ Now you can use the above pipe in template expression as below,
   2. The second build contains old ES5 syntax to support older browsers with all necessary polyfills. But this results in a larger bundle size.
 
   **Note:** This strategy is used to support multiple browsers but it only load the code that the browser needs.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is Angular supports dynamic imports?
 
@@ -2072,6 +2559,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   {path: ‘user’, loadChildren: () => import(‘./users/user.module’).then(m => m.UserModule)};
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is lazy loading?
 
@@ -2093,6 +2584,10 @@ Now you can use the above pipe in template expression as below,
     }
   ];
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are workspace APIs?
 
@@ -2122,6 +2617,10 @@ Now you can use the above pipe in template expression as below,
 
   addBuildTargetOption();
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you upgrade angular version?
 
@@ -2129,6 +2628,10 @@ Now you can use the above pipe in template expression as below,
   ```bash
   $ ng update @angular/cli @angular/core
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular Material?
 
@@ -2139,10 +2642,18 @@ Now you can use the above pipe in template expression as below,
   yarn add @angular/material @angular/cdk @angular/animations
   ```
   It supports the most recent two versions of all major browsers. The latest version of Angular material is 8.1.1
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is NgUpgrade?
 
   NgUpgrade is a library put together by the Angular team, which you can use in your applications to mix and match AngularJS and Angular components and bridge the AngularJS and Angular dependency injection systems.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How to use polyfills in Angular application?
 
@@ -2158,6 +2669,10 @@ Now you can use the above pipe in template expression as below,
         ```javascript
         import 'web-animations-js';
         ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the ways to trigger change detection in Angular?
 
@@ -2166,6 +2681,10 @@ Now you can use the above pipe in template expression as below,
   1. **ApplicationRef.tick():** Invoke this method to explicitly process change detection and its side-effects. It check the full component tree.
   2. **NgZone.run(callback):** It evaluate the callback function inside the Angular zone.
   3. **ChangeDetectorRef.detectChanges():** It detects only the components and it's children.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the security principles in angular?
 
@@ -2177,14 +2696,26 @@ Now you can use the above pipe in template expression as below,
   4.  You should Use Server Side XSS protection.
   5.  You should Use DOM Sanitizer.
   6.  You should Preventing CSRF or XSRF attacks.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is schematic?
 
   It's a scaffolding library that defines how to generate or transform a programming project by creating, modifying, refactoring, or moving files and code. It defines rules that operate on a virtual file system called a tree.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is rule in Schematics?
 
   In schematics world, it's a function that operates on a file tree to create, delete, or modify files in a specific manner.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Schematics CLI?
 
@@ -2192,6 +2723,10 @@ Now you can use the above pipe in template expression as below,
   ```bash
   npm install -g @angular-devkit/schematics-cli
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the best practices for security in angular?
 
@@ -2200,14 +2735,26 @@ Now you can use the above pipe in template expression as below,
   1. Use the latest Angular library releases
   2. Don't modify your copy of Angular
   3. Avoid Angular APIs marked in the documentation as “Security Risk.”
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular security model for preventing XSS attacks?
 
   Angular treats all values as untrusted by default. i.e, Angular sanitizes and escapes untrusted values When a value is inserted into the DOM from a template, via property, attribute, style, class binding, or interpolation.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the role of template compiler for prevention of XSS attacks?
 
   The offline template compiler prevents vulnerabilities caused by template injection, and greatly improves application performance. So it is recommended to use offline template compiler in production deployments without dynamically generating any template.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the various security contexts in Angular?
 
@@ -2217,10 +2764,18 @@ Now you can use the above pipe in template expression as below,
   2. **Style:** It is used when binding CSS into the style property.
   3. **URL:** It is used for URL properties such as `<a href>`.
   4. **Resource URL:** It is a URL that will be loaded and executed as code such as `<script src>`.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Sanitization? Is angular supports it?
 
   **Sanitization** is the inspection of an untrusted value, turning it into a value that's safe to insert into the DOM. Yes, Angular suppports sanitization. It sanitizes untrusted values for HTML, styles, and URLs but sanitizing resource URLs isn't possible because they contain arbitrary code.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of innerHTML?
 
@@ -2236,6 +2791,10 @@ Now you can use the above pipe in template expression as below,
   }
   ```
   Unfortunately this property could cause Cross Site Scripting (XSS) security bugs when improperly handled.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the difference between interpolated content and innerHTML?
 
@@ -2255,6 +2814,10 @@ Now you can use the above pipe in template expression as below,
   }
   ```
   Even though innerHTML binding create a chance of XSS attack, Angular recognizes the value as unsafe and automatically sanitizes it.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you prevent automatic sanitization?
 
@@ -2276,24 +2839,44 @@ Now you can use the above pipe in template expression as below,
     this.dangerousUrl = 'javascript:alert("XSS attack")';
     this.trustedUrl = sanitizer.bypassSecurityTrustUrl(this.dangerousUrl);
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is safe to use direct DOM API methods in terms of security?
 
   No,the built-in browser DOM APIs or methods don't automatically protect you from security vulnerabilities. In this case it is recommended to use Angular templates instead of directly interacting with DOM. If it is unavoidable then use the built-in Angular sanitization functions.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is DOM sanitizer?
 
   `DomSanitizer` is used to help preventing Cross Site Scripting Security bugs (XSS) by sanitizing values to be safe to use in the different DOM contexts.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you support server side XSS protection in Angular application?
 
   The server-side XSS protection is supported in an angular application by using a templating language that automatically escapes values to prevent XSS vulnerabilities on the server. But don't use a templating language to generate Angular templates on the server side which creates a high risk of introducing template-injection vulnerabilities.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is angular prevents http level vulnerabilities?
 
   Angular has built-in support for preventing http level vulnerabilities such as as cross-site request forgery (CSRF or XSRF) and cross-site script inclusion (XSSI). Even though these vulnerabilities need to be mitigated on server-side, Angular provides helpers to make the integration easier on the client side.
   1. HttpClient supports a token mechanism used to prevent XSRF attacks
   2. HttpClient library recognizes the convention of prefixed JSON responses(which non-executable js code with ")]}',\\n" characters) and automatically strips the string ")]}',\\n" from all responses before further parsing
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are Http Interceptors?
 
@@ -2333,6 +2916,10 @@ Now you can use the above pipe in template expression as below,
   })
   export class AppModule {}
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the applications of HTTP interceptors?
 
@@ -2344,6 +2931,10 @@ Now you can use the above pipe in template expression as below,
   4. Fake backend
   5. URL transformation
   6. Modifying headers
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is multiple interceptors supported in Angular?
 
@@ -2355,6 +2946,10 @@ Now you can use the above pipe in template expression as below,
   ],
   ```
   The interceptors will be called in the order in which they were provided. i.e, MyFirstInterceptor will be called first in the above interceptors configuration.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How can I use interceptor for an entire application?
 
@@ -2389,12 +2984,20 @@ Now you can use the above pipe in template expression as below,
   })
   export class AppModule {}
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is an angular library?
 
   An Angular library is an Angular project that differs from an app in that it cannot run on its own. It must be imported and used in an app. For example,  you can import or add `service worker` library to an Angular application which turns an application into a Progressive Web App (PWA).
 
   **Note:** You can create own third party library and publish it as npm package to be used in an Application.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you select an element in component template?
 
@@ -2404,10 +3007,18 @@ Now you can use the above pipe in template expression as below,
     el.nativeElement.style.backgroundColor = 'yellow';
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is TestBed?
 
   TestBed is an api for writing unit tests for Angular applications and it's libraries. Even though We still write our tests in Jasmine and run using Karma, this API provides an easier way to create components, handle injection, test asynchronous behaviour and interact with our application.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is protractor?
 
@@ -2415,6 +3026,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   npm install -g protractor
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you create schematics for libraries?
 
@@ -2425,6 +3040,10 @@ Now you can use the above pipe in template expression as below,
     For example, @angular/material generation schematic supplies generation schematics for the UI components. Let's say the table component is generated using `ng generate @angular/material:table `.
   3. **Update schematics:** These schematics are used to update library's dependencies and adjust for breaking changes in a new library release using `ng update` command.
     For example, @angular/material update schematic updates material and cdk dependencies using `ng update @angular/material` command.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you use jquery in Angular?
 
@@ -2463,6 +3082,10 @@ Now you can use the above pipe in template expression as below,
         }
       }
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the reason for No provider for HTTP exception?
 
@@ -2480,6 +3103,10 @@ Now you can use the above pipe in template expression as below,
   })
   export class AppModule { }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How can I use SASS in angular project?
 
@@ -2491,6 +3118,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   ng set defaults.styleExt scss
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of hidden property?
 
@@ -2500,10 +3131,18 @@ Now you can use the above pipe in template expression as below,
     My name is: {{user.name}}
   </div>
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the difference between ngIf and hidden property?
 
   The main difference is that *ngIf will remove the element from the DOM, while [hidden] actually plays with the CSS style by setting `display:none`. Generally it is expensive to add and remove stuff from the DOM for frequent actions.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is slice pipe?
 
@@ -2523,6 +3162,10 @@ Now you can use the above pipe in template expression as below,
     greeting: string[] = ['h', 'e', 'l', 'l', 'o', 'm','o', 'r', 'n', 'i', 'n', 'g'];
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is index property in ngFor directive?
 
@@ -2532,6 +3175,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   <div *ngFor="let todo of todos; let i=index">{{i + 1}} - {{todo.name}}</div>
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of ngFor trackBy?
 
@@ -2547,6 +3194,10 @@ Now you can use the above pipe in template expression as below,
   ```javascript
   trackByTodos(index: number, item: Todo): number { return todo.id; }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of ngSwitch directive?
 
@@ -2562,6 +3213,10 @@ Now you can use the above pipe in template expression as below,
     <ie-browser  *ngSwitchDefault           [item]="currentItem"></ie-browser>
   </div>
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is it possible to do aliasing for inputs and outputs?
 
@@ -2576,6 +3231,10 @@ Now you can use the above pipe in template expression as below,
       @Input('buyItem') input1: string;
       @Output('completedEvent') outputEvent1 = new EventEmitter<string>();
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is safe navigation operator?
 
@@ -2586,6 +3245,10 @@ Now you can use the above pipe in template expression as below,
   <p>The user firstName is: {{user?.fullName.firstName}}</p>
   ```
   Using this safe navigation operator, Angular framework stops evaluating the expression when it hits the first null value and renders the view without any errors.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is mandatory to pass static flag for ViewChild?
 
@@ -2594,6 +3257,10 @@ Now you can use the above pipe in template expression as below,
   @ViewChild(ChildDirective) child: ChildDirective; // Angular9 usage
   @ViewChild(ChildDirective, { static: false }) child: ChildDirective; //Angular8 usage
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the list of template expression operators?
 
@@ -2601,10 +3268,18 @@ Now you can use the above pipe in template expression as below,
   1. Pipe operator
   2. Safe navigation operator
   3. Non-null assertion operator
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the precedence between pipe and ternary operators?
 
   The pipe operator has a higher precedence than the ternary operator (?:). For example, the expression `first ? second : third | fourth` is parsed as `first ? second : (third | fourth)`.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is an entry component?
 
@@ -2613,6 +3288,10 @@ Now you can use the above pipe in template expression as below,
   Basically, there are two main kinds of entry components which are following -
   1. The bootstrapped root component
   2. A component you specify in a route
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a bootstrapped component?
 
@@ -2632,6 +3311,10 @@ Now you can use the above pipe in template expression as below,
     bootstrap: [AppComponent] // bootstrapped entry component need to be declared here
   })
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you manually bootstrap an application?
 
@@ -2649,10 +3332,18 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is it necessary for bootstrapped component to be entry component?
 
   Yes, the bootstrapped component needs to be an entry component. This is because the bootstrapping process is an imperative process.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a routed entry component?
 
@@ -2668,36 +3359,69 @@ Now you can use the above pipe in template expression as below,
   Since router definition requires you to add the component in two places (router and entryComponents), these components are always entry components.
 
   **Note:** The compilers are smart enough to recognize a router definition and automatically add the router component into `entryComponents`.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Why is not necessary to use entryComponents array every time?
 
   Most of the time, you don't need to explicity to set entry components in entryComponents array of ngModule decorator. Because angular adds components from both @NgModule.bootstrap and route definitions to entry components automatically.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Do I still need to use entryComponents array in Angular9?
 
   No. In previous angular releases, the entryComponents array of ngModule decorator is used to tell the compiler which components would be created and inserted dynamically in the view. In Angular9, this is not required anymore with Ivy.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is it all components generated in production build?
 
   No, only the entry components and template components appears in production builds. If a component isn't an entry component and isn't found in a template, the tree shaker will throw it away. Due to this reason, make sure to add only true entry components to reduce the bundle size.
+  
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is Angular compiler?
 
   The Angular compiler is used to convert the application code into JavaScript code. It reads the template markup, combines it with the corresponding component class code, and emits component factories which creates JavaScript representation of the component along with elements of @Component metadata.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the role of ngModule metadata in compilation process?
 
   The `@NgModule` metadata is used to tell the Angular compiler what components to be compiled for this module and how to link this module with other modules.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How does angular finds components, directives and pipes?
 
   The Angular compiler finds a component or directive in a template when it can match the selector of that component or directive in that template. Whereas it finds a pipe if the pipe's name appears within the pipe syntax of the template HTML.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Give few examples for NgModules?
 
   The Angular core libraries and third-party libraries are available as NgModules.
   1. Angular libraries such as FormsModule, HttpClientModule, and RouterModule are NgModules.
   2. Many third-party libraries such as Material Design, Ionic, and AngularFire2 are NgModules.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are feature modules?
 
@@ -2720,12 +3444,20 @@ Now you can use the above pipe in template expression as below,
   ```
 
   **Note:**  The "Module" suffix shouldn't present in the name because the CLI appends it.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the imported modules in CLI generated feature modules?
 
   In the CLI generated feature module, there are two JavaScript import statements at the top of the file
   1. **NgModule:** InOrder to use the `@NgModule` decorator
   2. **CommonModule:** It provides many common directives such as `ngIf` and `ngFor`.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the differences between ngmodule and javascript module?
 
@@ -2737,12 +3469,20 @@ Now you can use the above pipe in template expression as below,
   | List the module's classes in declarations array only | Can define all member classes in one giant file |
   | It only export the declarable classes it owns or imports from other modules| It can export any classes |
   | Extend the entire application with services by adding providers to provides array | Can't extend the application with services |
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the possible errors with declarations?
 
   There are two common possible errors with declarations array,
   1. If you use a component without declaring it, Angular returns an error message.
   2. If you try to declare the same class in more than one module then compiler emits an error.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the steps to use declaration elements?
 
@@ -2750,12 +3490,20 @@ Now you can use the above pipe in template expression as below,
   1. Create the element(component, directive and pipes) and export it from the file where you wrote it
   2. Import it into the appropriate module.
   3. Declare it in the @NgModule declarations array.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What happens if browserModule used in feature module?
 
   If you do import `BrowserModule` into a lazy loaded feature module, Angular returns an error telling you to use `CommonModule` instead. Because BrowserModule’s providers are for the entire app so it should only be in the root module, not in feature module. Whereas Feature modules only need the common directives in CommonModule.
 
   ![ScreenShot](images/browser-module-error.gif)
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the types of feature modules?
 
@@ -2765,6 +3513,10 @@ Now you can use the above pipe in template expression as below,
   3. **Routing:** It provides routing configuration for another module.
   4. **Service:** It provides utility services such as data access and messaging(For example, HttpClientModule)
   5. **Widget:** It makes components, directives, and pipes available to external modules(For example, third-party libraries such as Material UI)
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a provider?
 
@@ -2782,10 +3534,18 @@ Now you can use the above pipe in template expression as below,
   export class MyService {
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the recommendation for provider scope?
 
   You should always provide your service in the root injector unless there is a case where you want the service to be available only if you import a particular @NgModule.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you restrict provider scope to a module?
 
@@ -2813,6 +3573,10 @@ Now you can use the above pipe in template expression as below,
       export class SomeModule {
       }
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you provide a singleton service?
 
@@ -2837,6 +3601,10 @@ Now you can use the above pipe in template expression as below,
         ...
       })
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the different ways to remove duplicate service registration?
 
@@ -2844,10 +3612,18 @@ Now you can use the above pipe in template expression as below,
   1. Use the providedIn syntax instead of registering the service in the module.
   2. Separate your services into their own module.
   3. Define forRoot() and forChild() methods in the module.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How does forRoot method helpful to avoid duplicate router instances?
 
   If the `RouterModule` module didn’t have forRoot() static method then each feature module would instantiate a new Router instance, which leads to broken application due to duplicate instances. After using forRoot() method, the root application module imports `RouterModule.forRoot(...)` and gets a Router, and all feature modules import `RouterModule.forChild(...)` which does not instantiate another Router.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a shared module?
 
@@ -2870,10 +3646,18 @@ Now you can use the above pipe in template expression as below,
   })
   export class SharedModule { }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Can I share services using modules?
 
   No, it is not recommended to share services by importing module. i.e Import modules when you want to use directives, pipes, and components only. The best approach to get a hold of shared services is through 'Angular dependency injection' because importing a module will result in a new service instance.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is ngcc?
 
@@ -2885,6 +3669,10 @@ Now you can use the above pipe in template expression as below,
   ```
 
   Whereas, Ivy compiler (ngtsc), which compiles Ivy-compatible code.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What classes should not be added to declarations?
 
@@ -2894,12 +3682,20 @@ Now you can use the above pipe in template expression as below,
   3. Module classes.
   4. Service classes.
   5. Non-Angular classes and objects, such as strings, numbers, functions, entity models, configurations, business logic, and helper classes.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is NgZone?
 
   Angular provides a service called NgZone which creates a zone named `angular` to automatically trigger change detection when the following conditions are satisfied.
   1. When a sync or async function is executed.
   2. When there is no microTask scheduled.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is NoopZone?
 
@@ -2917,6 +3713,10 @@ Now you can use the above pipe in template expression as below,
       platformBrowserDynamic().bootstrapModule(AppModule, {ngZone: 'noop'})
         .catch(err => console.error(err));
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the possible data update scenarios for change detection?
 
@@ -2970,6 +3770,10 @@ Now you can use the above pipe in template expression as below,
         }
       ```
   6. **Async operations like Web sockets and Canvas:** The data can be updated asynchronously using WebSocket.onmessage() and Canvas.toBlob().
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is a zone context?
 
@@ -2985,6 +3789,10 @@ Now you can use the above pipe in template expression as below,
   });
   ```
   The current zone is retrieved through `Zone.current`.
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the lifecycle hooks of a zone?
 
@@ -3017,6 +3825,10 @@ Now you can use the above pipe in template expression as below,
           return delegate.invoke(target, callback, applyThis, applyArgs);
         }
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What are the methods of NgZone used to control change detection?
 
@@ -3048,6 +3860,10 @@ Now you can use the above pipe in template expression as below,
     }
   }
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you change the settings of zonejs?
 
@@ -3068,6 +3884,10 @@ Now you can use the above pipe in template expression as below,
   import `./zone-flags`;
   import 'zone.js/dist/zone';  // Included with Angular CLI.
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you trigger an animation?
 
@@ -3108,6 +3928,10 @@ Now you can use the above pipe in template expression as below,
     }
 
   ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## How do you configure injectors with providers at different levels?
 
@@ -3115,6 +3939,10 @@ Now you can use the above pipe in template expression as below,
   1. In the `@Injectable()` decorator for the service itself
   2. In the `@NgModule()` decorator for an NgModule
   3. In the `@Component()` decorator for a component
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Is it mandatory to use injectable on every service class?
 
@@ -3167,6 +3995,10 @@ Now you can use the above pipe in template expression as below,
         }
       }
       ```
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is an optional dependency?
 
@@ -3185,8 +4017,10 @@ constructor(@Optional() private logger?: Logger) {
 }
 
 ````
-
-
+  
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are the types of injector hierarchies?
 There are two types of injector hierarchies in Angular
@@ -3194,7 +4028,9 @@ There are two types of injector hierarchies in Angular
 1. **ModuleInjector hierarchy:** It configure on a module level using an @NgModule() or @Injectable() annotation.
 2. **ElementInjector hierarchy:** It created implicitly at each DOM element. Also it is empty by default unless you configure it in the providers property on @Directive() or @Component().
 
-
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are reactive forms?
 Reactive forms is a model-driven approach for creating forms in a reactive style(form inputs changes over time). These are built around observable streams, where form inputs and values are provided as streams of input values. Let's follow the below steps to create reactive forms,
@@ -3250,11 +4086,16 @@ Finally, the component with reactive form control appears as below,
     }
     ```
 
-
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are dynamic forms?
 Dynamic forms is a pattern in which we build a form dynamically based on metadata that describes a business object model. You can create them based on reactive form API.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are the different ways to group form controls?
 Reactive forms provide two ways of grouping multiple related controls.
@@ -3388,7 +4229,9 @@ Reactive forms provide two ways of grouping multiple related controls.
       </div>
       ```
 
-
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How do you update specific properties of a form model?
   You can use `patchValue()` method to update specific properties defined in the form model. For example,you can update the name and street of certain profile on click of the update button as shown below.
@@ -3411,6 +4254,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   **Note:** Remember to update the properties against the exact model structure.
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the purpose of FormBuilder?
   FormBuilder is used as syntactic sugar for easily creating instances of a FormControl, FormGroup, or FormArray. This is helpful to reduce the amount of boilerplate needed to build complex reactive forms. It is available as an injectable helper class of the `@angular/forms` package.
@@ -3432,6 +4278,9 @@ Reactive forms provide two ways of grouping multiple related controls.
     }
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How do you verify the model changes in forms?
   You can add a getter property(let's say, diagnostic) inside component to return a JSON representation of the model during the development. This is useful to verify whether the values are really flowing from the input box to the model and vice versa or not.
@@ -3453,6 +4302,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   ```
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are the state CSS classes provided by ngModel?
   The ngModel directive updates the form control with special Angular CSS classes to reflect it's state. Let's find the list of classes in a tabular format,
@@ -3464,6 +4316,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   | Value is valid| 	ng-valid | ng-invalid |
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How do you reset the form?
   In a model-driven form, you can reset the form just by calling the function `reset()` on our form model.
@@ -3480,6 +4335,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   Now, your form model resets the form back to its original pristine state.
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What are the types of validator functions?
   In reactive forms, the validators can be either synchronous or asynchronous functions,
@@ -3496,6 +4354,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   ```
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  Can you give an example of built-in validators?
   In reactive forms, you can use built-in validator like `required` and `minlength` on your input form controls. For example, the registration form can have these validators on name input field
@@ -3510,6 +4371,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   Whereas in template-driven forms, both `required` and `minlength` validators available as attributes.
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How do you optimize the performance of async validators?
   Since all validators run after every form value change, it creates a major impact on performance with async validators by hitting the external API on each keystroke. This situation can be avoided by delaying the form validity by changing the updateOn property from change (default) to submit or blur.
@@ -3524,6 +4388,9 @@ Reactive forms provide two ways of grouping multiple related controls.
       ```
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How to set ngFor and ngIf on the same element?
   Sometimes you may need to both ngFor and ngIf on the same element but unfortunately you are going to encounter below template error.
@@ -3546,7 +4413,9 @@ Reactive forms provide two ways of grouping multiple related controls.
   </ng-container>
   ```
 
-
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  What is host property in css?
   The `:host` pseudo-class selector is used to target styles in the element that hosts the component. Since the host element is in a parent component's template, you can't reach the host element from inside the component by other means.
@@ -3561,22 +4430,28 @@ Reactive forms provide two ways of grouping multiple related controls.
   }
   ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ##  How do you get the current route?
-  In Angular, there is an `url` property of router package to get the current route. You need to follow the below few steps,
+In Angular, there is an `url` property of router package to get the current route. You need to follow the below few steps,
 
-  1. Import Router from @angular/router
-  ```js
-    import { Router } from '@angular/router';
-  ```
-  2. Inject router inside constructor
-  ```js
-  constructor(private router: Router ) {
+1. Import Router from @angular/router
+```js
+  import { Router } from '@angular/router';
+```
+2. Inject router inside constructor
+```js
+constructor(private router: Router ) {
 
-  }
-  ```
-  3. Access url parameter
-  ```js
-    console.log(this.router.url); //  /routename
-  ```
-````
+}
+```
+3. Access url parameter
+```js
+  console.log(this.router.url); //  /routename
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
