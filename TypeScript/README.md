@@ -32,6 +32,10 @@ In details:
 - To use TypeScript you need a build process to compile to JavaScript code. The TypeScript compiler can inline source map information in the generated .js files or create separate .map files. This makes it possible for you to set breakpoints and inspect variables during runtime directly on your TypeScript code.
 - TypeScript is open source (Apache 2 licensed, see github) and backed by Microsoft. _Anders Hejlsberg_, the lead architect of C# is spearheading the project.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What are the difference beetween Typescript and JavaScript?
 
 - It is an object oriented programming language (not pure).
@@ -43,9 +47,17 @@ In details:
 - Supports Modules
 - Number, string etc. are the interfaces.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Do we need to compile TypeScript files and why?
 
 Yes we do. Typescript is just a language Extension browsers can't interpret it. Converting from TypeScript to JavaScript is called compiling. Compiling doesn't mean binary code is created in this case. For this kind of translation, also the term transpilation is used instead of compilation.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## List the built-in types in Typescript
 
@@ -81,6 +93,10 @@ var variable_name: number = null;
 var variable_name: number = undefined;
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is Interface in TypeScript?
 
 One of TypeScript’s core principles is that type-checking focuses on the _shape_ that values have.
@@ -88,6 +104,10 @@ One of TypeScript’s core principles is that type-checking focuses on the _shap
 An `interface` is a virtual structure that only exists within the context of TypeScript. The TypeScript compiler uses interfaces solely for type-checking purposes.
 
 When you define your interface you’re saying that any object (not an instance of a class) given this contract must be an object containing interfaces properties.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## What is the difference between Classes and Interfaces in Typescript?
 
@@ -97,11 +117,19 @@ Unlike classes, an interface is a virtual structure that only exists within the 
 
 A class may define a factory or a singleton by providing initialisation to its properties and implementation to its methods, an interface is simply a structural contract that defines what the properties of an object should have as a name and as a type.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## When to use interfaces and when to use classes in TypeScript?
 
 If you need/wish to create an instance of perhaps a custom object, whilst getting the benefits of type-checking things such as arguments, return types or generics - a class makes sense.
 
 If you’re not creating instances - we have interfaces at our disposal, and their benefit comes from not generating any source code, yet allowing us to somewhat “virtually” type-check our code.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Explain generics in TypeScript
 
@@ -121,11 +149,19 @@ queue.push("1"); // ERROR : cannot push a string. Only numbers allowed
 
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## What is "Decorators" in TypeScript?
 
 A _Decorator_ is a special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter. Decorators are functions that take their target as the argument. With decorators we can run arbitrary code around the target execution or even entirely replace the target with a new definition.
 
 There are 4 things we can decorate in ECMAScript2016 (and Typescript): constructors, methods, properties and parameters.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Does TypeScript support all object oriented principles?
 
@@ -135,6 +171,10 @@ The answer is **YES**. There are 4 main principles to Object Oriented Programmin
 - Inheritance,
 - Abstraction, and
 - Polymorphism.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Which object oriented terms are supported by TypeScript?
 
