@@ -31,5 +31,11 @@
         <br/><sub><b>Lyubomyr Kuzenko</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/jullienfall">
+        <img src="https://avatars.githubusercontent.com/u/32792317?s=460&u=151c93e32ca3dc6ed5cd22fae6097d392f039daf&v=4" width="120px;"/>
+        <br/><sub><b>Iuliia Kyryk</b></sub>
+      </a>
+    </td>
   </tr>
 </table>
