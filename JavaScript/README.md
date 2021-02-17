@@ -317,7 +317,7 @@
 | 309.|[What is callback() function in javascript?](#309-what-is-callback-function-in-javascript)|
 | 310.|[What is shallow copy and deep copy in javascript?](#310-what-is-shallow-copy-and-deep-copy-in-javascript)|
 | 311.|[What is difference between stoppropagation vs stopimmediatepropagation vs preventdefault in javascript?](#311-what-is-difference-between-stoppropagation-vs-stopimmediatepropagation-vs-preventdefault-in-javascript)|
-| 312.|[Explain array methods [join(), pop(), push(), shift(), unshift(), concat(), map(), filter(), reduce(), reduceRight(), every(), some(), indexOf(), lastIndexOf(), find(), findIndex(), includes()]](#312-explain-array-methods-[join-pop-push-shift-unshift-concat-map-filter-reduce-reduceright-every-some-indexof-lastindexof-find-findindex-includes])|
+| 312.|[Explain array methods [join(), pop(), push(), shift(), unshift(), concat(), map(), filter(), reduce(), reduceRight(), every(), some(), indexOf(), lastIndexOf(), find(), findIndex(), includes()]](#312-explain-array-methods-join-pop-push-shift-unshift-concat-map-filter-reduce-reduceright-every-some-indexof-lastindexof-find-findindex-includes)|
 | 313.|[When to use function declarations and expressions in JavaScript?](#313-when-to-use-function-declarations-and-expressions-in-javascript)|
 | 314.|[How to avoid callback hell in javascript?](#314-how-to-avoid-callback-hell-in-javascript)|
 | 315.|[Why is eval() considered evil and dangerous?](#315-why-is-eval-considered-evil-and-dangerous)|
