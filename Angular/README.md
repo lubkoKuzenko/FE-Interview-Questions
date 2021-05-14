@@ -1609,6 +1609,9 @@ Now you can use the above pipe in template expression as below,
   ng build --aot
   ng serve --aot
   ```
+
+  <img src="./images/Angular-compilation.png" />
+  
   **Note:** The ng build command with the --prod meta-flag (`ng build --prod`) compiles with AOT by default.
   
 <div align="right">
