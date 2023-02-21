@@ -1,6 +1,6 @@
 # JavaScript Coding Questions
 
-## <img src="./images/coding-interview-illustration2.webp" width="960">
+## <img src="./images/javascript_interview_questions_1.jpg" width="960">
 
 ###### 1. What's the output?
 
