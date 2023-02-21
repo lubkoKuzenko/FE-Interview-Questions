@@ -8,7 +8,7 @@
 - [TypeScript](./TypeScript/README.md)
 - [Angular](./Angular/README.md)
 - [React](./React/README.md)
-- [Coding](./Coding/README.md)
+- [Coding](./Coding/README.MD)
 
 ## Contributors
 
