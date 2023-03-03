@@ -1,5 +1,7 @@
 # JavaScript Coding Questions
 
+**[[Source](https://github.com/lydiahallie/javascript-questions)]**
+
 ## <img src="./images/javascript_interview_questions_1.jpg" width="960">
 
 ###### 1. What's the output?
