@@ -1,6 +1,6 @@
 # Reverse interview
 
-<img src="./images/Answers to 7 common Interview Questions.png">
+<img src="./images/Answers to 7 common Interview Questions.png" width="100%">
 
 **[[Source](https://github.com/viraptor/reverse-interview)]**
 
