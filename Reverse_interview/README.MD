@@ -1,6 +1,6 @@
 # Reverse interview
 
-<img src="./images/getty_803789400_2000133320009280103_362124.jpg">
+<img src="./images/getty_803789400_2000133320009280103_362124.jpg" height="400px">
 
 **[[Source](https://github.com/viraptor/reverse-interview)]**
 
