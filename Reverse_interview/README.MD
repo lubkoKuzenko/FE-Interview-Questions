@@ -1,5 +1,7 @@
 # Reverse interview
 
+<img src="./images/getty_803789400_2000133320009280103_362124.jpg">
+
 **[[Source](https://github.com/viraptor/reverse-interview)]**
 
 This is a list of questions which may be interesting to a tech job applicant.
