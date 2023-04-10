@@ -2,6 +2,8 @@
 
 <img src="./images/How-the-Web-Works-–-Web-Application-Architecture-for-Beginners.png" width="800">
 
+**[[Source](https://github.com/vasanthk/how-web-works)]**
+
 What happens behind the scenes when we type google.com in a browser?
 
 ## Table of Contents

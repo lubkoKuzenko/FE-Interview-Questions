@@ -2,6 +2,7 @@
 
 <img src="./images/developer.gif">
 
+- [How Web Works](./How_Web_Works/README.md)
 - [HTML](./HTML/README.md)
 - [CSS](./CSS/README.md)
 - [JavaScript](./JavaScript/README.md)
