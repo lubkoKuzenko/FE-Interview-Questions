@@ -1,4 +1,4 @@
-# Algorithms and Data Structures
+# Data Structures
 
 <img src="./images/Banner-Blog-1A-1.jpg" width="800">
 
@@ -105,7 +105,3 @@ In computer science, a graph is an abstract data type that is meant to implement
 A graph data structure consists of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as edges, arcs, or lines for an undirected graph and as arrows, directed edges, directed arcs, or directed lines for a directed graph. The vertices may be part of the graph structure, or may be external entities represented by integer indices or references.
 
 <img src="./images/graph.jpeg" width="800" />
-
-## Algorithms
-
-An algorithm is an unambiguous specification of how to solve a class of problems. It is a set of rules that precisely define a sequence of operations

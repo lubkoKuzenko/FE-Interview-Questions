@@ -10,7 +10,7 @@
 - [Angular](./Angular/README.md)
 - [React](./React/README.md)
 - [Coding](./Coding/README.MD)
-- [Data Structures](./Algorithms_and_Data_Structures/README.md)
+- [Data Structures](./Data_Structures/README.md)
 - [Reverse interview](./Reverse_interview/README.MD)
 
 ## Contributors
